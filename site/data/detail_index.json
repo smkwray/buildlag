@@ -1,0 +1,758 @@
+{
+  "detail_mode": "multi_metro_real_safmr_zcta",
+  "default_cbsa_code": "12420",
+  "default_metro_name": "Austin-Round Rock-San Marcos, TX",
+  "supported_detail_count": 75,
+  "supported_details": [
+    {
+      "cbsa_code": "35380",
+      "metro_name": "New Orleans-Metairie, LA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 65,
+      "county_count": 7,
+      "zips_path": "data/detail/35380/zips.geojson",
+      "counties_path": "data/detail/35380/counties.geojson",
+      "context_path": "data/detail/35380/context.json"
+    },
+    {
+      "cbsa_code": "31080",
+      "metro_name": "Los Angeles-Long Beach-Anaheim, CA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 394,
+      "county_count": 2,
+      "zips_path": "data/detail/31080/zips.geojson",
+      "counties_path": "data/detail/31080/counties.geojson",
+      "context_path": "data/detail/31080/context.json"
+    },
+    {
+      "cbsa_code": "46520",
+      "metro_name": "Urban Honolulu, HI",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 38,
+      "county_count": 1,
+      "zips_path": "data/detail/46520/zips.geojson",
+      "counties_path": "data/detail/46520/counties.geojson",
+      "context_path": "data/detail/46520/context.json"
+    },
+    {
+      "cbsa_code": "33100",
+      "metro_name": "Miami-Fort Lauderdale-West Palm Beach, FL",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 189,
+      "county_count": 3,
+      "zips_path": "data/detail/33100/zips.geojson",
+      "counties_path": "data/detail/33100/counties.geojson",
+      "context_path": "data/detail/33100/context.json"
+    },
+    {
+      "cbsa_code": "14860",
+      "metro_name": "Bridgeport-Stamford-Danbury, CT",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 52,
+      "county_count": 2,
+      "zips_path": "data/detail/14860/zips.geojson",
+      "counties_path": "data/detail/14860/counties.geojson",
+      "context_path": "data/detail/14860/context.json"
+    },
+    {
+      "cbsa_code": "37100",
+      "metro_name": "Oxnard-Thousand Oaks-Ventura, CA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 34,
+      "county_count": 1,
+      "zips_path": "data/detail/37100/zips.geojson",
+      "counties_path": "data/detail/37100/counties.geojson",
+      "context_path": "data/detail/37100/context.json"
+    },
+    {
+      "cbsa_code": "39300",
+      "metro_name": "Providence-Warwick, RI-MA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 114,
+      "county_count": 6,
+      "zips_path": "data/detail/39300/zips.geojson",
+      "counties_path": "data/detail/39300/counties.geojson",
+      "context_path": "data/detail/39300/context.json"
+    },
+    {
+      "cbsa_code": "41860",
+      "metro_name": "San Francisco-Oakland-Fremont, CA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 182,
+      "county_count": 5,
+      "zips_path": "data/detail/41860/zips.geojson",
+      "counties_path": "data/detail/41860/counties.geojson",
+      "context_path": "data/detail/41860/context.json"
+    },
+    {
+      "cbsa_code": "40380",
+      "metro_name": "Rochester, NY",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 125,
+      "county_count": 5,
+      "zips_path": "data/detail/40380/zips.geojson",
+      "counties_path": "data/detail/40380/counties.geojson",
+      "context_path": "data/detail/40380/context.json"
+    },
+    {
+      "cbsa_code": "25540",
+      "metro_name": "Hartford-West Hartford-East Hartford, CT",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 104,
+      "county_count": 2,
+      "zips_path": "data/detail/25540/zips.geojson",
+      "counties_path": "data/detail/25540/counties.geojson",
+      "context_path": "data/detail/25540/context.json"
+    },
+    {
+      "cbsa_code": "37980",
+      "metro_name": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 404,
+      "county_count": 11,
+      "zips_path": "data/detail/37980/zips.geojson",
+      "counties_path": "data/detail/37980/counties.geojson",
+      "context_path": "data/detail/37980/context.json"
+    },
+    {
+      "cbsa_code": "41740",
+      "metro_name": "San Diego-Chula Vista-Carlsbad, CA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 118,
+      "county_count": 1,
+      "zips_path": "data/detail/41740/zips.geojson",
+      "counties_path": "data/detail/41740/counties.geojson",
+      "context_path": "data/detail/41740/context.json"
+    },
+    {
+      "cbsa_code": "14460",
+      "metro_name": "Boston-Cambridge-Newton, MA-NH",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 305,
+      "county_count": 7,
+      "zips_path": "data/detail/14460/zips.geojson",
+      "counties_path": "data/detail/14460/counties.geojson",
+      "context_path": "data/detail/14460/context.json"
+    },
+    {
+      "cbsa_code": "47260",
+      "metro_name": "Virginia Beach-Chesapeake-Norfolk, VA-NC",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 121,
+      "county_count": 18,
+      "zips_path": "data/detail/47260/zips.geojson",
+      "counties_path": "data/detail/47260/counties.geojson",
+      "context_path": "data/detail/47260/context.json"
+    },
+    {
+      "cbsa_code": "40140",
+      "metro_name": "Riverside-San Bernardino-Ontario, CA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 169,
+      "county_count": 2,
+      "zips_path": "data/detail/40140/zips.geojson",
+      "counties_path": "data/detail/40140/counties.geojson",
+      "context_path": "data/detail/40140/context.json"
+    },
+    {
+      "cbsa_code": "35620",
+      "metro_name": "New York-Newark-Jersey City, NY-NJ",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 912,
+      "county_count": 22,
+      "zips_path": "data/detail/35620/zips.geojson",
+      "counties_path": "data/detail/35620/counties.geojson",
+      "context_path": "data/detail/35620/context.json"
+    },
+    {
+      "cbsa_code": "19820",
+      "metro_name": "Detroit-Warren-Dearborn, MI",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 234,
+      "county_count": 6,
+      "zips_path": "data/detail/19820/zips.geojson",
+      "counties_path": "data/detail/19820/counties.geojson",
+      "context_path": "data/detail/19820/context.json"
+    },
+    {
+      "cbsa_code": "23420",
+      "metro_name": "Fresno, CA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 75,
+      "county_count": 2,
+      "zips_path": "data/detail/23420/zips.geojson",
+      "counties_path": "data/detail/23420/counties.geojson",
+      "context_path": "data/detail/23420/context.json"
+    },
+    {
+      "cbsa_code": "21340",
+      "metro_name": "El Paso, TX",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 31,
+      "county_count": 2,
+      "zips_path": "data/detail/21340/zips.geojson",
+      "counties_path": "data/detail/21340/counties.geojson",
+      "context_path": "data/detail/21340/context.json"
+    },
+    {
+      "cbsa_code": "16980",
+      "metro_name": "Chicago-Naperville-Elgin, IL-IN",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 402,
+      "county_count": 13,
+      "zips_path": "data/detail/16980/zips.geojson",
+      "counties_path": "data/detail/16980/counties.geojson",
+      "context_path": "data/detail/16980/context.json"
+    },
+    {
+      "cbsa_code": "12580",
+      "metro_name": "Baltimore-Columbia-Towson, MD",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 174,
+      "county_count": 7,
+      "zips_path": "data/detail/12580/zips.geojson",
+      "counties_path": "data/detail/12580/counties.geojson",
+      "context_path": "data/detail/12580/context.json"
+    },
+    {
+      "cbsa_code": "10900",
+      "metro_name": "Allentown-Bethlehem-Easton, PA-NJ",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 105,
+      "county_count": 4,
+      "zips_path": "data/detail/10900/zips.geojson",
+      "counties_path": "data/detail/10900/counties.geojson",
+      "context_path": "data/detail/10900/context.json"
+    },
+    {
+      "cbsa_code": "45300",
+      "metro_name": "Tampa-St. Petersburg-Clearwater, FL",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 143,
+      "county_count": 4,
+      "zips_path": "data/detail/45300/zips.geojson",
+      "counties_path": "data/detail/45300/counties.geojson",
+      "context_path": "data/detail/45300/context.json"
+    },
+    {
+      "cbsa_code": "15380",
+      "metro_name": "Buffalo-Cheektowaga, NY",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 98,
+      "county_count": 2,
+      "zips_path": "data/detail/15380/zips.geojson",
+      "counties_path": "data/detail/15380/counties.geojson",
+      "context_path": "data/detail/15380/context.json"
+    },
+    {
+      "cbsa_code": "49340",
+      "metro_name": "Worcester, MA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 83,
+      "county_count": 1,
+      "zips_path": "data/detail/49340/zips.geojson",
+      "counties_path": "data/detail/49340/counties.geojson",
+      "context_path": "data/detail/49340/context.json"
+    },
+    {
+      "cbsa_code": "12540",
+      "metro_name": "Bakersfield-Delano, CA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 55,
+      "county_count": 1,
+      "zips_path": "data/detail/12540/zips.geojson",
+      "counties_path": "data/detail/12540/counties.geojson",
+      "context_path": "data/detail/12540/context.json"
+    },
+    {
+      "cbsa_code": "32820",
+      "metro_name": "Memphis, TN-MS-AR",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 80,
+      "county_count": 9,
+      "zips_path": "data/detail/32820/zips.geojson",
+      "counties_path": "data/detail/32820/counties.geojson",
+      "context_path": "data/detail/32820/context.json"
+    },
+    {
+      "cbsa_code": "40900",
+      "metro_name": "Sacramento-Roseville-Folsom, CA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 134,
+      "county_count": 4,
+      "zips_path": "data/detail/40900/zips.geojson",
+      "counties_path": "data/detail/40900/counties.geojson",
+      "context_path": "data/detail/40900/context.json"
+    },
+    {
+      "cbsa_code": "10580",
+      "metro_name": "Albany-Schenectady-Troy, NY",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 133,
+      "county_count": 5,
+      "zips_path": "data/detail/10580/zips.geojson",
+      "counties_path": "data/detail/10580/counties.geojson",
+      "context_path": "data/detail/10580/context.json"
+    },
+    {
+      "cbsa_code": "41940",
+      "metro_name": "San Jose-Sunnyvale-Santa Clara, CA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 64,
+      "county_count": 2,
+      "zips_path": "data/detail/41940/zips.geojson",
+      "counties_path": "data/detail/41940/counties.geojson",
+      "context_path": "data/detail/41940/context.json"
+    },
+    {
+      "cbsa_code": "29820",
+      "metro_name": "Las Vegas-Henderson-North Las Vegas, NV",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 76,
+      "county_count": 1,
+      "zips_path": "data/detail/29820/zips.geojson",
+      "counties_path": "data/detail/29820/counties.geojson",
+      "context_path": "data/detail/29820/context.json"
+    },
+    {
+      "cbsa_code": "36740",
+      "metro_name": "Orlando-Kissimmee-Sanford, FL",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 106,
+      "county_count": 4,
+      "zips_path": "data/detail/36740/zips.geojson",
+      "counties_path": "data/detail/36740/counties.geojson",
+      "context_path": "data/detail/36740/context.json"
+    },
+    {
+      "cbsa_code": "10740",
+      "metro_name": "Albuquerque, NM",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 64,
+      "county_count": 4,
+      "zips_path": "data/detail/10740/zips.geojson",
+      "counties_path": "data/detail/10740/counties.geojson",
+      "context_path": "data/detail/10740/context.json"
+    },
+    {
+      "cbsa_code": "38900",
+      "metro_name": "Portland-Vancouver-Hillsboro, OR-WA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 134,
+      "county_count": 7,
+      "zips_path": "data/detail/38900/zips.geojson",
+      "counties_path": "data/detail/38900/counties.geojson",
+      "context_path": "data/detail/38900/context.json"
+    },
+    {
+      "cbsa_code": "19430",
+      "metro_name": "Dayton-Kettering-Beavercreek, OH",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 77,
+      "county_count": 3,
+      "zips_path": "data/detail/19430/zips.geojson",
+      "counties_path": "data/detail/19430/counties.geojson",
+      "context_path": "data/detail/19430/context.json"
+    },
+    {
+      "cbsa_code": "35840",
+      "metro_name": "North Port-Bradenton-Sarasota, FL",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 46,
+      "county_count": 2,
+      "zips_path": "data/detail/35840/zips.geojson",
+      "counties_path": "data/detail/35840/counties.geojson",
+      "context_path": "data/detail/35840/context.json"
+    },
+    {
+      "cbsa_code": "42660",
+      "metro_name": "Seattle-Tacoma-Bellevue, WA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 176,
+      "county_count": 3,
+      "zips_path": "data/detail/42660/zips.geojson",
+      "counties_path": "data/detail/42660/counties.geojson",
+      "context_path": "data/detail/42660/context.json"
+    },
+    {
+      "cbsa_code": "38300",
+      "metro_name": "Pittsburgh, PA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 365,
+      "county_count": 8,
+      "zips_path": "data/detail/38300/zips.geojson",
+      "counties_path": "data/detail/38300/counties.geojson",
+      "context_path": "data/detail/38300/context.json"
+    },
+    {
+      "cbsa_code": "46060",
+      "metro_name": "Tucson, AZ",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 56,
+      "county_count": 1,
+      "zips_path": "data/detail/46060/zips.geojson",
+      "counties_path": "data/detail/46060/counties.geojson",
+      "context_path": "data/detail/46060/context.json"
+    },
+    {
+      "cbsa_code": "12940",
+      "metro_name": "Baton Rouge, LA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 90,
+      "county_count": 10,
+      "zips_path": "data/detail/12940/zips.geojson",
+      "counties_path": "data/detail/12940/counties.geojson",
+      "context_path": "data/detail/12940/context.json"
+    },
+    {
+      "cbsa_code": "27260",
+      "metro_name": "Jacksonville, FL",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 63,
+      "county_count": 5,
+      "zips_path": "data/detail/27260/zips.geojson",
+      "counties_path": "data/detail/27260/counties.geojson",
+      "context_path": "data/detail/27260/context.json"
+    },
+    {
+      "cbsa_code": "33340",
+      "metro_name": "Milwaukee-Waukesha, WI",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 90,
+      "county_count": 4,
+      "zips_path": "data/detail/33340/zips.geojson",
+      "counties_path": "data/detail/33340/counties.geojson",
+      "context_path": "data/detail/33340/context.json"
+    },
+    {
+      "cbsa_code": "40060",
+      "metro_name": "Richmond, VA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 116,
+      "county_count": 17,
+      "zips_path": "data/detail/40060/zips.geojson",
+      "counties_path": "data/detail/40060/counties.geojson",
+      "context_path": "data/detail/40060/context.json"
+    },
+    {
+      "cbsa_code": "12060",
+      "metro_name": "Atlanta-Sandy Springs-Roswell, GA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 221,
+      "county_count": 29,
+      "zips_path": "data/detail/12060/zips.geojson",
+      "counties_path": "data/detail/12060/counties.geojson",
+      "context_path": "data/detail/12060/context.json"
+    },
+    {
+      "cbsa_code": "15980",
+      "metro_name": "Cape Coral-Fort Myers, FL",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 38,
+      "county_count": 1,
+      "zips_path": "data/detail/15980/zips.geojson",
+      "counties_path": "data/detail/15980/counties.geojson",
+      "context_path": "data/detail/15980/context.json"
+    },
+    {
+      "cbsa_code": "17140",
+      "metro_name": "Cincinnati, OH-KY-IN",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 188,
+      "county_count": 15,
+      "zips_path": "data/detail/17140/zips.geojson",
+      "counties_path": "data/detail/17140/counties.geojson",
+      "context_path": "data/detail/17140/context.json"
+    },
+    {
+      "cbsa_code": "19740",
+      "metro_name": "Denver-Aurora-Centennial, CO",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 152,
+      "county_count": 10,
+      "zips_path": "data/detail/19740/zips.geojson",
+      "counties_path": "data/detail/19740/counties.geojson",
+      "context_path": "data/detail/19740/context.json"
+    },
+    {
+      "cbsa_code": "41700",
+      "metro_name": "San Antonio-New Braunfels, TX",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 111,
+      "county_count": 8,
+      "zips_path": "data/detail/41700/zips.geojson",
+      "counties_path": "data/detail/41700/counties.geojson",
+      "context_path": "data/detail/41700/context.json"
+    },
+    {
+      "cbsa_code": "17900",
+      "metro_name": "Columbia, SC",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 57,
+      "county_count": 6,
+      "zips_path": "data/detail/17900/zips.geojson",
+      "counties_path": "data/detail/17900/counties.geojson",
+      "context_path": "data/detail/17900/context.json"
+    },
+    {
+      "cbsa_code": "29460",
+      "metro_name": "Lakeland-Winter Haven, FL",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 45,
+      "county_count": 1,
+      "zips_path": "data/detail/29460/zips.geojson",
+      "counties_path": "data/detail/29460/counties.geojson",
+      "context_path": "data/detail/29460/context.json"
+    },
+    {
+      "cbsa_code": "41180",
+      "metro_name": "St. Louis, MO-IL",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 243,
+      "county_count": 15,
+      "zips_path": "data/detail/41180/zips.geojson",
+      "counties_path": "data/detail/41180/counties.geojson",
+      "context_path": "data/detail/41180/context.json"
+    },
+    {
+      "cbsa_code": "24340",
+      "metro_name": "Grand Rapids-Wyoming-Kentwood, MI",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 72,
+      "county_count": 5,
+      "zips_path": "data/detail/24340/zips.geojson",
+      "counties_path": "data/detail/24340/counties.geojson",
+      "context_path": "data/detail/24340/context.json"
+    },
+    {
+      "cbsa_code": "38060",
+      "metro_name": "Phoenix-Mesa-Chandler, AZ",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 170,
+      "county_count": 2,
+      "zips_path": "data/detail/38060/zips.geojson",
+      "counties_path": "data/detail/38060/counties.geojson",
+      "context_path": "data/detail/38060/context.json"
+    },
+    {
+      "cbsa_code": "47900",
+      "metro_name": "Washington-Arlington-Alexandria, DC-VA-MD-WV",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 349,
+      "county_count": 23,
+      "zips_path": "data/detail/47900/zips.geojson",
+      "counties_path": "data/detail/47900/counties.geojson",
+      "context_path": "data/detail/47900/context.json"
+    },
+    {
+      "cbsa_code": "13820",
+      "metro_name": "Birmingham, AL",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 113,
+      "county_count": 7,
+      "zips_path": "data/detail/13820/zips.geojson",
+      "counties_path": "data/detail/13820/counties.geojson",
+      "context_path": "data/detail/13820/context.json"
+    },
+    {
+      "cbsa_code": "26420",
+      "metro_name": "Houston-Pasadena-The Woodlands, TX",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 240,
+      "county_count": 10,
+      "zips_path": "data/detail/26420/zips.geojson",
+      "counties_path": "data/detail/26420/counties.geojson",
+      "context_path": "data/detail/26420/context.json"
+    },
+    {
+      "cbsa_code": "31140",
+      "metro_name": "Louisville-Jefferson County, KY-IN",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 117,
+      "county_count": 12,
+      "zips_path": "data/detail/31140/zips.geojson",
+      "counties_path": "data/detail/31140/counties.geojson",
+      "context_path": "data/detail/31140/context.json"
+    },
+    {
+      "cbsa_code": "16700",
+      "metro_name": "Charleston-North Charleston, SC",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 51,
+      "county_count": 3,
+      "zips_path": "data/detail/16700/zips.geojson",
+      "counties_path": "data/detail/16700/counties.geojson",
+      "context_path": "data/detail/16700/context.json"
+    },
+    {
+      "cbsa_code": "19100",
+      "metro_name": "Dallas-Fort Worth-Arlington, TX",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 288,
+      "county_count": 11,
+      "zips_path": "data/detail/19100/zips.geojson",
+      "counties_path": "data/detail/19100/counties.geojson",
+      "context_path": "data/detail/19100/context.json"
+    },
+    {
+      "cbsa_code": "33460",
+      "metro_name": "Minneapolis-St. Paul-Bloomington, MN-WI",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 236,
+      "county_count": 15,
+      "zips_path": "data/detail/33460/zips.geojson",
+      "counties_path": "data/detail/33460/counties.geojson",
+      "context_path": "data/detail/33460/context.json"
+    },
+    {
+      "cbsa_code": "28940",
+      "metro_name": "Knoxville, TN",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 62,
+      "county_count": 9,
+      "zips_path": "data/detail/28940/zips.geojson",
+      "counties_path": "data/detail/28940/counties.geojson",
+      "context_path": "data/detail/28940/context.json"
+    },
+    {
+      "cbsa_code": "26900",
+      "metro_name": "Indianapolis-Carmel-Greenwood, IN",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 140,
+      "county_count": 11,
+      "zips_path": "data/detail/26900/zips.geojson",
+      "counties_path": "data/detail/26900/counties.geojson",
+      "context_path": "data/detail/26900/context.json"
+    },
+    {
+      "cbsa_code": "34980",
+      "metro_name": "Nashville-Davidson--Murfreesboro--Franklin, TN",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 104,
+      "county_count": 14,
+      "zips_path": "data/detail/34980/zips.geojson",
+      "counties_path": "data/detail/34980/counties.geojson",
+      "context_path": "data/detail/34980/context.json"
+    },
+    {
+      "cbsa_code": "16740",
+      "metro_name": "Charlotte-Concord-Gastonia, NC-SC",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 92,
+      "county_count": 11,
+      "zips_path": "data/detail/16740/zips.geojson",
+      "counties_path": "data/detail/16740/counties.geojson",
+      "context_path": "data/detail/16740/context.json"
+    },
+    {
+      "cbsa_code": "46140",
+      "metro_name": "Tulsa, OK",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 97,
+      "county_count": 7,
+      "zips_path": "data/detail/46140/zips.geojson",
+      "counties_path": "data/detail/46140/counties.geojson",
+      "context_path": "data/detail/46140/context.json"
+    },
+    {
+      "cbsa_code": "41620",
+      "metro_name": "Salt Lake City-Murray, UT",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 42,
+      "county_count": 2,
+      "zips_path": "data/detail/41620/zips.geojson",
+      "counties_path": "data/detail/41620/counties.geojson",
+      "context_path": "data/detail/41620/context.json"
+    },
+    {
+      "cbsa_code": "28140",
+      "metro_name": "Kansas City, MO-KS",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 221,
+      "county_count": 14,
+      "zips_path": "data/detail/28140/zips.geojson",
+      "counties_path": "data/detail/28140/counties.geojson",
+      "context_path": "data/detail/28140/context.json"
+    },
+    {
+      "cbsa_code": "18140",
+      "metro_name": "Columbus, OH",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 133,
+      "county_count": 10,
+      "zips_path": "data/detail/18140/zips.geojson",
+      "counties_path": "data/detail/18140/counties.geojson",
+      "context_path": "data/detail/18140/context.json"
+    },
+    {
+      "cbsa_code": "36420",
+      "metro_name": "Oklahoma City, OK",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 104,
+      "county_count": 7,
+      "zips_path": "data/detail/36420/zips.geojson",
+      "counties_path": "data/detail/36420/counties.geojson",
+      "context_path": "data/detail/36420/context.json"
+    },
+    {
+      "cbsa_code": "14260",
+      "metro_name": "Boise City, ID",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 46,
+      "county_count": 5,
+      "zips_path": "data/detail/14260/zips.geojson",
+      "counties_path": "data/detail/14260/counties.geojson",
+      "context_path": "data/detail/14260/context.json"
+    },
+    {
+      "cbsa_code": "32580",
+      "metro_name": "McAllen-Edinburg-Mission, TX",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 31,
+      "county_count": 1,
+      "zips_path": "data/detail/32580/zips.geojson",
+      "counties_path": "data/detail/32580/counties.geojson",
+      "context_path": "data/detail/32580/context.json"
+    },
+    {
+      "cbsa_code": "24860",
+      "metro_name": "Greenville-Anderson-Greer, SC",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 49,
+      "county_count": 4,
+      "zips_path": "data/detail/24860/zips.geojson",
+      "counties_path": "data/detail/24860/counties.geojson",
+      "context_path": "data/detail/24860/context.json"
+    },
+    {
+      "cbsa_code": "12420",
+      "metro_name": "Austin-Round Rock-San Marcos, TX",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 104,
+      "county_count": 5,
+      "zips_path": "data/detail/12420/zips.geojson",
+      "counties_path": "data/detail/12420/counties.geojson",
+      "context_path": "data/detail/12420/context.json"
+    },
+    {
+      "cbsa_code": "36540",
+      "metro_name": "Omaha, NE-IA",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 125,
+      "county_count": 8,
+      "zips_path": "data/detail/36540/zips.geojson",
+      "counties_path": "data/detail/36540/counties.geojson",
+      "context_path": "data/detail/36540/context.json"
+    },
+    {
+      "cbsa_code": "39580",
+      "metro_name": "Raleigh-Cary, NC",
+      "detail_mode": "real_safmr_zcta",
+      "zip_count": 64,
+      "county_count": 3,
+      "zips_path": "data/detail/39580/zips.geojson",
+      "counties_path": "data/detail/39580/counties.geojson",
+      "context_path": "data/detail/39580/context.json"
+    }
+  ]
+}

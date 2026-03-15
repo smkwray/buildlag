@@ -1,0 +1,59 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "33340",
+  "detail_metro_name": "Milwaukee-Waukesha, WI",
+  "cbsa_summary": {
+    "zip_count": 90,
+    "county_count": 4,
+    "safmr_2br_min": 1140.0,
+    "safmr_2br_median": 1360.0,
+    "safmr_2br_max": 2010.0,
+    "safmr_2br_mean": 1419.0
+  },
+  "counties": [
+    {
+      "county_fips": "55079",
+      "county_name": "Milwaukee County",
+      "state_name": "Wisconsin",
+      "population": 926331,
+      "households": 392399,
+      "permits_2024": 1005,
+      "permits_per_1000_households": 2.56,
+      "median_household_income": 64435,
+      "rent_burdened_share_pct": 40.1
+    },
+    {
+      "county_fips": "55089",
+      "county_name": "Ozaukee County",
+      "state_name": "Wisconsin",
+      "population": 92966,
+      "households": 38309,
+      "permits_2024": 689,
+      "permits_per_1000_households": 17.99,
+      "median_household_income": 96996,
+      "rent_burdened_share_pct": 35.0
+    },
+    {
+      "county_fips": "55131",
+      "county_name": "Washington County",
+      "state_name": "Wisconsin",
+      "population": 137879,
+      "households": 57070,
+      "permits_2024": 447,
+      "permits_per_1000_households": 7.83,
+      "median_household_income": 96359,
+      "rent_burdened_share_pct": 35.6
+    },
+    {
+      "county_fips": "55133",
+      "county_name": "Waukesha County",
+      "state_name": "Wisconsin",
+      "population": 411762,
+      "households": 168658,
+      "permits_2024": 1917,
+      "permits_per_1000_households": 11.37,
+      "median_household_income": 106076,
+      "rent_burdened_share_pct": 35.6
+    }
+  ]
+}

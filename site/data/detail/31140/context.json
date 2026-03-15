@@ -1,0 +1,147 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "31140",
+  "detail_metro_name": "Louisville-Jefferson County, KY-IN",
+  "cbsa_summary": {
+    "zip_count": 117,
+    "county_count": 12,
+    "safmr_2br_min": 1000.0,
+    "safmr_2br_median": 1170.0,
+    "safmr_2br_max": 1910.0,
+    "safmr_2br_mean": 1244.0
+  },
+  "counties": [
+    {
+      "county_fips": "21029",
+      "county_name": "Bullitt County",
+      "state_name": "Kentucky",
+      "population": 84027,
+      "households": 31747,
+      "permits_2024": 380,
+      "permits_per_1000_households": 11.97,
+      "median_household_income": 80558,
+      "rent_burdened_share_pct": 36.7
+    },
+    {
+      "county_fips": "18019",
+      "county_name": "Clark County",
+      "state_name": "Indiana",
+      "population": 124354,
+      "households": 51242,
+      "permits_2024": 911,
+      "permits_per_1000_households": 17.78,
+      "median_household_income": 74214,
+      "rent_burdened_share_pct": 35.5
+    },
+    {
+      "county_fips": "18043",
+      "county_name": "Floyd County",
+      "state_name": "Indiana",
+      "population": 80918,
+      "households": 31916,
+      "permits_2024": 297,
+      "permits_per_1000_households": 9.31,
+      "median_household_income": 79704,
+      "rent_burdened_share_pct": 38.0
+    },
+    {
+      "county_fips": "18061",
+      "county_name": "Harrison County",
+      "state_name": "Indiana",
+      "population": 39859,
+      "households": 15497,
+      "permits_2024": 158,
+      "permits_per_1000_households": 10.2,
+      "median_household_income": 74475,
+      "rent_burdened_share_pct": 30.8
+    },
+    {
+      "county_fips": "21103",
+      "county_name": "Henry County",
+      "state_name": "Kentucky",
+      "population": 15856,
+      "households": 6147,
+      "permits_2024": 65,
+      "permits_per_1000_households": 10.57,
+      "median_household_income": 63347,
+      "rent_burdened_share_pct": 48.6
+    },
+    {
+      "county_fips": "21111",
+      "county_name": "Jefferson County",
+      "state_name": "Kentucky",
+      "population": 783022,
+      "households": 331554,
+      "permits_2024": 2863,
+      "permits_per_1000_households": 8.64,
+      "median_household_income": 69866,
+      "rent_burdened_share_pct": 38.5
+    },
+    {
+      "county_fips": "21163",
+      "county_name": "Meade County",
+      "state_name": "Kentucky",
+      "population": 30158,
+      "households": 11007,
+      "permits_2024": 124,
+      "permits_per_1000_households": 11.27,
+      "median_household_income": 74355,
+      "rent_burdened_share_pct": 31.4
+    },
+    {
+      "county_fips": "21179",
+      "county_name": "Nelson County",
+      "state_name": "Kentucky",
+      "population": 47606,
+      "households": 19150,
+      "permits_2024": 210,
+      "permits_per_1000_households": 10.97,
+      "median_household_income": 69562,
+      "rent_burdened_share_pct": 44.0
+    },
+    {
+      "county_fips": "21185",
+      "county_name": "Oldham County",
+      "state_name": "Kentucky",
+      "population": 69257,
+      "households": 23025,
+      "permits_2024": 402,
+      "permits_per_1000_households": 17.46,
+      "median_household_income": 122497,
+      "rent_burdened_share_pct": 32.2
+    },
+    {
+      "county_fips": "21211",
+      "county_name": "Shelby County",
+      "state_name": "Kentucky",
+      "population": 49096,
+      "households": 18484,
+      "permits_2024": 237,
+      "permits_per_1000_households": 12.82,
+      "median_household_income": 82604,
+      "rent_burdened_share_pct": 32.7
+    },
+    {
+      "county_fips": "21215",
+      "county_name": "Spencer County",
+      "state_name": "Kentucky",
+      "population": 20193,
+      "households": 7308,
+      "permits_2024": 126,
+      "permits_per_1000_households": 17.24,
+      "median_household_income": 102618,
+      "rent_burdened_share_pct": 31.4
+    },
+    {
+      "county_fips": "18175",
+      "county_name": "Washington County",
+      "state_name": "Indiana",
+      "population": 28212,
+      "households": 11229,
+      "permits_2024": 23,
+      "permits_per_1000_households": 2.05,
+      "median_household_income": 64641,
+      "rent_burdened_share_pct": 38.2
+    }
+  ]
+}

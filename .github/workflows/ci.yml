@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    env:
+      UV_PROJECT_ENVIRONMENT: ${{ runner.temp }}/buildlag-venv
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONPYCACHEPREFIX: ${{ runner.temp }}/pycache
+      PYTEST_ADDOPTS: "-p no:cacheprovider"
+      UV_CACHE_DIR: ${{ runner.temp }}/uv-cache
+      RUFF_CACHE_DIR: ${{ runner.temp }}/ruff-cache
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install uv
+        run: python -m pip install uv
+
+      - name: Create external environment
+        run: uv venv "$UV_PROJECT_ENVIRONMENT"
+
+      - name: Install project
+        run: |
+          uv pip install --python "$UV_PROJECT_ENVIRONMENT/bin/python" -e .
+          uv pip install --python "$UV_PROJECT_ENVIRONMENT/bin/python" -r requirements.txt
+
+      - name: Run tests
+        run: uv run python -B -m unittest discover -s tests -v
+
+      - name: Fetch real sources
+        run: uv run python -B -m underbuilt_overpriced.cli fetch-real-sources
+
+      - name: Fetch ACS
+        run: uv run python -B -m underbuilt_overpriced.cli fetch-acs
+
+      - name: Build real panel
+        run: uv run python -B -m underbuilt_overpriced.cli build-real-panel --top-n 75
+
+      - name: Re-run contract tests against built outputs
+        run: uv run python -B -m unittest discover -s tests -v

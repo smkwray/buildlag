@@ -1,0 +1,136 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "19100",
+  "detail_metro_name": "Dallas-Fort Worth-Arlington, TX",
+  "cbsa_summary": {
+    "zip_count": 288,
+    "county_count": 11,
+    "safmr_2br_min": 970.0,
+    "safmr_2br_median": 1830.0,
+    "safmr_2br_max": 2900.0,
+    "safmr_2br_mean": 1887.0
+  },
+  "counties": [
+    {
+      "county_fips": "48085",
+      "county_name": "Collin County",
+      "state_name": "Texas",
+      "population": 1163337,
+      "households": 416646,
+      "permits_2024": 18813,
+      "permits_per_1000_households": 45.15,
+      "median_household_income": 121600,
+      "rent_burdened_share_pct": 37.4
+    },
+    {
+      "county_fips": "48113",
+      "county_name": "Dallas County",
+      "state_name": "Texas",
+      "population": 2621179,
+      "households": 982737,
+      "permits_2024": 12711,
+      "permits_per_1000_households": 12.93,
+      "median_household_income": 76547,
+      "rent_burdened_share_pct": 42.7
+    },
+    {
+      "county_fips": "48121",
+      "county_name": "Denton County",
+      "state_name": "Texas",
+      "population": 979561,
+      "households": 360392,
+      "permits_2024": 10507,
+      "permits_per_1000_households": 29.15,
+      "median_household_income": 111498,
+      "rent_burdened_share_pct": 41.3
+    },
+    {
+      "county_fips": "48139",
+      "county_name": "Ellis County",
+      "state_name": "Texas",
+      "population": 213160,
+      "households": 71759,
+      "permits_2024": 2972,
+      "permits_per_1000_households": 41.42,
+      "median_household_income": 99595,
+      "rent_burdened_share_pct": 42.5
+    },
+    {
+      "county_fips": "48231",
+      "county_name": "Hunt County",
+      "state_name": "Texas",
+      "population": 108972,
+      "households": 38466,
+      "permits_2024": 1287,
+      "permits_per_1000_households": 33.46,
+      "median_household_income": 71938,
+      "rent_burdened_share_pct": 38.6
+    },
+    {
+      "county_fips": "48251",
+      "county_name": "Johnson County",
+      "state_name": "Texas",
+      "population": 195597,
+      "households": 65507,
+      "permits_2024": 2183,
+      "permits_per_1000_households": 33.32,
+      "median_household_income": 84859,
+      "rent_burdened_share_pct": 42.8
+    },
+    {
+      "county_fips": "48257",
+      "county_name": "Kaufman County",
+      "state_name": "Texas",
+      "population": 172604,
+      "households": 50990,
+      "permits_2024": 1745,
+      "permits_per_1000_households": 34.22,
+      "median_household_income": 89485,
+      "rent_burdened_share_pct": 44.0
+    },
+    {
+      "county_fips": "48367",
+      "county_name": "Parker County",
+      "state_name": "Texas",
+      "population": 165168,
+      "households": 56437,
+      "permits_2024": 439,
+      "permits_per_1000_households": 7.78,
+      "median_household_income": 104443,
+      "rent_burdened_share_pct": 43.6
+    },
+    {
+      "county_fips": "48397",
+      "county_name": "Rockwall County",
+      "state_name": "Texas",
+      "population": 123617,
+      "households": 41237,
+      "permits_2024": 1810,
+      "permits_per_1000_households": 43.89,
+      "median_household_income": 127981,
+      "rent_burdened_share_pct": 42.4
+    },
+    {
+      "county_fips": "48439",
+      "county_name": "Tarrant County",
+      "state_name": "Texas",
+      "population": 2167390,
+      "households": 782419,
+      "permits_2024": 18858,
+      "permits_per_1000_households": 24.1,
+      "median_household_income": 84207,
+      "rent_burdened_share_pct": 45.5
+    },
+    {
+      "county_fips": "48497",
+      "county_name": "Wise County",
+      "state_name": "Texas",
+      "population": 75005,
+      "households": 25135,
+      "permits_2024": 463,
+      "permits_per_1000_households": 18.42,
+      "median_household_income": 93421,
+      "rent_burdened_share_pct": 30.9
+    }
+  ]
+}

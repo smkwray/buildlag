@@ -1,0 +1,26 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "46520",
+  "detail_metro_name": "Urban Honolulu, HI",
+  "cbsa_summary": {
+    "zip_count": 38,
+    "county_count": 1,
+    "safmr_2br_min": 2060.0,
+    "safmr_2br_median": 2715.0,
+    "safmr_2br_max": 3960.0,
+    "safmr_2br_mean": 2793.0
+  },
+  "counties": [
+    {
+      "county_fips": "15003",
+      "county_name": "Honolulu County",
+      "state_name": "Hawaii",
+      "population": 1001146,
+      "households": 338868,
+      "permits_2024": 1638,
+      "permits_per_1000_households": 4.83,
+      "median_household_income": 106195,
+      "rent_burdened_share_pct": 47.2
+    }
+  ]
+}

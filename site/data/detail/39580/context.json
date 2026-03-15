@@ -1,0 +1,48 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "39580",
+  "detail_metro_name": "Raleigh-Cary, NC",
+  "cbsa_summary": {
+    "zip_count": 64,
+    "county_count": 3,
+    "safmr_2br_min": 1350.0,
+    "safmr_2br_median": 1665.0,
+    "safmr_2br_max": 2240.0,
+    "safmr_2br_mean": 1644.0
+  },
+  "counties": [
+    {
+      "county_fips": "37069",
+      "county_name": "Franklin County",
+      "state_name": "North Carolina",
+      "population": 74386,
+      "households": 28529,
+      "permits_2024": 948,
+      "permits_per_1000_households": 33.23,
+      "median_household_income": 74240,
+      "rent_burdened_share_pct": 46.5
+    },
+    {
+      "county_fips": "37101",
+      "county_name": "Johnston County",
+      "state_name": "North Carolina",
+      "population": 234263,
+      "households": 85591,
+      "permits_2024": 2783,
+      "permits_per_1000_households": 32.52,
+      "median_household_income": 83384,
+      "rent_burdened_share_pct": 37.1
+    },
+    {
+      "county_fips": "37183",
+      "county_name": "Wake County",
+      "state_name": "North Carolina",
+      "population": 1178653,
+      "households": 460175,
+      "permits_2024": 15248,
+      "permits_per_1000_households": 33.14,
+      "median_household_income": 105768,
+      "rent_burdened_share_pct": 38.1
+    }
+  ]
+}

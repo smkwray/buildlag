@@ -1,0 +1,7 @@
+zip_code,label,center_lat,center_lon,half_width_deg,half_height_deg,safmr_2br,pressure_band
+78701,Downtown Austin,30.2705,-97.7420,0.018,0.014,2320,high
+78702,East Austin,30.2661,-97.7140,0.020,0.015,2190,high
+78704,South Central Austin,30.2450,-97.7600,0.022,0.016,2080,medium
+78705,UT / Central Austin,30.2890,-97.7415,0.016,0.014,2210,high
+78744,Southeast Austin,30.1880,-97.7300,0.026,0.018,1840,medium
+78758,North Austin,30.3875,-97.7050,0.028,0.018,1980,medium

@@ -1,0 +1,70 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "40380",
+  "detail_metro_name": "Rochester, NY",
+  "cbsa_summary": {
+    "zip_count": 125,
+    "county_count": 5,
+    "safmr_2br_min": 1070.0,
+    "safmr_2br_median": 1410.0,
+    "safmr_2br_max": 2360.0,
+    "safmr_2br_mean": 1487.0
+  },
+  "counties": [
+    {
+      "county_fips": "36051",
+      "county_name": "Livingston County",
+      "state_name": "New York",
+      "population": 61498,
+      "households": 24473,
+      "permits_2024": 64,
+      "permits_per_1000_households": 2.62,
+      "median_household_income": 74001,
+      "rent_burdened_share_pct": 46.6
+    },
+    {
+      "county_fips": "36055",
+      "county_name": "Monroe County",
+      "state_name": "New York",
+      "population": 753753,
+      "households": 318428,
+      "permits_2024": 1156,
+      "permits_per_1000_households": 3.63,
+      "median_household_income": 76382,
+      "rent_burdened_share_pct": 42.4
+    },
+    {
+      "county_fips": "36069",
+      "county_name": "Ontario County",
+      "state_name": "New York",
+      "population": 112625,
+      "households": 48311,
+      "permits_2024": 287,
+      "permits_per_1000_households": 5.94,
+      "median_household_income": 82324,
+      "rent_burdened_share_pct": 35.0
+    },
+    {
+      "county_fips": "36073",
+      "county_name": "Orleans County",
+      "state_name": "New York",
+      "population": 39608,
+      "households": 16220,
+      "permits_2024": 31,
+      "permits_per_1000_households": 1.91,
+      "median_household_income": 65969,
+      "rent_burdened_share_pct": 33.5
+    },
+    {
+      "county_fips": "36117",
+      "county_name": "Wayne County",
+      "state_name": "New York",
+      "population": 90929,
+      "households": 38404,
+      "permits_2024": 263,
+      "permits_per_1000_households": 6.85,
+      "median_household_income": 74506,
+      "rent_burdened_share_pct": 37.1
+    }
+  ]
+}

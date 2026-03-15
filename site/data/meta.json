@@ -1,0 +1,29 @@
+{
+  "project": "Underbuilt vs. Overpriced Atlas",
+  "fixture_mode": false,
+  "detail_mode": "multi_metro_real_safmr_zcta",
+  "detail_metro_code": "12420",
+  "detail_metro_name": "Austin-Round Rock-San Marcos, TX",
+  "built_at_utc": "2026-03-15T09:36:26+00:00",
+  "national_metro_count": 75,
+  "selected_metro_counties": 5,
+  "selected_metro_zip_features": 104,
+  "supported_detail_count": 75,
+  "download_path": "data/metro_panel.csv",
+  "data_vintages": {
+    "bps": "2024",
+    "hud": "FY2026",
+    "hud_safmr": "FY2026",
+    "delineation": "2023",
+    "population": "2024",
+    "gazetteer": "2023",
+    "zcta_boundaries": "2020",
+    "county_boundaries": "2023",
+    "acs_metro": "2024",
+    "acs_county": "2024"
+  },
+  "source_manifest_path": "../data/raw/source_manifest.json",
+  "acs_manifest_path": "../data/raw/acs/manifest.json",
+  "detail_index_path": "data/detail_index.json",
+  "top_n": 75
+}

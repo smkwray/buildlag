@@ -1,0 +1,136 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "16740",
+  "detail_metro_name": "Charlotte-Concord-Gastonia, NC-SC",
+  "cbsa_summary": {
+    "zip_count": 92,
+    "county_count": 11,
+    "safmr_2br_min": 930.0,
+    "safmr_2br_median": 1490.0,
+    "safmr_2br_max": 2530.0,
+    "safmr_2br_mean": 1549.0
+  },
+  "counties": [
+    {
+      "county_fips": "37007",
+      "county_name": "Anson County",
+      "state_name": "North Carolina",
+      "population": 22289,
+      "households": 8548,
+      "permits_2024": 55,
+      "permits_per_1000_households": 6.43,
+      "median_household_income": 47302,
+      "rent_burdened_share_pct": 35.3
+    },
+    {
+      "county_fips": "37025",
+      "county_name": "Cabarrus County",
+      "state_name": "North Carolina",
+      "population": 236133,
+      "households": 84246,
+      "permits_2024": 2485,
+      "permits_per_1000_households": 29.5,
+      "median_household_income": 89005,
+      "rent_burdened_share_pct": 40.8
+    },
+    {
+      "county_fips": "45023",
+      "county_name": "Chester County",
+      "state_name": "South Carolina",
+      "population": 32182,
+      "households": 13159,
+      "permits_2024": 269,
+      "permits_per_1000_households": 20.44,
+      "median_household_income": 52458,
+      "rent_burdened_share_pct": 39.1
+    },
+    {
+      "county_fips": "37071",
+      "county_name": "Gaston County",
+      "state_name": "North Carolina",
+      "population": 234881,
+      "households": 93576,
+      "permits_2024": 2069,
+      "permits_per_1000_households": 22.11,
+      "median_household_income": 67478,
+      "rent_burdened_share_pct": 40.8
+    },
+    {
+      "county_fips": "37097",
+      "county_name": "Iredell County",
+      "state_name": "North Carolina",
+      "population": 196544,
+      "households": 76344,
+      "permits_2024": 1955,
+      "permits_per_1000_households": 25.61,
+      "median_household_income": 81419,
+      "rent_burdened_share_pct": 35.2
+    },
+    {
+      "county_fips": "45057",
+      "county_name": "Lancaster County",
+      "state_name": "South Carolina",
+      "population": 104475,
+      "households": 40128,
+      "permits_2024": 997,
+      "permits_per_1000_households": 24.85,
+      "median_household_income": 78869,
+      "rent_burdened_share_pct": 44.9
+    },
+    {
+      "county_fips": "37109",
+      "county_name": "Lincoln County",
+      "state_name": "North Carolina",
+      "population": 92716,
+      "households": 36811,
+      "permits_2024": 697,
+      "permits_per_1000_households": 18.93,
+      "median_household_income": 80016,
+      "rent_burdened_share_pct": 38.4
+    },
+    {
+      "county_fips": "37119",
+      "county_name": "Mecklenburg County",
+      "state_name": "North Carolina",
+      "population": 1154681,
+      "households": 466527,
+      "permits_2024": 11969,
+      "permits_per_1000_households": 25.66,
+      "median_household_income": 87005,
+      "rent_burdened_share_pct": 40.1
+    },
+    {
+      "county_fips": "37159",
+      "county_name": "Rowan County",
+      "state_name": "North Carolina",
+      "population": 149875,
+      "households": 58899,
+      "permits_2024": 592,
+      "permits_per_1000_households": 10.05,
+      "median_household_income": 65725,
+      "rent_burdened_share_pct": 37.8
+    },
+    {
+      "county_fips": "37179",
+      "county_name": "Union County",
+      "state_name": "North Carolina",
+      "population": 250958,
+      "households": 84237,
+      "permits_2024": 2334,
+      "permits_per_1000_households": 27.71,
+      "median_household_income": 102900,
+      "rent_burdened_share_pct": 35.9
+    },
+    {
+      "county_fips": "45091",
+      "county_name": "York County",
+      "state_name": "South Carolina",
+      "population": 293673,
+      "households": 113785,
+      "permits_2024": 2513,
+      "permits_per_1000_households": 22.09,
+      "median_household_income": 89095,
+      "rent_burdened_share_pct": 40.3
+    }
+  ]
+}

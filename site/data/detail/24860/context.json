@@ -1,0 +1,59 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "24860",
+  "detail_metro_name": "Greenville-Anderson-Greer, SC",
+  "cbsa_summary": {
+    "zip_count": 49,
+    "county_count": 4,
+    "safmr_2br_min": 930.0,
+    "safmr_2br_median": 1180.0,
+    "safmr_2br_max": 1930.0,
+    "safmr_2br_mean": 1246.0
+  },
+  "counties": [
+    {
+      "county_fips": "45007",
+      "county_name": "Anderson County",
+      "state_name": "South Carolina",
+      "population": 210478,
+      "households": 83904,
+      "permits_2024": 1255,
+      "permits_per_1000_households": 14.96,
+      "median_household_income": 66651,
+      "rent_burdened_share_pct": 38.8
+    },
+    {
+      "county_fips": "45045",
+      "county_name": "Greenville County",
+      "state_name": "South Carolina",
+      "population": 548166,
+      "households": 220565,
+      "permits_2024": 5575,
+      "permits_per_1000_households": 25.28,
+      "median_household_income": 76932,
+      "rent_burdened_share_pct": 40.0
+    },
+    {
+      "county_fips": "45059",
+      "county_name": "Laurens County",
+      "state_name": "South Carolina",
+      "population": 68666,
+      "households": 26959,
+      "permits_2024": 621,
+      "permits_per_1000_households": 23.03,
+      "median_household_income": 57623,
+      "rent_burdened_share_pct": 40.9
+    },
+    {
+      "county_fips": "45077",
+      "county_name": "Pickens County",
+      "state_name": "South Carolina",
+      "population": 134629,
+      "households": 52414,
+      "permits_2024": 1424,
+      "permits_per_1000_households": 27.17,
+      "median_household_income": 61064,
+      "rent_burdened_share_pct": 49.3
+    }
+  ]
+}

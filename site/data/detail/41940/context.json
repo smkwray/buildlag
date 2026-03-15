@@ -1,0 +1,37 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "41940",
+  "detail_metro_name": "San Jose-Sunnyvale-Santa Clara, CA",
+  "cbsa_summary": {
+    "zip_count": 64,
+    "county_count": 2,
+    "safmr_2br_min": 2540.0,
+    "safmr_2br_median": 3570.0,
+    "safmr_2br_max": 4740.0,
+    "safmr_2br_mean": 3581.0
+  },
+  "counties": [
+    {
+      "county_fips": "06069",
+      "county_name": "San Benito County",
+      "state_name": "California",
+      "population": 67290,
+      "households": 20561,
+      "permits_2024": 281,
+      "permits_per_1000_households": 13.67,
+      "median_household_income": 114394,
+      "rent_burdened_share_pct": 37.1
+    },
+    {
+      "county_fips": "06085",
+      "county_name": "Santa Clara County",
+      "state_name": "California",
+      "population": 1902047,
+      "households": 659353,
+      "permits_2024": 3834,
+      "permits_per_1000_households": 5.81,
+      "median_household_income": 164281,
+      "rent_burdened_share_pct": 36.4
+    }
+  ]
+}

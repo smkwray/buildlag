@@ -1,0 +1,103 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "36540",
+  "detail_metro_name": "Omaha, NE-IA",
+  "cbsa_summary": {
+    "zip_count": 125,
+    "county_count": 8,
+    "safmr_2br_min": 960.0,
+    "safmr_2br_median": 1190.0,
+    "safmr_2br_max": 2050.0,
+    "safmr_2br_mean": 1259.0
+  },
+  "counties": [
+    {
+      "county_fips": "31025",
+      "county_name": "Cass County",
+      "state_name": "Nebraska",
+      "population": 27161,
+      "households": 10832,
+      "permits_2024": 86,
+      "permits_per_1000_households": 7.94,
+      "median_household_income": 91836,
+      "rent_burdened_share_pct": 31.6
+    },
+    {
+      "county_fips": "31055",
+      "county_name": "Douglas County",
+      "state_name": "Nebraska",
+      "population": 590736,
+      "households": 238430,
+      "permits_2024": 4539,
+      "permits_per_1000_households": 19.04,
+      "median_household_income": 80391,
+      "rent_burdened_share_pct": 39.9
+    },
+    {
+      "county_fips": "19085",
+      "county_name": "Harrison County",
+      "state_name": "Iowa",
+      "population": 14632,
+      "households": 6089,
+      "permits_2024": 37,
+      "permits_per_1000_households": 6.08,
+      "median_household_income": 79535,
+      "rent_burdened_share_pct": 25.0
+    },
+    {
+      "county_fips": "19129",
+      "county_name": "Mills County",
+      "state_name": "Iowa",
+      "population": 14568,
+      "households": 5394,
+      "permits_2024": 40,
+      "permits_per_1000_households": 7.42,
+      "median_household_income": 90753,
+      "rent_burdened_share_pct": 26.7
+    },
+    {
+      "county_fips": "19155",
+      "county_name": "Pottawattamie County",
+      "state_name": "Iowa",
+      "population": 93424,
+      "households": 37642,
+      "permits_2024": 681,
+      "permits_per_1000_households": 18.09,
+      "median_household_income": 73602,
+      "rent_burdened_share_pct": 33.6
+    },
+    {
+      "county_fips": "31153",
+      "county_name": "Sarpy County",
+      "state_name": "Nebraska",
+      "population": 197389,
+      "households": 74097,
+      "permits_2024": 1597,
+      "permits_per_1000_households": 21.55,
+      "median_household_income": 103321,
+      "rent_burdened_share_pct": 35.7
+    },
+    {
+      "county_fips": "31155",
+      "county_name": "Saunders County",
+      "state_name": "Nebraska",
+      "population": 23048,
+      "households": 8899,
+      "permits_2024": 135,
+      "permits_per_1000_households": 15.17,
+      "median_household_income": 94066,
+      "rent_burdened_share_pct": 36.0
+    },
+    {
+      "county_fips": "31177",
+      "county_name": "Washington County",
+      "state_name": "Nebraska",
+      "population": 21106,
+      "households": 8429,
+      "permits_2024": 82,
+      "permits_per_1000_households": 9.73,
+      "median_household_income": 94396,
+      "rent_burdened_share_pct": 35.4
+    }
+  ]
+}

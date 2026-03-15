@@ -1,0 +1,16 @@
+.env
+.DS_Store
+do/
+CODEX_TASKS.md
+docs/codex-handoff.md
+docs/release-plan.md
+site/docs/codex-handoff.md
+data/raw/
+data/interim/
+data/processed/build_real_panel_summary.json
+src/underbuilt_overpriced_atlas.egg-info/
+__pycache__/
+*.pyc
+site/data/detail_austin_*.geojson
+site/data/detail_context.json
+site/docs/methodology.md

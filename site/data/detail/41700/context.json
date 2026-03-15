@@ -1,0 +1,103 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "41700",
+  "detail_metro_name": "San Antonio-New Braunfels, TX",
+  "cbsa_summary": {
+    "zip_count": 111,
+    "county_count": 8,
+    "safmr_2br_min": 970.0,
+    "safmr_2br_median": 1380.0,
+    "safmr_2br_max": 2140.0,
+    "safmr_2br_mean": 1449.0
+  },
+  "counties": [
+    {
+      "county_fips": "48013",
+      "county_name": "Atascosa County",
+      "state_name": "Texas",
+      "population": 51008,
+      "households": 16786,
+      "permits_2024": 220,
+      "permits_per_1000_households": 13.11,
+      "median_household_income": 70770,
+      "rent_burdened_share_pct": 40.2
+    },
+    {
+      "county_fips": "48019",
+      "county_name": "Bandera County",
+      "state_name": "Texas",
+      "population": 22021,
+      "households": 9255,
+      "permits_2024": 2,
+      "permits_per_1000_households": 0.22,
+      "median_household_income": 75813,
+      "rent_burdened_share_pct": 24.8
+    },
+    {
+      "county_fips": "48029",
+      "county_name": "Bexar County",
+      "state_name": "Texas",
+      "population": 2067341,
+      "households": 750939,
+      "permits_2024": 8349,
+      "permits_per_1000_households": 11.12,
+      "median_household_income": 72341,
+      "rent_burdened_share_pct": 44.2
+    },
+    {
+      "county_fips": "48091",
+      "county_name": "Comal County",
+      "state_name": "Texas",
+      "population": 183826,
+      "households": 71354,
+      "permits_2024": 3430,
+      "permits_per_1000_households": 48.07,
+      "median_household_income": 101889,
+      "rent_burdened_share_pct": 38.5
+    },
+    {
+      "county_fips": "48187",
+      "county_name": "Guadalupe County",
+      "state_name": "Texas",
+      "population": 183642,
+      "households": 65424,
+      "permits_2024": 2062,
+      "permits_per_1000_households": 31.52,
+      "median_household_income": 92375,
+      "rent_burdened_share_pct": 38.0
+    },
+    {
+      "county_fips": "48259",
+      "county_name": "Kendall County",
+      "state_name": "Texas",
+      "population": 48567,
+      "households": 17741,
+      "permits_2024": 560,
+      "permits_per_1000_households": 31.57,
+      "median_household_income": 114962,
+      "rent_burdened_share_pct": 49.6
+    },
+    {
+      "county_fips": "48325",
+      "county_name": "Medina County",
+      "state_name": "Texas",
+      "population": 53547,
+      "households": 17804,
+      "permits_2024": 100,
+      "permits_per_1000_households": 5.62,
+      "median_household_income": 78074,
+      "rent_burdened_share_pct": 38.2
+    },
+    {
+      "county_fips": "48493",
+      "county_name": "Wilson County",
+      "state_name": "Texas",
+      "population": 52781,
+      "households": 18185,
+      "permits_2024": 134,
+      "permits_per_1000_households": 7.37,
+      "median_household_income": 94565,
+      "rent_burdened_share_pct": 36.6
+    }
+  ]
+}

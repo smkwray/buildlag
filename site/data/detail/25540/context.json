@@ -1,0 +1,37 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "25540",
+  "detail_metro_name": "Hartford-West Hartford-East Hartford, CT",
+  "cbsa_summary": {
+    "zip_count": 104,
+    "county_count": 2,
+    "safmr_2br_min": 1300.0,
+    "safmr_2br_median": 1915.0,
+    "safmr_2br_max": 2800.0,
+    "safmr_2br_mean": 1970.0
+  },
+  "counties": [
+    {
+      "county_fips": "09110",
+      "county_name": "Capitol Planning Region",
+      "state_name": "Connecticut",
+      "population": 977290,
+      "households": 391113,
+      "permits_2024": 1618,
+      "permits_per_1000_households": 4.14,
+      "median_household_income": 93394,
+      "rent_burdened_share_pct": 43.2
+    },
+    {
+      "county_fips": "09130",
+      "county_name": "Lower Connecticut River Valley Planning Region",
+      "state_name": "Connecticut",
+      "population": 175822,
+      "households": 74068,
+      "permits_2024": 269,
+      "permits_per_1000_households": 3.63,
+      "median_household_income": 104428,
+      "rent_burdened_share_pct": 40.7
+    }
+  ]
+}

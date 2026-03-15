@@ -1,0 +1,92 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "38900",
+  "detail_metro_name": "Portland-Vancouver-Hillsboro, OR-WA",
+  "cbsa_summary": {
+    "zip_count": 134,
+    "county_count": 7,
+    "safmr_2br_min": 1800.0,
+    "safmr_2br_median": 1870.0,
+    "safmr_2br_max": 2780.0,
+    "safmr_2br_mean": 1948.0
+  },
+  "counties": [
+    {
+      "county_fips": "41005",
+      "county_name": "Clackamas County",
+      "state_name": "Oregon",
+      "population": 423975,
+      "households": 163845,
+      "permits_2024": 1140,
+      "permits_per_1000_households": 6.96,
+      "median_household_income": 103517,
+      "rent_burdened_share_pct": 44.6
+    },
+    {
+      "county_fips": "53011",
+      "county_name": "Clark County",
+      "state_name": "Washington",
+      "population": 516959,
+      "households": 196017,
+      "permits_2024": 3594,
+      "permits_per_1000_households": 18.34,
+      "median_household_income": 97536,
+      "rent_burdened_share_pct": 40.7
+    },
+    {
+      "county_fips": "41009",
+      "county_name": "Columbia County",
+      "state_name": "Oregon",
+      "population": 53493,
+      "households": 20928,
+      "permits_2024": 55,
+      "permits_per_1000_households": 2.63,
+      "median_household_income": 87458,
+      "rent_burdened_share_pct": 45.0
+    },
+    {
+      "county_fips": "41051",
+      "county_name": "Multnomah County",
+      "state_name": "Oregon",
+      "population": 801477,
+      "households": 349803,
+      "permits_2024": 2040,
+      "permits_per_1000_households": 5.83,
+      "median_household_income": 88766,
+      "rent_burdened_share_pct": 43.7
+    },
+    {
+      "county_fips": "53059",
+      "county_name": "Skamania County",
+      "state_name": "Washington",
+      "population": 12402,
+      "households": 5019,
+      "permits_2024": 35,
+      "permits_per_1000_households": 6.97,
+      "median_household_income": 93265,
+      "rent_burdened_share_pct": 37.0
+    },
+    {
+      "county_fips": "41067",
+      "county_name": "Washington County",
+      "state_name": "Oregon",
+      "population": 603947,
+      "households": 235406,
+      "permits_2024": 2273,
+      "permits_per_1000_households": 9.66,
+      "median_household_income": 107772,
+      "rent_burdened_share_pct": 39.1
+    },
+    {
+      "county_fips": "41071",
+      "county_name": "Yamhill County",
+      "state_name": "Oregon",
+      "population": 108734,
+      "households": 39247,
+      "permits_2024": 316,
+      "permits_per_1000_households": 8.05,
+      "median_household_income": 90063,
+      "rent_burdened_share_pct": 46.3
+    }
+  ]
+}

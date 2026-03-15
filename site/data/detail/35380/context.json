@@ -1,0 +1,92 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "35380",
+  "detail_metro_name": "New Orleans-Metairie, LA",
+  "cbsa_summary": {
+    "zip_count": 65,
+    "county_count": 7,
+    "safmr_2br_min": 1340.0,
+    "safmr_2br_median": 1340.0,
+    "safmr_2br_max": 2000.0,
+    "safmr_2br_mean": 1447.0
+  },
+  "counties": [
+    {
+      "county_fips": "22051",
+      "county_name": "Jefferson Parish",
+      "state_name": "Louisiana",
+      "population": 430920,
+      "households": 177003,
+      "permits_2024": 501,
+      "permits_per_1000_households": 2.83,
+      "median_household_income": 65252,
+      "rent_burdened_share_pct": 45.6
+    },
+    {
+      "county_fips": "22071",
+      "county_name": "Orleans Parish",
+      "state_name": "Louisiana",
+      "population": 371853,
+      "households": 155821,
+      "permits_2024": 710,
+      "permits_per_1000_households": 4.56,
+      "median_household_income": 56631,
+      "rent_burdened_share_pct": 51.0
+    },
+    {
+      "county_fips": "22075",
+      "county_name": "Plaquemines Parish",
+      "state_name": "Louisiana",
+      "population": 22803,
+      "households": 8218,
+      "permits_2024": 88,
+      "permits_per_1000_households": 10.71,
+      "median_household_income": 86315,
+      "rent_burdened_share_pct": 47.5
+    },
+    {
+      "county_fips": "22087",
+      "county_name": "St. Bernard Parish",
+      "state_name": "Louisiana",
+      "population": 44419,
+      "households": 16219,
+      "permits_2024": 112,
+      "permits_per_1000_households": 6.91,
+      "median_household_income": 58651,
+      "rent_burdened_share_pct": 50.5
+    },
+    {
+      "county_fips": "22089",
+      "county_name": "St. Charles Parish",
+      "state_name": "Louisiana",
+      "population": 51396,
+      "households": 18608,
+      "permits_2024": 74,
+      "permits_per_1000_households": 3.98,
+      "median_household_income": 80897,
+      "rent_burdened_share_pct": 54.9
+    },
+    {
+      "county_fips": "22093",
+      "county_name": "St. James Parish",
+      "state_name": "Louisiana",
+      "population": 19528,
+      "households": 7543,
+      "permits_2024": 64,
+      "permits_per_1000_households": 8.48,
+      "median_household_income": 65531,
+      "rent_burdened_share_pct": 54.1
+    },
+    {
+      "county_fips": "22095",
+      "county_name": "St. John the Baptist Parish",
+      "state_name": "Louisiana",
+      "population": 40743,
+      "households": 15152,
+      "permits_2024": 62,
+      "permits_per_1000_households": 4.09,
+      "median_household_income": 66630,
+      "rent_burdened_share_pct": 48.8
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "underbuilt-overpriced-atlas"
+version = "0.1.0"
+description = "U.S. Housing Pressure Atlas — screening where weak supply collides with rent pressure"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Shane Wray"}]
+dependencies = [
+  "openpyxl>=3.1",
+  "pandas>=2.2",
+  "pyshp>=2.3",
+  "pyyaml>=6.0",
+  "requests>=2.32",
+  "xlrd>=2.0.1",
+]
+
+[project.scripts]
+uoa = "underbuilt_overpriced.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

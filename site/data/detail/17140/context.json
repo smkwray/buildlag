@@ -1,0 +1,180 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "17140",
+  "detail_metro_name": "Cincinnati, OH-KY-IN",
+  "cbsa_summary": {
+    "zip_count": 188,
+    "county_count": 15,
+    "safmr_2br_min": 960.0,
+    "safmr_2br_median": 1220.0,
+    "safmr_2br_max": 2030.0,
+    "safmr_2br_mean": 1289.0
+  },
+  "counties": [
+    {
+      "county_fips": "21015",
+      "county_name": "Boone County",
+      "state_name": "Kentucky",
+      "population": 139841,
+      "households": 50963,
+      "permits_2024": 1430,
+      "permits_per_1000_households": 28.06,
+      "median_household_income": 99414,
+      "rent_burdened_share_pct": 30.4
+    },
+    {
+      "county_fips": "21023",
+      "county_name": "Bracken County",
+      "state_name": "Kentucky",
+      "population": 8444,
+      "households": 3364,
+      "permits_2024": 0,
+      "permits_per_1000_households": 0.0,
+      "median_household_income": 66319,
+      "rent_burdened_share_pct": 36.8
+    },
+    {
+      "county_fips": "39015",
+      "county_name": "Brown County",
+      "state_name": "Ohio",
+      "population": 43845,
+      "households": 17138,
+      "permits_2024": 147,
+      "permits_per_1000_households": 8.58,
+      "median_household_income": 71270,
+      "rent_burdened_share_pct": 37.2
+    },
+    {
+      "county_fips": "39017",
+      "county_name": "Butler County",
+      "state_name": "Ohio",
+      "population": 392876,
+      "households": 146822,
+      "permits_2024": 1162,
+      "permits_per_1000_households": 7.91,
+      "median_household_income": 81590,
+      "rent_burdened_share_pct": 40.3
+    },
+    {
+      "county_fips": "21037",
+      "county_name": "Campbell County",
+      "state_name": "Kentucky",
+      "population": 93426,
+      "households": 39232,
+      "permits_2024": 249,
+      "permits_per_1000_households": 6.35,
+      "median_household_income": 77567,
+      "rent_burdened_share_pct": 37.9
+    },
+    {
+      "county_fips": "39025",
+      "county_name": "Clermont County",
+      "state_name": "Ohio",
+      "population": 211181,
+      "households": 84955,
+      "permits_2024": 996,
+      "permits_per_1000_households": 11.72,
+      "median_household_income": 85510,
+      "rent_burdened_share_pct": 32.5
+    },
+    {
+      "county_fips": "18029",
+      "county_name": "Dearborn County",
+      "state_name": "Indiana",
+      "population": 51094,
+      "households": 20282,
+      "permits_2024": 120,
+      "permits_per_1000_households": 5.92,
+      "median_household_income": 84735,
+      "rent_burdened_share_pct": 30.1
+    },
+    {
+      "county_fips": "18047",
+      "county_name": "Franklin County",
+      "state_name": "Indiana",
+      "population": 23020,
+      "households": 9211,
+      "permits_2024": 58,
+      "permits_per_1000_households": 6.3,
+      "median_household_income": 78074,
+      "rent_burdened_share_pct": 33.9
+    },
+    {
+      "county_fips": "21077",
+      "county_name": "Gallatin County",
+      "state_name": "Kentucky",
+      "population": 8769,
+      "households": 3265,
+      "permits_2024": 56,
+      "permits_per_1000_households": 17.15,
+      "median_household_income": 63346,
+      "rent_burdened_share_pct": 30.8
+    },
+    {
+      "county_fips": "21081",
+      "county_name": "Grant County",
+      "state_name": "Kentucky",
+      "population": 25418,
+      "households": 9224,
+      "permits_2024": 108,
+      "permits_per_1000_households": 11.71,
+      "median_household_income": 69178,
+      "rent_burdened_share_pct": 24.5
+    },
+    {
+      "county_fips": "39061",
+      "county_name": "Hamilton County",
+      "state_name": "Ohio",
+      "population": 830774,
+      "households": 354739,
+      "permits_2024": 822,
+      "permits_per_1000_households": 2.32,
+      "median_household_income": 72470,
+      "rent_burdened_share_pct": 40.3
+    },
+    {
+      "county_fips": "21117",
+      "county_name": "Kenton County",
+      "state_name": "Kentucky",
+      "population": 171288,
+      "households": 67367,
+      "permits_2024": 699,
+      "permits_per_1000_households": 10.38,
+      "median_household_income": 80548,
+      "rent_burdened_share_pct": 35.7
+    },
+    {
+      "county_fips": "18115",
+      "county_name": "Ohio County",
+      "state_name": "Indiana",
+      "population": 5999,
+      "households": 2619,
+      "permits_2024": 10,
+      "permits_per_1000_households": 3.82,
+      "median_household_income": 70392,
+      "rent_burdened_share_pct": 50.5
+    },
+    {
+      "county_fips": "21191",
+      "county_name": "Pendleton County",
+      "state_name": "Kentucky",
+      "population": 14723,
+      "households": 5442,
+      "permits_2024": 0,
+      "permits_per_1000_households": 0.0,
+      "median_household_income": 64669,
+      "rent_burdened_share_pct": 32.4
+    },
+    {
+      "county_fips": "39165",
+      "county_name": "Warren County",
+      "state_name": "Ohio",
+      "population": 250008,
+      "households": 92052,
+      "permits_2024": 1232,
+      "permits_per_1000_households": 13.38,
+      "median_household_income": 110132,
+      "rent_burdened_share_pct": 32.4
+    }
+  ]
+}

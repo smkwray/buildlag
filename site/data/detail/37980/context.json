@@ -1,0 +1,136 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "37980",
+  "detail_metro_name": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",
+  "cbsa_summary": {
+    "zip_count": 404,
+    "county_count": 11,
+    "safmr_2br_min": 1130.0,
+    "safmr_2br_median": 1835.0,
+    "safmr_2br_max": 2720.0,
+    "safmr_2br_mean": 1909.0
+  },
+  "counties": [
+    {
+      "county_fips": "42017",
+      "county_name": "Bucks County",
+      "state_name": "Pennsylvania",
+      "population": 647461,
+      "households": 249187,
+      "permits_2024": 718,
+      "permits_per_1000_households": 2.88,
+      "median_household_income": 114764,
+      "rent_burdened_share_pct": 39.3
+    },
+    {
+      "county_fips": "34005",
+      "county_name": "Burlington County",
+      "state_name": "New Jersey",
+      "population": 467805,
+      "households": 177222,
+      "permits_2024": 2154,
+      "permits_per_1000_households": 12.15,
+      "median_household_income": 108111,
+      "rent_burdened_share_pct": 42.0
+    },
+    {
+      "county_fips": "34007",
+      "county_name": "Camden County",
+      "state_name": "New Jersey",
+      "population": 527257,
+      "households": 202540,
+      "permits_2024": 970,
+      "permits_per_1000_households": 4.79,
+      "median_household_income": 88755,
+      "rent_burdened_share_pct": 44.0
+    },
+    {
+      "county_fips": "24015",
+      "county_name": "Cecil County",
+      "state_name": "Maryland",
+      "population": 104960,
+      "households": 40595,
+      "permits_2024": 561,
+      "permits_per_1000_households": 13.82,
+      "median_household_income": 92007,
+      "rent_burdened_share_pct": 39.7
+    },
+    {
+      "county_fips": "42029",
+      "county_name": "Chester County",
+      "state_name": "Pennsylvania",
+      "population": 547840,
+      "households": 204774,
+      "permits_2024": 1529,
+      "permits_per_1000_households": 7.47,
+      "median_household_income": 127208,
+      "rent_burdened_share_pct": 38.9
+    },
+    {
+      "county_fips": "42045",
+      "county_name": "Delaware County",
+      "state_name": "Pennsylvania",
+      "population": 579222,
+      "households": 216946,
+      "permits_2024": 281,
+      "permits_per_1000_households": 1.3,
+      "median_household_income": 89546,
+      "rent_burdened_share_pct": 45.9
+    },
+    {
+      "county_fips": "34015",
+      "county_name": "Gloucester County",
+      "state_name": "New Jersey",
+      "population": 306954,
+      "households": 112545,
+      "permits_2024": 899,
+      "permits_per_1000_households": 7.99,
+      "median_household_income": 105115,
+      "rent_burdened_share_pct": 43.9
+    },
+    {
+      "county_fips": "42091",
+      "county_name": "Montgomery County",
+      "state_name": "Pennsylvania",
+      "population": 867573,
+      "households": 335505,
+      "permits_2024": 2490,
+      "permits_per_1000_households": 7.42,
+      "median_household_income": 113915,
+      "rent_burdened_share_pct": 40.3
+    },
+    {
+      "county_fips": "10003",
+      "county_name": "New Castle County",
+      "state_name": "Delaware",
+      "population": 577961,
+      "households": 224173,
+      "permits_2024": 1586,
+      "permits_per_1000_households": 7.07,
+      "median_household_income": 91166,
+      "rent_burdened_share_pct": 38.9
+    },
+    {
+      "county_fips": "42101",
+      "county_name": "Philadelphia County",
+      "state_name": "Pennsylvania",
+      "population": 1579706,
+      "households": 679428,
+      "permits_2024": 2962,
+      "permits_per_1000_households": 4.36,
+      "median_household_income": 61953,
+      "rent_burdened_share_pct": 44.1
+    },
+    {
+      "county_fips": "34033",
+      "county_name": "Salem County",
+      "state_name": "New Jersey",
+      "population": 65275,
+      "households": 24846,
+      "permits_2024": 64,
+      "permits_per_1000_households": 2.58,
+      "median_household_income": 79960,
+      "rent_burdened_share_pct": 44.9
+    }
+  ]
+}

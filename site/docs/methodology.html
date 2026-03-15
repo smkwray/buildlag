@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Methodology - Underbuilt vs. Overpriced Atlas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #0c1220;
+        --surface: #111928;
+        --surface-raised: #162032;
+        --text: #e8eaed;
+        --text-secondary: #8b97a8;
+        --text-dim: #5e6b7d;
+        --border: rgba(136, 153, 176, 0.14);
+        --accent: #3b82f6;
+        --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+        --sans: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
+      }
+      [data-theme="light"] {
+        --bg: #f5f6f8;
+        --surface: #ffffff;
+        --surface-raised: #f0f1f4;
+        --text: #1a1d23;
+        --text-secondary: #4b5563;
+        --text-dim: #7c8596;
+        --border: rgba(0, 0, 0, 0.1);
+        --accent: #2563eb;
+      }
+      @media (prefers-color-scheme: light) {
+        :root:not([data-theme="dark"]):not([data-theme="light"]) {
+          --bg: #f5f6f8; --surface: #ffffff; --surface-raised: #f0f1f4;
+          --text: #1a1d23; --text-secondary: #4b5563; --text-dim: #7c8596;
+          --border: rgba(0,0,0,0.1); --accent: #2563eb;
+        }
+      }
+      *, *::before, *::after { box-sizing: border-box; }
+      body {
+        margin: 0; font-family: var(--sans); font-size: 16px; line-height: 1.7;
+        background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased;
+      }
+      .page {
+        max-width: 760px; margin: 0 auto; padding: 48px 24px 80px;
+      }
+      .back-link {
+        display: inline-flex; align-items: center; gap: 6px;
+        font-size: 0.85rem; color: var(--accent); text-decoration: none;
+        margin-bottom: 32px;
+      }
+      .back-link:hover { text-decoration: underline; }
+      h1 {
+        font-family: var(--serif); font-size: 2.4rem; font-weight: 700;
+        line-height: 1.15; margin: 0 0 12px; letter-spacing: -0.01em;
+      }
+      .subtitle {
+        color: var(--text-secondary); font-size: 1.1rem; margin: 0 0 40px;
+        max-width: 60ch;
+      }
+      h2 {
+        font-family: var(--serif); font-size: 1.4rem; font-weight: 700;
+        margin: 48px 0 16px; padding-bottom: 8px;
+        border-bottom: 1px solid var(--border);
+      }
+      h3 {
+        font-family: var(--sans); font-size: 1rem; font-weight: 700;
+        margin: 28px 0 8px; color: var(--accent);
+      }
+      p { margin: 0 0 16px; color: var(--text-secondary); }
+      p strong { color: var(--text); }
+      ul, ol { color: var(--text-secondary); padding-left: 24px; margin: 0 0 16px; }
+      li { margin-bottom: 8px; }
+      li strong { color: var(--text); }
+      table {
+        width: 100%; border-collapse: collapse; margin: 16px 0 24px;
+        font-size: 0.9rem;
+      }
+      th, td {
+        padding: 10px 14px; text-align: left;
+        border-bottom: 1px solid var(--border);
+      }
+      th {
+        color: var(--text-dim); font-size: 0.75rem; font-weight: 600;
+        text-transform: uppercase; letter-spacing: 0.06em;
+      }
+      td { color: var(--text-secondary); }
+      td strong { color: var(--text); }
+      .formula-block {
+        background: var(--surface-raised); border: 1px solid var(--border);
+        border-radius: 10px; padding: 16px 20px; margin: 16px 0 24px;
+        font-family: "SF Mono", SFMono-Regular, ui-monospace, monospace;
+        font-size: 0.88rem; line-height: 1.8; color: var(--text);
+        white-space: pre-wrap; overflow-x: auto;
+      }
+      .callout {
+        background: var(--surface); border: 1px solid var(--border);
+        border-left: 3px solid var(--accent); border-radius: 8px;
+        padding: 16px 20px; margin: 20px 0; font-size: 0.92rem;
+      }
+      .callout p { margin: 0; }
+      .score-table td:first-child {
+        font-weight: 700; font-variant-numeric: tabular-nums;
+      }
+      a { color: var(--accent); }
+      .theme-toggle-meth {
+        position: fixed; top: 16px; right: 16px;
+        width: 36px; height: 36px; border-radius: 8px;
+        border: 1px solid var(--border); background: var(--surface);
+        color: var(--text); cursor: pointer; font-size: 1rem;
+        display: flex; align-items: center; justify-content: center; z-index: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-toggle-meth" id="theme-toggle" title="Toggle light/dark mode">
+      <span id="theme-icon">&#9790;</span>
+    </button>
+    <div class="page">
+      <a class="back-link" href="../">&larr; Back to atlas</a>
+
+      <h1>Methodology</h1>
+      <p class="subtitle">
+        How the Underbuilt vs. Overpriced Atlas scores housing pressure across the 75 largest U.S. metropolitan areas.
+      </p>
+
+      <h2>What this tool does</h2>
+      <p>
+        The atlas is a <strong>screening tool</strong> for housing pressure. It does not model rents or predict prices.
+        Instead, it flags where two forces &mdash; weak new construction and high rent benchmarks relative to income &mdash;
+        appear to overlap.
+      </p>
+      <div class="callout">
+        <p>
+          <strong>A high score means the inputs suggest pressure.</strong> It does not prove a housing crisis or assign blame.
+          Rankings should be investigated, not cited as conclusions.
+        </p>
+      </div>
+
+      <h2>Data sources and vintages</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Source</th>
+            <th>Vintage</th>
+            <th>Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Census Building Permits Survey (BPS)</strong></td>
+            <td>2024 annual</td>
+            <td>Permitted housing units by CBSA and county</td>
+          </tr>
+          <tr>
+            <td><strong>American Community Survey (ACS 1-year)</strong></td>
+            <td>2024</td>
+            <td>Metro-level median income, rent, tenure, cost burden</td>
+          </tr>
+          <tr>
+            <td><strong>American Community Survey (ACS 5-year)</strong></td>
+            <td>2024</td>
+            <td>County-level income and cost burden</td>
+          </tr>
+          <tr>
+            <td><strong>HUD Fair Market Rents (FMR)</strong></td>
+            <td>FY2026</td>
+            <td>County-level 2-bedroom rent benchmarks</td>
+          </tr>
+          <tr>
+            <td><strong>HUD Small Area FMRs (SAFMR)</strong></td>
+            <td>FY2026</td>
+            <td>ZIP-level 2-bedroom rent benchmarks</td>
+          </tr>
+          <tr>
+            <td><strong>Census delineation</strong></td>
+            <td>2023 (List 1)</td>
+            <td>County-to-CBSA membership crosswalk</td>
+          </tr>
+          <tr>
+            <td><strong>Census ZCTA boundaries</strong></td>
+            <td>2020 generalized</td>
+            <td>ZIP geometry for detail maps</td>
+          </tr>
+          <tr>
+            <td><strong>Census county boundaries</strong></td>
+            <td>2023 generalized</td>
+            <td>County outlines for detail maps</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        The <code>meta.json</code> file shipped with every build records the exact vintages used.
+        The <code>source_catalog.json</code> file contains direct download URLs for each input.
+      </p>
+
+      <h2>Score construction</h2>
+
+      <h3>Underbuilt component (0&ndash;100)</h3>
+      <p>
+        Measures how thin new housing construction is relative to the metro's existing housing stock.
+      </p>
+      <p><strong>Input:</strong></p>
+      <div class="formula-block">permits_per_1000_households = (annual_permitted_units / total_households) &times; 1,000</div>
+      <p>
+        <strong>Scoring:</strong> Inverse percentile rank across all 75 metros.
+        Metros with <em>fewer</em> permits per household score higher.
+      </p>
+      <p>
+        A score of 90 means only 10% of the metros in the panel had weaker permitting intensity.
+      </p>
+
+      <h3>Overpriced component (0&ndash;100)</h3>
+      <p>
+        Measures how expensive benchmark rents are relative to local incomes.
+      </p>
+      <p><strong>Inputs:</strong></p>
+      <ul>
+        <li><strong>FMR-to-income ratio</strong> = (2BR Fair Market Rent &times; 12) / median household income</li>
+        <li><strong>Renter cost-burden share</strong> = percentage of renters paying 35%+ of income on housing</li>
+      </ul>
+      <p><strong>Scoring:</strong></p>
+      <div class="formula-block">overpriced = mean(percentile(fmr_to_income), percentile(rent_burden_35plus)) &times; 100</div>
+      <p>
+        A score of 80 means the metro is in the top quintile on the combined rent-to-income and burden measures.
+      </p>
+
+      <h3>Overall score (0&ndash;100)</h3>
+      <div class="formula-block">overall = mean(underbuilt, overpriced)</div>
+
+      <table class="score-table">
+        <thead><tr><th>Score range</th><th>Label</th></tr></thead>
+        <tbody>
+          <tr><td>75&ndash;100</td><td>Acute pressure</td></tr>
+          <tr><td>55&ndash;74</td><td>Elevated</td></tr>
+          <tr><td>35&ndash;54</td><td>Watch</td></tr>
+          <tr><td>0&ndash;34</td><td>Lower pressure</td></tr>
+        </tbody>
+      </table>
+
+      <h2>ZIP-level detail</h2>
+      <p>
+        For each of the 75 metros, the atlas shows ZIP-level <strong>Small Area Fair Market Rents</strong> (SAFMRs)
+        mapped onto Census ZCTA boundaries. SAFMRs are HUD's ZIP-level rent benchmarks, calculated from local
+        rent distributions. They are used in the Housing Choice Voucher program to set payment standards that
+        vary by neighborhood.
+      </p>
+      <p>
+        County boundaries are overlaid for geographic context, with county-level permits, income, and
+        cost-burden statistics shown alongside the map.
+      </p>
+
+      <h2>Limitations</h2>
+      <ul>
+        <li>
+          <strong>Single-year snapshot.</strong>
+          There is no time series &mdash; you cannot see whether a metro is getting worse or improving.
+          A trailing 3-year permitting average would smooth annual volatility and strengthen the underbuilt signal.
+        </li>
+        <li>
+          <strong>Permits are a noisy proxy for supply.</strong>
+          Metros with large multifamily pipelines can look well-supplied on permits while still having
+          affordability problems, because permitted units are not necessarily affordable units.
+        </li>
+        <li>
+          <strong>FMR is a lagging indicator.</strong>
+          Fair Market Rents are backward-looking and tuned for the voucher program, not real-time market rents.
+          Metros with fast rent growth may appear better than they are.
+        </li>
+        <li>
+          <strong>No vacancy, household growth, or structure mix.</strong>
+          These factors shape housing pressure but are not yet included. Their absence means the screen can
+          misread metros with unusual housing stock characteristics.
+        </li>
+      </ul>
+
+      <h2>Caveats</h2>
+      <ol>
+        <li>
+          <strong>Permits are not completions.</strong>
+          The BPS counts authorized housing units. Not all permitted units get built,
+          and there is a lag between authorization and occupancy.
+        </li>
+        <li>
+          <strong>FMR is a program benchmark, not observed market rent.</strong>
+          HUD calculates Fair Market Rents for the Housing Choice Voucher program.
+          They approximate the 40th percentile of gross rents for recent movers,
+          but they are not the same as asking rents on listing sites.
+        </li>
+        <li>
+          <strong>ACS products differ.</strong>
+          Metro-level figures use the ACS 1-year product (available only for areas with 65,000+ population).
+          County-level figures use the ACS 5-year product (broader coverage, more stable, but slower to
+          reflect recent changes). Comparing across these products requires care.
+        </li>
+        <li>
+          <strong>Metro definitions vary.</strong>
+          Census CBSAs and HUD Metro FMR Areas do not always share the same boundaries.
+          Some large metros are split into sub-areas by HUD.
+        </li>
+        <li>
+          <strong>This is a screen, not a causal model.</strong>
+          A high score flags a pattern worth investigating. It does not establish that housing costs
+          are rising <em>because of</em> insufficient construction, or vice versa.
+        </li>
+      </ol>
+
+      <h2>Why this design</h2>
+      <ul>
+        <li>Every component is easy to explain in plain language.</li>
+        <li>No black-box regression or machine learning is required.</li>
+        <li>Every input is downloadable as CSV so anyone can check the math.</li>
+        <li>The score separates supply-side (underbuilt) from demand-side (overpriced) so users can see which dimension is driving a metro's ranking.</li>
+      </ul>
+
+      <h2>Possible future enhancements</h2>
+      <ul>
+        <li>Trailing 3-year permitting average to smooth annual volatility.</li>
+        <li>Compare permits to household <em>growth</em>, not just household stock.</li>
+        <li>Add vacancy rate and structure mix terms.</li>
+        <li>Sensitivity analysis by metro size bucket.</li>
+        <li>Confidence intervals and missingness flags.</li>
+      </ul>
+
+    </div>
+    <script>
+      // Theme toggle (syncs with main site)
+      const saved = localStorage.getItem("atlas-theme");
+      if (saved) document.documentElement.setAttribute("data-theme", saved);
+      function isLight() {
+        const ex = document.documentElement.getAttribute("data-theme");
+        if (ex) return ex === "light";
+        return window.matchMedia("(prefers-color-scheme: light)").matches;
+      }
+      function updateIcon() {
+        document.getElementById("theme-icon").innerHTML = isLight() ? "&#9728;" : "&#9790;";
+      }
+      updateIcon();
+      document.getElementById("theme-toggle").addEventListener("click", () => {
+        const next = isLight() ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", next);
+        localStorage.setItem("atlas-theme", next);
+        updateIcon();
+      });
+    </script>
+  </body>
+</html>

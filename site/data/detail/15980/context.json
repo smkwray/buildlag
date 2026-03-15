@@ -1,0 +1,26 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "15980",
+  "detail_metro_name": "Cape Coral-Fort Myers, FL",
+  "cbsa_summary": {
+    "zip_count": 38,
+    "county_count": 1,
+    "safmr_2br_min": 1660.0,
+    "safmr_2br_median": 2085.0,
+    "safmr_2br_max": 2940.0,
+    "safmr_2br_mean": 2075.0
+  },
+  "counties": [
+    {
+      "county_fips": "12071",
+      "county_name": "Lee County",
+      "state_name": "Florida",
+      "population": 817666,
+      "households": 327803,
+      "permits_2024": 15411,
+      "permits_per_1000_households": 47.01,
+      "median_household_income": 76107,
+      "rent_burdened_share_pct": 50.1
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "28140",
+  "detail_metro_name": "Kansas City, MO-KS",
+  "cbsa_summary": {
+    "zip_count": 221,
+    "county_count": 14,
+    "safmr_2br_min": 1030.0,
+    "safmr_2br_median": 1250.0,
+    "safmr_2br_max": 2040.0,
+    "safmr_2br_mean": 1314.0
+  },
+  "counties": [
+    {
+      "county_fips": "29013",
+      "county_name": "Bates County",
+      "state_name": "Missouri",
+      "population": 16186,
+      "households": 6158,
+      "permits_2024": 9,
+      "permits_per_1000_households": 1.46,
+      "median_household_income": 60733,
+      "rent_burdened_share_pct": 41.0
+    },
+    {
+      "county_fips": "29025",
+      "county_name": "Caldwell County",
+      "state_name": "Missouri",
+      "population": 8927,
+      "households": 3769,
+      "permits_2024": 34,
+      "permits_per_1000_households": 9.02,
+      "median_household_income": 64806,
+      "rent_burdened_share_pct": 14.3
+    },
+    {
+      "county_fips": "29037",
+      "county_name": "Cass County",
+      "state_name": "Missouri",
+      "population": 110773,
+      "households": 43206,
+      "permits_2024": 600,
+      "permits_per_1000_households": 13.89,
+      "median_household_income": 87535,
+      "rent_burdened_share_pct": 33.2
+    },
+    {
+      "county_fips": "29047",
+      "county_name": "Clay County",
+      "state_name": "Missouri",
+      "population": 258122,
+      "households": 102171,
+      "permits_2024": 356,
+      "permits_per_1000_households": 3.48,
+      "median_household_income": 88468,
+      "rent_burdened_share_pct": 36.4
+    },
+    {
+      "county_fips": "29049",
+      "county_name": "Clinton County",
+      "state_name": "Missouri",
+      "population": 21414,
+      "households": 8329,
+      "permits_2024": 68,
+      "permits_per_1000_households": 8.16,
+      "median_household_income": 70627,
+      "rent_burdened_share_pct": 26.5
+    },
+    {
+      "county_fips": "29095",
+      "county_name": "Jackson County",
+      "state_name": "Missouri",
+      "population": 719976,
+      "households": 306798,
+      "permits_2024": 4003,
+      "permits_per_1000_households": 13.05,
+      "median_household_income": 68577,
+      "rent_burdened_share_pct": 41.1
+    },
+    {
+      "county_fips": "20091",
+      "county_name": "Johnson County",
+      "state_name": "Kansas",
+      "population": 620631,
+      "households": 249531,
+      "permits_2024": 2714,
+      "permits_per_1000_households": 10.88,
+      "median_household_income": 109208,
+      "rent_burdened_share_pct": 32.9
+    },
+    {
+      "county_fips": "29107",
+      "county_name": "Lafayette County",
+      "state_name": "Missouri",
+      "population": 33115,
+      "households": 12576,
+      "permits_2024": 121,
+      "permits_per_1000_households": 9.62,
+      "median_household_income": 80612,
+      "rent_burdened_share_pct": 31.9
+    },
+    {
+      "county_fips": "20103",
+      "county_name": "Leavenworth County",
+      "state_name": "Kansas",
+      "population": 83123,
+      "households": 30164,
+      "permits_2024": 349,
+      "permits_per_1000_households": 11.57,
+      "median_household_income": 89218,
+      "rent_burdened_share_pct": 32.3
+    },
+    {
+      "county_fips": "20107",
+      "county_name": "Linn County",
+      "state_name": "Kansas",
+      "population": 9767,
+      "households": 4348,
+      "permits_2024": 100,
+      "permits_per_1000_households": 23.0,
+      "median_household_income": 59069,
+      "rent_burdened_share_pct": 20.2
+    },
+    {
+      "county_fips": "20121",
+      "county_name": "Miami County",
+      "state_name": "Kansas",
+      "population": 34938,
+      "households": 13738,
+      "permits_2024": 118,
+      "permits_per_1000_households": 8.59,
+      "median_household_income": 89000,
+      "rent_burdened_share_pct": 33.6
+    },
+    {
+      "county_fips": "29165",
+      "county_name": "Platte County",
+      "state_name": "Missouri",
+      "population": 110371,
+      "households": 43902,
+      "permits_2024": 237,
+      "permits_per_1000_households": 5.4,
+      "median_household_income": 96227,
+      "rent_burdened_share_pct": 33.4
+    },
+    {
+      "county_fips": "29177",
+      "county_name": "Ray County",
+      "state_name": "Missouri",
+      "population": 23145,
+      "households": 9116,
+      "permits_2024": 70,
+      "permits_per_1000_households": 7.68,
+      "median_household_income": 74573,
+      "rent_burdened_share_pct": 31.8
+    },
+    {
+      "county_fips": "20209",
+      "county_name": "Wyandotte County",
+      "state_name": "Kansas",
+      "population": 167654,
+      "households": 61562,
+      "permits_2024": 369,
+      "permits_per_1000_households": 5.99,
+      "median_household_income": 63631,
+      "rent_burdened_share_pct": 38.0
+    }
+  ]
+}

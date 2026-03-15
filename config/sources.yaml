@@ -1,0 +1,69 @@
+project_name: underbuilt-vs-overpriced-atlas
+status: production
+notes:
+  - Use county-year as the main analytic grain.
+  - Roll counties to CBSAs with Census delineation files.
+  - Keep fixture data clearly separated from real-source outputs.
+
+sources:
+  census_bps:
+    homepage: https://www.census.gov/permits
+    current_cbsa_annual_pattern: https://www.census.gov/construction/bps/xls/cbsaannual_{year}99.xls
+    master_data_directory: https://www2.census.gov/econ/bps/Master%20Data%20Set/
+    intended_use:
+      - permits_annual_by_cbsa
+      - permits_annual_by_county
+      - permits_annual_by_place_v2
+    join_keys:
+      - cbsa_code
+      - state_fips
+      - county_fips
+    caveats:
+      - permits are authorizations, not completions
+      - annual files are safer for public ranking than recent monthly files
+
+  census_acs:
+    api_docs: https://www.census.gov/programs-surveys/acs/data/data-via-api.html
+    acs1_profile_examples: https://api.census.gov/data/2024/acs/acs1/profile/examples.html
+    acs1_geography: https://api.census.gov/data/2024/acs/acs1/geography.html
+    preferred_vintages:
+      metro_context: 2024_acs1
+      county_context: 2020_2024_acs5
+    preferred_variables:
+      - DP03_0062E   # median household income
+      - DP04_0001E   # total housing units
+      - DP04_0046E   # renter-occupied housing units (verify before production)
+      - DP04_0134E   # median gross rent
+      - DP04_0142PE  # renter GRAPI 35%+
+    caveats:
+      - verify variable choices against official ACS docs before first production pull
+      - use non-overlapping 5-year comparisons when doing change analysis
+
+  hud_fmr:
+    docs: https://www.huduser.gov/portal/datasets/fmr.html
+    api_docs: https://www.huduser.gov/portal/dataset/fmr-api.html
+    county_file_pattern: https://www.huduser.gov/portal/datasets/fmr/fmr{year}/FY{yy}_FMRs.xlsx
+    safmr_file_pattern: https://www.huduser.gov/portal/datasets/fmr/fmr{year}/fy{year}_safmrs.xlsx
+    intended_use:
+      - metro_affordability_benchmark
+      - selected_metro_zip_detail
+    join_keys:
+      - county_fips
+      - cbsa_code
+      - zip_code
+    caveats:
+      - FMR is a benchmark used for policy and payment standards
+      - HMFA boundaries may not map 1:1 to OMB metro boundaries
+
+  metro_delineation:
+    page: https://www.census.gov/geographies/reference-files/time-series/demo/metro-micro/delineation-files.html
+    county_to_cbsa_file: https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2023/delineation-files/list2_2023.xlsx
+    intended_use:
+      - county_to_cbsa_crosswalk
+
+  metro_population_estimates:
+    page: https://www.census.gov/data/tables/time-series/demo/popest/2020s-total-metro-and-micro-statistical-areas.html
+    metro_population_file: https://www2.census.gov/programs-surveys/popest/tables/2020-2024/metro/totals/cbsa-met-est2024-pop.xlsx
+    intended_use:
+      - select_top_metros
+      - normalize_permits_per_capita

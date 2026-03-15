@@ -1,0 +1,48 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "42660",
+  "detail_metro_name": "Seattle-Tacoma-Bellevue, WA",
+  "cbsa_summary": {
+    "zip_count": 176,
+    "county_count": 3,
+    "safmr_2br_min": 1860.0,
+    "safmr_2br_median": 2280.0,
+    "safmr_2br_max": 3750.0,
+    "safmr_2br_mean": 2406.0
+  },
+  "counties": [
+    {
+      "county_fips": "53033",
+      "county_name": "King County",
+      "state_name": "Washington",
+      "population": 2287171,
+      "households": 941054,
+      "permits_2024": 10564,
+      "permits_per_1000_households": 11.23,
+      "median_household_income": 124746,
+      "rent_burdened_share_pct": 37.5
+    },
+    {
+      "county_fips": "53053",
+      "county_name": "Pierce County",
+      "state_name": "Washington",
+      "population": 930319,
+      "households": 351330,
+      "permits_2024": 3207,
+      "permits_per_1000_households": 9.13,
+      "median_household_income": 99564,
+      "rent_burdened_share_pct": 42.6
+    },
+    {
+      "county_fips": "53061",
+      "county_name": "Snohomish County",
+      "state_name": "Washington",
+      "population": 844430,
+      "households": 316212,
+      "permits_2024": 4149,
+      "permits_per_1000_households": 13.12,
+      "median_household_income": 111246,
+      "rent_burdened_share_pct": 41.9
+    }
+  ]
+}

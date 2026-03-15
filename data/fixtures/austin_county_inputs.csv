@@ -1,0 +1,5 @@
+county_name,center_lat,center_lon,half_width_deg,half_height_deg,permits_2024,permits_per_1000_households
+Travis County,30.3100,-97.7200,0.120,0.090,24400,39.8
+Williamson County,30.5900,-97.6400,0.110,0.085,12800,34.1
+Hays County,30.0500,-97.9400,0.100,0.080,5200,28.7
+Bastrop County,30.1100,-97.3200,0.085,0.070,1600,16.2

@@ -1,0 +1,26 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "49340",
+  "detail_metro_name": "Worcester, MA",
+  "cbsa_summary": {
+    "zip_count": 83,
+    "county_count": 1,
+    "safmr_2br_min": 1500.0,
+    "safmr_2br_median": 1990.0,
+    "safmr_2br_max": 3220.0,
+    "safmr_2br_mean": 2111.0
+  },
+  "counties": [
+    {
+      "county_fips": "25027",
+      "county_name": "Worcester County",
+      "state_name": "Massachusetts",
+      "population": 867788,
+      "households": 335826,
+      "permits_2024": 2506,
+      "permits_per_1000_households": 7.46,
+      "median_household_income": 95939,
+      "rent_burdened_share_pct": 40.5
+    }
+  ]
+}

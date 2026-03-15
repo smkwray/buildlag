@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Underbuilt vs. Overpriced — U.S. Housing Pressure Atlas</title>
+    <meta name="description" content="An interactive atlas screening 75 U.S. metros where weak housing supply collides with rent pressure. Built from federal open data." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+
+      <!-- HEADER -->
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="kicker">U.S. Housing Pressure Atlas</p>
+          <h1>Where is housing<br/><em>underbuilt</em> and <em>overpriced</em>?</h1>
+          <p class="lede">
+            A data-driven screening of 75 major metros — ranking where weak construction
+            activity overlaps with high rent benchmarks relative to income.
+            Every number is sourced from public federal data. Every input is downloadable.
+          </p>
+        </div>
+        <nav class="hero-actions">
+          <a class="btn btn-primary" href="data/metro_panel.csv" download>Download data (CSV)</a>
+          <a class="btn btn-outline" href="docs/methodology.html">Methodology</a>
+          <button class="theme-toggle" id="theme-toggle" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">
+            <span id="theme-icon">&#9790;</span>
+          </button>
+        </nav>
+      </header>
+
+      <!-- DATA VINTAGE STRIP -->
+      <div class="vintage-strip" id="vintage-strip"></div>
+
+      <!-- SCORE MODE TOGGLE -->
+      <div class="mode-bar">
+        <span class="mode-label">Color by</span>
+        <div class="mode-toggle" id="score-mode-toggle">
+          <button class="mode-btn is-active" data-mode="overall">Overall</button>
+          <button class="mode-btn" data-mode="underbuilt">Underbuilt</button>
+          <button class="mode-btn" data-mode="overpriced">Overpriced</button>
+        </div>
+      </div>
+
+      <!-- NATIONAL MAP + SCATTERPLOT ROW -->
+      <section class="duo-row">
+        <article class="panel panel-map">
+          <div class="panel-head">
+            <h2>National pressure map</h2>
+            <p class="panel-note">Circle size = population · color = <span id="map-color-label">overall</span> score</p>
+          </div>
+          <div id="national-map" class="map-container"></div>
+          <div class="map-legend" id="national-legend"></div>
+        </article>
+
+        <article class="panel panel-scatter">
+          <div class="panel-head">
+            <h2>Supply vs. burden</h2>
+            <p class="panel-note">Click a dot to select · hover for detail</p>
+          </div>
+          <div class="scatter-wrap">
+            <canvas id="scatterplot" width="560" height="420"></canvas>
+          </div>
+          <div class="scatter-axis-labels">
+            <span class="axis-x">Permits per 1,000 households →</span>
+          </div>
+          <span class="axis-y">Renter burden % →</span>
+        </article>
+      </section>
+
+      <!-- RANKING TABLE -->
+      <section class="panel panel-table">
+        <div class="panel-head table-head">
+          <div>
+            <h2>Metro rankings</h2>
+            <p class="panel-note"><span id="table-count">75</span> metros · sorted by <span id="sort-label">overall score</span></p>
+          </div>
+          <div class="table-controls">
+            <input id="table-filter" type="search" placeholder="Filter metros…" autocomplete="off" />
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table id="ranking-table">
+            <thead>
+              <tr>
+                <th class="th-rank">#</th>
+                <th class="th-metro sortable" data-sort="metro_name">Metro</th>
+                <th class="th-score sortable is-active-sort" data-sort="overall_score">Overall</th>
+                <th class="th-bar" data-sort="underbuilt_component">
+                  <span class="sortable" data-sort="underbuilt_component">Underbuilt</span>
+                </th>
+                <th class="th-bar" data-sort="overpriced_component">
+                  <span class="sortable" data-sort="overpriced_component">Overpriced</span>
+                </th>
+                <th class="sortable" data-sort="permits_per_1000_households">Permits/1k HH</th>
+                <th class="sortable" data-sort="hud_fmr_2br">2BR FMR</th>
+                <th class="sortable" data-sort="median_household_income">Income</th>
+                <th class="sortable" data-sort="rent_burdened_share_pct">Burden %</th>
+              </tr>
+            </thead>
+            <tbody id="ranking-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- COMPARE TRAY -->
+      <div class="compare-tray" id="compare-tray">
+        <div class="compare-header">
+          <h3>Compare metros</h3>
+          <button class="compare-clear" id="compare-clear">Clear all</button>
+        </div>
+        <div class="compare-cards" id="compare-cards"></div>
+      </div>
+
+      <!-- SELECTED METRO DETAIL -->
+      <section class="detail-section" id="detail-section">
+        <div class="detail-header">
+          <div>
+            <p class="kicker">Selected metro</p>
+            <h2 id="detail-metro-name">Select a metro</h2>
+          </div>
+          <div class="detail-score-group">
+            <div class="score-ring" id="detail-score-ring">
+              <span class="score-ring-value" id="detail-score-value">—</span>
+            </div>
+            <div class="detail-components">
+              <div class="component-row">
+                <span class="component-label">Underbuilt</span>
+                <div class="component-bar-track"><div class="component-bar component-bar-under" id="detail-bar-under"></div></div>
+                <span class="component-value" id="detail-val-under">—</span>
+              </div>
+              <div class="component-row">
+                <span class="component-label">Overpriced</span>
+                <div class="component-bar-track"><div class="component-bar component-bar-over" id="detail-bar-over"></div></div>
+                <span class="component-value" id="detail-val-over">—</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WHY PANEL -->
+        <div class="explainer-panel" id="explainer-panel"></div>
+
+        <!-- DETAIL MAP + COUNTY STRIP -->
+        <div class="detail-grid">
+          <article class="panel panel-detail-map">
+            <div class="panel-head">
+              <h2>ZIP rent benchmarks</h2>
+              <p class="panel-note" id="detail-map-note">HUD SAFMR 2BR · ZCTA geometry</p>
+            </div>
+            <div id="detail-map" class="map-container"></div>
+            <div id="detail-placeholder" class="detail-placeholder hidden">
+              ZIP detail is not available for this metro.
+            </div>
+          </article>
+
+          <article class="panel panel-counties">
+            <div class="panel-head">
+              <h2>County breakdown</h2>
+            </div>
+            <div id="county-strip" class="county-strip"></div>
+          </article>
+        </div>
+
+        <!-- DETAIL METRICS ROW -->
+        <div class="detail-metrics" id="detail-metrics"></div>
+      </section>
+
+      <!-- SOURCE CARDS -->
+      <section class="panel panel-sources">
+        <div class="panel-head">
+          <h2>Data sources</h2>
+          <p class="panel-note">Every input is public and verifiable</p>
+        </div>
+        <div class="source-grid" id="source-grid"></div>
+      </section>
+
+      <!-- LIMITATIONS -->
+      <section class="panel panel-limitations">
+        <div class="panel-head">
+          <h2>Limitations</h2>
+        </div>
+        <ul class="limitations-list">
+          <li><strong>Single-year snapshot.</strong> No time series &mdash; you cannot see whether a metro is getting worse or improving.</li>
+          <li><strong>Permits are a noisy proxy.</strong> Metros with large multifamily pipelines can look well-supplied on permits while still having affordability problems, because permitted units are not necessarily affordable units.</li>
+          <li><strong>FMR is a lagging indicator.</strong> Fair Market Rents are backward-looking and tuned for the voucher program, not real-time market rents. Metros with fast rent growth may appear better than they are.</li>
+          <li><strong>No vacancy, household growth, or structure mix.</strong> These factors shape housing pressure but are not yet included.</li>
+        </ul>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="site-footer">
+        <p>
+          Built from public federal data. This is a screening tool, not a causal model.
+          Rankings reflect input patterns and should be investigated, not cited as conclusions.
+        </p>
+        <p class="footer-links">
+          <a href="docs/methodology.html">Methodology</a>
+          <a href="data/metro_panel.csv" download>Download CSV</a>
+          <a href="https://github.com/smkwray/buildlag" target="_blank" rel="noopener">GitHub</a>
+        </p>
+        <p class="footer-byline">By <a href="https://github.com/smkwray" target="_blank" rel="noopener">Shane Wray</a></p>
+      </footer>
+
+    </div>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

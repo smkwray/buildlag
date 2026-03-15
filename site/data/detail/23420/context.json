@@ -1,0 +1,37 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "23420",
+  "detail_metro_name": "Fresno, CA",
+  "cbsa_summary": {
+    "zip_count": 75,
+    "county_count": 2,
+    "safmr_2br_min": 1290.0,
+    "safmr_2br_median": 1560.0,
+    "safmr_2br_max": 2690.0,
+    "safmr_2br_mean": 1649.0
+  },
+  "counties": [
+    {
+      "county_fips": "06019",
+      "county_name": "Fresno County",
+      "state_name": "California",
+      "population": 1016725,
+      "households": 324702,
+      "permits_2024": 2439,
+      "permits_per_1000_households": 7.51,
+      "median_household_income": 74201,
+      "rent_burdened_share_pct": 46.1
+    },
+    {
+      "county_fips": "06039",
+      "county_name": "Madera County",
+      "state_name": "California",
+      "population": 160940,
+      "households": 45379,
+      "permits_2024": 1343,
+      "permits_per_1000_households": 29.6,
+      "median_household_income": 76627,
+      "rent_burdened_share_pct": 47.2
+    }
+  ]
+}

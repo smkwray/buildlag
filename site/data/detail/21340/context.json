@@ -1,0 +1,37 @@
+{
+  "detail_mode": "real_safmr_zcta",
+  "detail_cbsa_code": "21340",
+  "detail_metro_name": "El Paso, TX",
+  "cbsa_summary": {
+    "zip_count": 31,
+    "county_count": 2,
+    "safmr_2br_min": 1080.0,
+    "safmr_2br_median": 1160.0,
+    "safmr_2br_max": 1790.0,
+    "safmr_2br_mean": 1274.0
+  },
+  "counties": [
+    {
+      "county_fips": "48141",
+      "county_name": "El Paso County",
+      "state_name": "Texas",
+      "population": 870779,
+      "households": 299637,
+      "permits_2024": 2320,
+      "permits_per_1000_households": 7.74,
+      "median_household_income": 59806,
+      "rent_burdened_share_pct": 44.2
+    },
+    {
+      "county_fips": "48229",
+      "county_name": "Hudspeth County",
+      "state_name": "Texas",
+      "population": 3403,
+      "households": 842,
+      "permits_2024": 0,
+      "permits_per_1000_households": 0.0,
+      "median_household_income": 48600,
+      "rent_burdened_share_pct": 10.2
+    }
+  ]
+}
