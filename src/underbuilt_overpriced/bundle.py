@@ -131,15 +131,19 @@ def build_fixture_bundle(project_root: Path) -> None:
 
     austin_zip_rows = read_csv_rows(fixture_dir / "austin_zip_inputs.csv")
     austin_county_rows = read_csv_rows(fixture_dir / "austin_county_inputs.csv")
-    detail_dir = site_data_dir / "detail" / "12420"
+    detail_dir = site_data_dir / "detail"
     detail_dir.mkdir(parents=True, exist_ok=True)
-    write_json(detail_dir / "zips.geojson", polygon_geojson(austin_zip_rows, id_field="zip_code"))
-    write_json(detail_dir / "counties.geojson", polygon_geojson(austin_county_rows, id_field="county_name"))
-    write_json(detail_dir / "context.json", {
-        "detail_mode": "fixture",
-        "detail_cbsa_code": "12420",
-        "detail_metro_name": "Austin-Round Rock-Georgetown",
-        "cbsa_summary": {"zip_count": len(austin_zip_rows), "county_count": len(austin_county_rows)},
+    write_json(detail_dir / "12420_zips.geojson", polygon_geojson(austin_zip_rows, id_field="zip_code"))
+    write_json(site_data_dir / "detail_counties.json", {
+        "12420": polygon_geojson(austin_county_rows, id_field="county_name"),
+    })
+    write_json(site_data_dir / "detail_contexts.json", {
+        "12420": {
+            "detail_mode": "fixture",
+            "detail_cbsa_code": "12420",
+            "detail_metro_name": "Austin-Round Rock-Georgetown",
+            "cbsa_summary": {"zip_count": len(austin_zip_rows), "county_count": len(austin_county_rows)},
+        },
     })
     write_json(site_data_dir / "detail_index.json", {
         "detail_mode": "fixture",
@@ -152,9 +156,7 @@ def build_fixture_bundle(project_root: Path) -> None:
             "detail_mode": "fixture",
             "zip_count": len(austin_zip_rows),
             "county_count": len(austin_county_rows),
-            "zips_path": "data/detail/12420/zips.geojson",
-            "counties_path": "data/detail/12420/counties.geojson",
-            "context_path": "data/detail/12420/context.json",
+            "zips_path": "data/detail/12420_zips.geojson",
         }],
     })
 

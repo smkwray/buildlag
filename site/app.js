@@ -7,6 +7,8 @@ const state = {
   metaData: null,
   metroPoints: null,
   detailIndex: null,
+  detailContexts: {},
+  detailCounties: {},
   sourceCatalog: null,
   selectedCbsa: null,
   scoreMode: "overall",      // overall | underbuilt | overpriced
@@ -528,11 +530,9 @@ async function loadDetailBundle(cbsa) {
   const entry = getDetailEntry(cbsa);
   if (!entry) return null;
   if (!state.detailCache[cbsa]) {
-    const [zips, counties, context] = await Promise.all([
-      loadJson(entry.zips_path),
-      loadJson(entry.counties_path),
-      loadJson(entry.context_path),
-    ]);
+    const context = state.detailContexts?.[cbsa] ?? null;
+    const counties = state.detailCounties?.[cbsa] ?? null;
+    const zips = await loadJson(entry.zips_path);
     state.detailCache[cbsa] = { zips, counties, context };
   }
   return state.detailCache[cbsa];
@@ -867,12 +867,14 @@ function addResetControl(map, resetFn) {
 
 // ───── Init ─────
 async function init() {
-  const [panel, points, meta, detailIndex, catalog] = await Promise.all([
+  const [panel, points, meta, detailIndex, catalog, detailContexts, detailCounties] = await Promise.all([
     loadJson("data/metro_panel.json"),
     loadJson("data/metro_points.geojson"),
     loadJson("data/meta.json"),
     loadJson("data/detail_index.json").catch(() => null),
     loadJson("data/source_catalog.json").catch(() => null),
+    loadJson("data/detail_contexts.json").catch(() => ({})),
+    loadJson("data/detail_counties.json").catch(() => ({})),
   ]);
 
   state.panel = panel;
@@ -880,6 +882,8 @@ async function init() {
   state.metaData = meta;
   state.detailIndex = detailIndex;
   state.sourceCatalog = catalog;
+  state.detailContexts = detailContexts;
+  state.detailCounties = detailCounties;
   state.selectedCbsa = meta.detail_metro_code || panel[0]?.cbsa_code;
 
   initThemeToggle();

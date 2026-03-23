@@ -20,9 +20,9 @@ class BundleTests(unittest.TestCase):
             expected = [
                 project_root / "site" / "data" / "metro_panel.json",
                 project_root / "site" / "data" / "metro_points.geojson",
-                project_root / "site" / "data" / "detail" / "12420" / "zips.geojson",
-                project_root / "site" / "data" / "detail" / "12420" / "counties.geojson",
-                project_root / "site" / "data" / "detail" / "12420" / "context.json",
+                project_root / "site" / "data" / "detail" / "12420_zips.geojson",
+                project_root / "site" / "data" / "detail_contexts.json",
+                project_root / "site" / "data" / "detail_counties.json",
                 project_root / "site" / "data" / "detail_index.json",
                 project_root / "site" / "data" / "meta.json",
             ]

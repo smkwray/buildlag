@@ -80,14 +80,24 @@ class RealOutputContractTests(unittest.TestCase):
         supported = {entry["cbsa_code"]: entry for entry in detail_index["supported_details"]}
         self.assertIn(default_cbsa_code, supported)
 
-        default_entry = supported[default_cbsa_code]
-        for key in ["zips_path", "counties_path", "context_path"]:
-            target = project_root / "site" / default_entry[key]
-            self.assertTrue(target.exists(), f"Missing detail asset: {target}")
+        # Check consolidated files exist
+        contexts_path = project_root / "site" / "data" / "detail_contexts.json"
+        counties_path = project_root / "site" / "data" / "detail_counties.json"
+        self.assertTrue(contexts_path.exists(), "Missing consolidated detail_contexts.json")
+        self.assertTrue(counties_path.exists(), "Missing consolidated detail_counties.json")
 
-        context = json.loads((project_root / "site" / default_entry["context_path"]).read_text(encoding="utf-8"))
-        self.assertIn("detail_mode", context)
-        self.assertIn("cbsa_summary", context)
+        contexts = json.loads(contexts_path.read_text(encoding="utf-8"))
+        self.assertIn(default_cbsa_code, contexts)
+        self.assertIn("detail_mode", contexts[default_cbsa_code])
+        self.assertIn("cbsa_summary", contexts[default_cbsa_code])
+
+        counties = json.loads(counties_path.read_text(encoding="utf-8"))
+        self.assertIn(default_cbsa_code, counties)
+
+        # Check per-metro zip file exists
+        default_entry = supported[default_cbsa_code]
+        zips_target = project_root / "site" / default_entry["zips_path"]
+        self.assertTrue(zips_target.exists(), f"Missing detail zip asset: {zips_target}")
 
     def test_source_catalog_consistency(self):
         project_root = Path(__file__).resolve().parents[1]

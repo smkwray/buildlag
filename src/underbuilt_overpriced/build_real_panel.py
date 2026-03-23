@@ -338,20 +338,17 @@ def _prepare_scoring_rows(df: pd.DataFrame) -> List[dict]:
 
 def _detail_paths_for_cbsa(cbsa_code: str) -> dict:
     return {
-        "zips_path": f"data/detail/{cbsa_code}/zips.geojson",
-        "counties_path": f"data/detail/{cbsa_code}/counties.geojson",
-        "context_path": f"data/detail/{cbsa_code}/context.json",
+        "zips_path": f"data/detail/{cbsa_code}_zips.geojson",
     }
 
 
 def _write_detail_fallback(site_data_dir: Path, project_root: Path, *, detail_cbsa_code: str, detail_metro_name: str) -> dict:
     fixture_dir = project_root / "data" / "fixtures"
-    detail_dir = site_data_dir / "detail" / detail_cbsa_code
+    detail_dir = site_data_dir / "detail"
     detail_dir.mkdir(parents=True, exist_ok=True)
     austin_zip_rows = read_csv_rows(fixture_dir / "austin_zip_inputs.csv")
     austin_county_rows = read_csv_rows(fixture_dir / "austin_county_inputs.csv")
-    write_json(detail_dir / "zips.geojson", polygon_geojson(austin_zip_rows, id_field="zip_code"))
-    write_json(detail_dir / "counties.geojson", polygon_geojson(austin_county_rows, id_field="county_name"))
+    write_json(detail_dir / f"{detail_cbsa_code}_zips.geojson", polygon_geojson(austin_zip_rows, id_field="zip_code"))
 
     detail_context = {
         "detail_mode": "fixture_fallback",
@@ -364,13 +361,16 @@ def _write_detail_fallback(site_data_dir: Path, project_root: Path, *, detail_cb
         "counties": [
             {
                 "county_name": row.get("county_name"),
-                "permits_annual": row.get("permits_annual", row.get("permits_2024")),
+                "permits_annual": row.get("permits_annual"),
                 "permits_per_1000_households": row.get("permits_per_1000_households"),
             }
             for row in austin_county_rows
         ],
     }
-    write_json(detail_dir / "context.json", detail_context)
+    write_json(site_data_dir / "detail_contexts.json", {detail_cbsa_code: detail_context})
+    write_json(site_data_dir / "detail_counties.json", {
+        detail_cbsa_code: polygon_geojson(austin_county_rows, id_field="county_name"),
+    })
 
     detail_paths = _detail_paths_for_cbsa(detail_cbsa_code)
     detail_index = {
@@ -454,11 +454,11 @@ def _build_real_detail_layers(
         shutil.rmtree(detail_root)
     detail_root.mkdir(parents=True, exist_ok=True)
 
+    all_contexts: Dict[str, dict] = {}
+    all_counties: Dict[str, dict] = {}
     supported_details = []
     for cbsa_code in supported_cbsa_codes:
         metro_name = scored_by_cbsa[cbsa_code]["metro_name"]
-        detail_dir = detail_root / cbsa_code
-        detail_dir.mkdir(parents=True, exist_ok=True)
 
         safmr_selected = all_safmr[all_safmr["cbsa_code"] == cbsa_code].copy()
         zip_features = []
@@ -531,9 +531,11 @@ def _build_real_detail_layers(
             },
             "counties": county_context_rows,
         }
-        write_json(detail_dir / "zips.geojson", {"type": "FeatureCollection", "features": zip_features})
-        write_json(detail_dir / "counties.geojson", {"type": "FeatureCollection", "features": county_features})
-        write_json(detail_dir / "context.json", detail_context)
+        # Zip geojson stays per-metro (large, lazy-loaded by browser)
+        write_json(detail_root / f"{cbsa_code}_zips.geojson", {"type": "FeatureCollection", "features": zip_features})
+        # Context and counties go into consolidated dicts
+        all_contexts[cbsa_code] = detail_context
+        all_counties[cbsa_code] = {"type": "FeatureCollection", "features": county_features}
 
         supported_details.append(
             {
@@ -548,6 +550,10 @@ def _build_real_detail_layers(
 
     if not supported_details:
         raise ValueError("No detail bundles were produced from available SAFMR and geometry inputs")
+
+    # Write consolidated context and county files (small enough to load upfront)
+    write_json(site_data_dir / "detail_contexts.json", all_contexts)
+    write_json(site_data_dir / "detail_counties.json", all_counties)
 
     default_entry = next(
         (entry for entry in supported_details if entry["cbsa_code"] == default_cbsa_code),

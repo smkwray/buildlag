@@ -10,9 +10,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 65,
       "county_count": 7,
-      "zips_path": "data/detail/35380/zips.geojson",
-      "counties_path": "data/detail/35380/counties.geojson",
-      "context_path": "data/detail/35380/context.json"
+      "zips_path": "data/detail/35380_zips.geojson"
     },
     {
       "cbsa_code": "31080",
@@ -20,9 +18,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 394,
       "county_count": 2,
-      "zips_path": "data/detail/31080/zips.geojson",
-      "counties_path": "data/detail/31080/counties.geojson",
-      "context_path": "data/detail/31080/context.json"
+      "zips_path": "data/detail/31080_zips.geojson"
     },
     {
       "cbsa_code": "46520",
@@ -30,9 +26,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 38,
       "county_count": 1,
-      "zips_path": "data/detail/46520/zips.geojson",
-      "counties_path": "data/detail/46520/counties.geojson",
-      "context_path": "data/detail/46520/context.json"
+      "zips_path": "data/detail/46520_zips.geojson"
     },
     {
       "cbsa_code": "33100",
@@ -40,9 +34,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 189,
       "county_count": 3,
-      "zips_path": "data/detail/33100/zips.geojson",
-      "counties_path": "data/detail/33100/counties.geojson",
-      "context_path": "data/detail/33100/context.json"
+      "zips_path": "data/detail/33100_zips.geojson"
     },
     {
       "cbsa_code": "14860",
@@ -50,9 +42,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 52,
       "county_count": 2,
-      "zips_path": "data/detail/14860/zips.geojson",
-      "counties_path": "data/detail/14860/counties.geojson",
-      "context_path": "data/detail/14860/context.json"
+      "zips_path": "data/detail/14860_zips.geojson"
     },
     {
       "cbsa_code": "37100",
@@ -60,9 +50,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 34,
       "county_count": 1,
-      "zips_path": "data/detail/37100/zips.geojson",
-      "counties_path": "data/detail/37100/counties.geojson",
-      "context_path": "data/detail/37100/context.json"
+      "zips_path": "data/detail/37100_zips.geojson"
     },
     {
       "cbsa_code": "39300",
@@ -70,9 +58,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 114,
       "county_count": 6,
-      "zips_path": "data/detail/39300/zips.geojson",
-      "counties_path": "data/detail/39300/counties.geojson",
-      "context_path": "data/detail/39300/context.json"
+      "zips_path": "data/detail/39300_zips.geojson"
     },
     {
       "cbsa_code": "41860",
@@ -80,9 +66,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 182,
       "county_count": 5,
-      "zips_path": "data/detail/41860/zips.geojson",
-      "counties_path": "data/detail/41860/counties.geojson",
-      "context_path": "data/detail/41860/context.json"
+      "zips_path": "data/detail/41860_zips.geojson"
     },
     {
       "cbsa_code": "40380",
@@ -90,9 +74,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 125,
       "county_count": 5,
-      "zips_path": "data/detail/40380/zips.geojson",
-      "counties_path": "data/detail/40380/counties.geojson",
-      "context_path": "data/detail/40380/context.json"
+      "zips_path": "data/detail/40380_zips.geojson"
     },
     {
       "cbsa_code": "25540",
@@ -100,9 +82,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 104,
       "county_count": 2,
-      "zips_path": "data/detail/25540/zips.geojson",
-      "counties_path": "data/detail/25540/counties.geojson",
-      "context_path": "data/detail/25540/context.json"
+      "zips_path": "data/detail/25540_zips.geojson"
     },
     {
       "cbsa_code": "37980",
@@ -110,9 +90,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 404,
       "county_count": 11,
-      "zips_path": "data/detail/37980/zips.geojson",
-      "counties_path": "data/detail/37980/counties.geojson",
-      "context_path": "data/detail/37980/context.json"
+      "zips_path": "data/detail/37980_zips.geojson"
     },
     {
       "cbsa_code": "41740",
@@ -120,9 +98,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 118,
       "county_count": 1,
-      "zips_path": "data/detail/41740/zips.geojson",
-      "counties_path": "data/detail/41740/counties.geojson",
-      "context_path": "data/detail/41740/context.json"
+      "zips_path": "data/detail/41740_zips.geojson"
     },
     {
       "cbsa_code": "14460",
@@ -130,9 +106,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 305,
       "county_count": 7,
-      "zips_path": "data/detail/14460/zips.geojson",
-      "counties_path": "data/detail/14460/counties.geojson",
-      "context_path": "data/detail/14460/context.json"
+      "zips_path": "data/detail/14460_zips.geojson"
     },
     {
       "cbsa_code": "47260",
@@ -140,9 +114,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 121,
       "county_count": 18,
-      "zips_path": "data/detail/47260/zips.geojson",
-      "counties_path": "data/detail/47260/counties.geojson",
-      "context_path": "data/detail/47260/context.json"
+      "zips_path": "data/detail/47260_zips.geojson"
     },
     {
       "cbsa_code": "40140",
@@ -150,9 +122,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 169,
       "county_count": 2,
-      "zips_path": "data/detail/40140/zips.geojson",
-      "counties_path": "data/detail/40140/counties.geojson",
-      "context_path": "data/detail/40140/context.json"
+      "zips_path": "data/detail/40140_zips.geojson"
     },
     {
       "cbsa_code": "35620",
@@ -160,9 +130,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 912,
       "county_count": 22,
-      "zips_path": "data/detail/35620/zips.geojson",
-      "counties_path": "data/detail/35620/counties.geojson",
-      "context_path": "data/detail/35620/context.json"
+      "zips_path": "data/detail/35620_zips.geojson"
     },
     {
       "cbsa_code": "19820",
@@ -170,9 +138,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 234,
       "county_count": 6,
-      "zips_path": "data/detail/19820/zips.geojson",
-      "counties_path": "data/detail/19820/counties.geojson",
-      "context_path": "data/detail/19820/context.json"
+      "zips_path": "data/detail/19820_zips.geojson"
     },
     {
       "cbsa_code": "23420",
@@ -180,9 +146,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 75,
       "county_count": 2,
-      "zips_path": "data/detail/23420/zips.geojson",
-      "counties_path": "data/detail/23420/counties.geojson",
-      "context_path": "data/detail/23420/context.json"
+      "zips_path": "data/detail/23420_zips.geojson"
     },
     {
       "cbsa_code": "21340",
@@ -190,9 +154,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 31,
       "county_count": 2,
-      "zips_path": "data/detail/21340/zips.geojson",
-      "counties_path": "data/detail/21340/counties.geojson",
-      "context_path": "data/detail/21340/context.json"
+      "zips_path": "data/detail/21340_zips.geojson"
     },
     {
       "cbsa_code": "16980",
@@ -200,9 +162,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 402,
       "county_count": 13,
-      "zips_path": "data/detail/16980/zips.geojson",
-      "counties_path": "data/detail/16980/counties.geojson",
-      "context_path": "data/detail/16980/context.json"
+      "zips_path": "data/detail/16980_zips.geojson"
     },
     {
       "cbsa_code": "12580",
@@ -210,9 +170,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 174,
       "county_count": 7,
-      "zips_path": "data/detail/12580/zips.geojson",
-      "counties_path": "data/detail/12580/counties.geojson",
-      "context_path": "data/detail/12580/context.json"
+      "zips_path": "data/detail/12580_zips.geojson"
     },
     {
       "cbsa_code": "10900",
@@ -220,9 +178,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 105,
       "county_count": 4,
-      "zips_path": "data/detail/10900/zips.geojson",
-      "counties_path": "data/detail/10900/counties.geojson",
-      "context_path": "data/detail/10900/context.json"
+      "zips_path": "data/detail/10900_zips.geojson"
     },
     {
       "cbsa_code": "45300",
@@ -230,9 +186,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 143,
       "county_count": 4,
-      "zips_path": "data/detail/45300/zips.geojson",
-      "counties_path": "data/detail/45300/counties.geojson",
-      "context_path": "data/detail/45300/context.json"
+      "zips_path": "data/detail/45300_zips.geojson"
     },
     {
       "cbsa_code": "15380",
@@ -240,9 +194,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 98,
       "county_count": 2,
-      "zips_path": "data/detail/15380/zips.geojson",
-      "counties_path": "data/detail/15380/counties.geojson",
-      "context_path": "data/detail/15380/context.json"
+      "zips_path": "data/detail/15380_zips.geojson"
     },
     {
       "cbsa_code": "49340",
@@ -250,9 +202,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 83,
       "county_count": 1,
-      "zips_path": "data/detail/49340/zips.geojson",
-      "counties_path": "data/detail/49340/counties.geojson",
-      "context_path": "data/detail/49340/context.json"
+      "zips_path": "data/detail/49340_zips.geojson"
     },
     {
       "cbsa_code": "12540",
@@ -260,9 +210,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 55,
       "county_count": 1,
-      "zips_path": "data/detail/12540/zips.geojson",
-      "counties_path": "data/detail/12540/counties.geojson",
-      "context_path": "data/detail/12540/context.json"
+      "zips_path": "data/detail/12540_zips.geojson"
     },
     {
       "cbsa_code": "32820",
@@ -270,9 +218,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 80,
       "county_count": 9,
-      "zips_path": "data/detail/32820/zips.geojson",
-      "counties_path": "data/detail/32820/counties.geojson",
-      "context_path": "data/detail/32820/context.json"
+      "zips_path": "data/detail/32820_zips.geojson"
     },
     {
       "cbsa_code": "40900",
@@ -280,9 +226,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 134,
       "county_count": 4,
-      "zips_path": "data/detail/40900/zips.geojson",
-      "counties_path": "data/detail/40900/counties.geojson",
-      "context_path": "data/detail/40900/context.json"
+      "zips_path": "data/detail/40900_zips.geojson"
     },
     {
       "cbsa_code": "10580",
@@ -290,9 +234,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 133,
       "county_count": 5,
-      "zips_path": "data/detail/10580/zips.geojson",
-      "counties_path": "data/detail/10580/counties.geojson",
-      "context_path": "data/detail/10580/context.json"
+      "zips_path": "data/detail/10580_zips.geojson"
     },
     {
       "cbsa_code": "41940",
@@ -300,9 +242,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 64,
       "county_count": 2,
-      "zips_path": "data/detail/41940/zips.geojson",
-      "counties_path": "data/detail/41940/counties.geojson",
-      "context_path": "data/detail/41940/context.json"
+      "zips_path": "data/detail/41940_zips.geojson"
     },
     {
       "cbsa_code": "29820",
@@ -310,9 +250,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 76,
       "county_count": 1,
-      "zips_path": "data/detail/29820/zips.geojson",
-      "counties_path": "data/detail/29820/counties.geojson",
-      "context_path": "data/detail/29820/context.json"
+      "zips_path": "data/detail/29820_zips.geojson"
     },
     {
       "cbsa_code": "36740",
@@ -320,9 +258,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 106,
       "county_count": 4,
-      "zips_path": "data/detail/36740/zips.geojson",
-      "counties_path": "data/detail/36740/counties.geojson",
-      "context_path": "data/detail/36740/context.json"
+      "zips_path": "data/detail/36740_zips.geojson"
     },
     {
       "cbsa_code": "10740",
@@ -330,9 +266,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 64,
       "county_count": 4,
-      "zips_path": "data/detail/10740/zips.geojson",
-      "counties_path": "data/detail/10740/counties.geojson",
-      "context_path": "data/detail/10740/context.json"
+      "zips_path": "data/detail/10740_zips.geojson"
     },
     {
       "cbsa_code": "38900",
@@ -340,9 +274,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 134,
       "county_count": 7,
-      "zips_path": "data/detail/38900/zips.geojson",
-      "counties_path": "data/detail/38900/counties.geojson",
-      "context_path": "data/detail/38900/context.json"
+      "zips_path": "data/detail/38900_zips.geojson"
     },
     {
       "cbsa_code": "19430",
@@ -350,9 +282,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 77,
       "county_count": 3,
-      "zips_path": "data/detail/19430/zips.geojson",
-      "counties_path": "data/detail/19430/counties.geojson",
-      "context_path": "data/detail/19430/context.json"
+      "zips_path": "data/detail/19430_zips.geojson"
     },
     {
       "cbsa_code": "35840",
@@ -360,9 +290,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 46,
       "county_count": 2,
-      "zips_path": "data/detail/35840/zips.geojson",
-      "counties_path": "data/detail/35840/counties.geojson",
-      "context_path": "data/detail/35840/context.json"
+      "zips_path": "data/detail/35840_zips.geojson"
     },
     {
       "cbsa_code": "42660",
@@ -370,9 +298,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 176,
       "county_count": 3,
-      "zips_path": "data/detail/42660/zips.geojson",
-      "counties_path": "data/detail/42660/counties.geojson",
-      "context_path": "data/detail/42660/context.json"
+      "zips_path": "data/detail/42660_zips.geojson"
     },
     {
       "cbsa_code": "38300",
@@ -380,9 +306,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 365,
       "county_count": 8,
-      "zips_path": "data/detail/38300/zips.geojson",
-      "counties_path": "data/detail/38300/counties.geojson",
-      "context_path": "data/detail/38300/context.json"
+      "zips_path": "data/detail/38300_zips.geojson"
     },
     {
       "cbsa_code": "46060",
@@ -390,9 +314,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 56,
       "county_count": 1,
-      "zips_path": "data/detail/46060/zips.geojson",
-      "counties_path": "data/detail/46060/counties.geojson",
-      "context_path": "data/detail/46060/context.json"
+      "zips_path": "data/detail/46060_zips.geojson"
     },
     {
       "cbsa_code": "12940",
@@ -400,9 +322,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 90,
       "county_count": 10,
-      "zips_path": "data/detail/12940/zips.geojson",
-      "counties_path": "data/detail/12940/counties.geojson",
-      "context_path": "data/detail/12940/context.json"
+      "zips_path": "data/detail/12940_zips.geojson"
     },
     {
       "cbsa_code": "27260",
@@ -410,9 +330,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 63,
       "county_count": 5,
-      "zips_path": "data/detail/27260/zips.geojson",
-      "counties_path": "data/detail/27260/counties.geojson",
-      "context_path": "data/detail/27260/context.json"
+      "zips_path": "data/detail/27260_zips.geojson"
     },
     {
       "cbsa_code": "33340",
@@ -420,9 +338,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 90,
       "county_count": 4,
-      "zips_path": "data/detail/33340/zips.geojson",
-      "counties_path": "data/detail/33340/counties.geojson",
-      "context_path": "data/detail/33340/context.json"
+      "zips_path": "data/detail/33340_zips.geojson"
     },
     {
       "cbsa_code": "40060",
@@ -430,9 +346,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 116,
       "county_count": 17,
-      "zips_path": "data/detail/40060/zips.geojson",
-      "counties_path": "data/detail/40060/counties.geojson",
-      "context_path": "data/detail/40060/context.json"
+      "zips_path": "data/detail/40060_zips.geojson"
     },
     {
       "cbsa_code": "12060",
@@ -440,9 +354,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 221,
       "county_count": 29,
-      "zips_path": "data/detail/12060/zips.geojson",
-      "counties_path": "data/detail/12060/counties.geojson",
-      "context_path": "data/detail/12060/context.json"
+      "zips_path": "data/detail/12060_zips.geojson"
     },
     {
       "cbsa_code": "15980",
@@ -450,9 +362,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 38,
       "county_count": 1,
-      "zips_path": "data/detail/15980/zips.geojson",
-      "counties_path": "data/detail/15980/counties.geojson",
-      "context_path": "data/detail/15980/context.json"
+      "zips_path": "data/detail/15980_zips.geojson"
     },
     {
       "cbsa_code": "17140",
@@ -460,9 +370,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 188,
       "county_count": 15,
-      "zips_path": "data/detail/17140/zips.geojson",
-      "counties_path": "data/detail/17140/counties.geojson",
-      "context_path": "data/detail/17140/context.json"
+      "zips_path": "data/detail/17140_zips.geojson"
     },
     {
       "cbsa_code": "19740",
@@ -470,9 +378,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 152,
       "county_count": 10,
-      "zips_path": "data/detail/19740/zips.geojson",
-      "counties_path": "data/detail/19740/counties.geojson",
-      "context_path": "data/detail/19740/context.json"
+      "zips_path": "data/detail/19740_zips.geojson"
     },
     {
       "cbsa_code": "41700",
@@ -480,9 +386,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 111,
       "county_count": 8,
-      "zips_path": "data/detail/41700/zips.geojson",
-      "counties_path": "data/detail/41700/counties.geojson",
-      "context_path": "data/detail/41700/context.json"
+      "zips_path": "data/detail/41700_zips.geojson"
     },
     {
       "cbsa_code": "17900",
@@ -490,9 +394,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 57,
       "county_count": 6,
-      "zips_path": "data/detail/17900/zips.geojson",
-      "counties_path": "data/detail/17900/counties.geojson",
-      "context_path": "data/detail/17900/context.json"
+      "zips_path": "data/detail/17900_zips.geojson"
     },
     {
       "cbsa_code": "29460",
@@ -500,9 +402,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 45,
       "county_count": 1,
-      "zips_path": "data/detail/29460/zips.geojson",
-      "counties_path": "data/detail/29460/counties.geojson",
-      "context_path": "data/detail/29460/context.json"
+      "zips_path": "data/detail/29460_zips.geojson"
     },
     {
       "cbsa_code": "41180",
@@ -510,9 +410,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 243,
       "county_count": 15,
-      "zips_path": "data/detail/41180/zips.geojson",
-      "counties_path": "data/detail/41180/counties.geojson",
-      "context_path": "data/detail/41180/context.json"
+      "zips_path": "data/detail/41180_zips.geojson"
     },
     {
       "cbsa_code": "24340",
@@ -520,9 +418,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 72,
       "county_count": 5,
-      "zips_path": "data/detail/24340/zips.geojson",
-      "counties_path": "data/detail/24340/counties.geojson",
-      "context_path": "data/detail/24340/context.json"
+      "zips_path": "data/detail/24340_zips.geojson"
     },
     {
       "cbsa_code": "38060",
@@ -530,9 +426,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 170,
       "county_count": 2,
-      "zips_path": "data/detail/38060/zips.geojson",
-      "counties_path": "data/detail/38060/counties.geojson",
-      "context_path": "data/detail/38060/context.json"
+      "zips_path": "data/detail/38060_zips.geojson"
     },
     {
       "cbsa_code": "47900",
@@ -540,9 +434,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 349,
       "county_count": 23,
-      "zips_path": "data/detail/47900/zips.geojson",
-      "counties_path": "data/detail/47900/counties.geojson",
-      "context_path": "data/detail/47900/context.json"
+      "zips_path": "data/detail/47900_zips.geojson"
     },
     {
       "cbsa_code": "13820",
@@ -550,9 +442,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 113,
       "county_count": 7,
-      "zips_path": "data/detail/13820/zips.geojson",
-      "counties_path": "data/detail/13820/counties.geojson",
-      "context_path": "data/detail/13820/context.json"
+      "zips_path": "data/detail/13820_zips.geojson"
     },
     {
       "cbsa_code": "26420",
@@ -560,9 +450,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 240,
       "county_count": 10,
-      "zips_path": "data/detail/26420/zips.geojson",
-      "counties_path": "data/detail/26420/counties.geojson",
-      "context_path": "data/detail/26420/context.json"
+      "zips_path": "data/detail/26420_zips.geojson"
     },
     {
       "cbsa_code": "31140",
@@ -570,9 +458,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 117,
       "county_count": 12,
-      "zips_path": "data/detail/31140/zips.geojson",
-      "counties_path": "data/detail/31140/counties.geojson",
-      "context_path": "data/detail/31140/context.json"
+      "zips_path": "data/detail/31140_zips.geojson"
     },
     {
       "cbsa_code": "16700",
@@ -580,9 +466,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 51,
       "county_count": 3,
-      "zips_path": "data/detail/16700/zips.geojson",
-      "counties_path": "data/detail/16700/counties.geojson",
-      "context_path": "data/detail/16700/context.json"
+      "zips_path": "data/detail/16700_zips.geojson"
     },
     {
       "cbsa_code": "19100",
@@ -590,9 +474,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 288,
       "county_count": 11,
-      "zips_path": "data/detail/19100/zips.geojson",
-      "counties_path": "data/detail/19100/counties.geojson",
-      "context_path": "data/detail/19100/context.json"
+      "zips_path": "data/detail/19100_zips.geojson"
     },
     {
       "cbsa_code": "33460",
@@ -600,9 +482,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 236,
       "county_count": 15,
-      "zips_path": "data/detail/33460/zips.geojson",
-      "counties_path": "data/detail/33460/counties.geojson",
-      "context_path": "data/detail/33460/context.json"
+      "zips_path": "data/detail/33460_zips.geojson"
     },
     {
       "cbsa_code": "28940",
@@ -610,9 +490,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 62,
       "county_count": 9,
-      "zips_path": "data/detail/28940/zips.geojson",
-      "counties_path": "data/detail/28940/counties.geojson",
-      "context_path": "data/detail/28940/context.json"
+      "zips_path": "data/detail/28940_zips.geojson"
     },
     {
       "cbsa_code": "26900",
@@ -620,9 +498,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 140,
       "county_count": 11,
-      "zips_path": "data/detail/26900/zips.geojson",
-      "counties_path": "data/detail/26900/counties.geojson",
-      "context_path": "data/detail/26900/context.json"
+      "zips_path": "data/detail/26900_zips.geojson"
     },
     {
       "cbsa_code": "34980",
@@ -630,9 +506,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 104,
       "county_count": 14,
-      "zips_path": "data/detail/34980/zips.geojson",
-      "counties_path": "data/detail/34980/counties.geojson",
-      "context_path": "data/detail/34980/context.json"
+      "zips_path": "data/detail/34980_zips.geojson"
     },
     {
       "cbsa_code": "16740",
@@ -640,9 +514,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 92,
       "county_count": 11,
-      "zips_path": "data/detail/16740/zips.geojson",
-      "counties_path": "data/detail/16740/counties.geojson",
-      "context_path": "data/detail/16740/context.json"
+      "zips_path": "data/detail/16740_zips.geojson"
     },
     {
       "cbsa_code": "46140",
@@ -650,9 +522,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 97,
       "county_count": 7,
-      "zips_path": "data/detail/46140/zips.geojson",
-      "counties_path": "data/detail/46140/counties.geojson",
-      "context_path": "data/detail/46140/context.json"
+      "zips_path": "data/detail/46140_zips.geojson"
     },
     {
       "cbsa_code": "41620",
@@ -660,9 +530,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 42,
       "county_count": 2,
-      "zips_path": "data/detail/41620/zips.geojson",
-      "counties_path": "data/detail/41620/counties.geojson",
-      "context_path": "data/detail/41620/context.json"
+      "zips_path": "data/detail/41620_zips.geojson"
     },
     {
       "cbsa_code": "28140",
@@ -670,9 +538,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 221,
       "county_count": 14,
-      "zips_path": "data/detail/28140/zips.geojson",
-      "counties_path": "data/detail/28140/counties.geojson",
-      "context_path": "data/detail/28140/context.json"
+      "zips_path": "data/detail/28140_zips.geojson"
     },
     {
       "cbsa_code": "18140",
@@ -680,9 +546,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 133,
       "county_count": 10,
-      "zips_path": "data/detail/18140/zips.geojson",
-      "counties_path": "data/detail/18140/counties.geojson",
-      "context_path": "data/detail/18140/context.json"
+      "zips_path": "data/detail/18140_zips.geojson"
     },
     {
       "cbsa_code": "36420",
@@ -690,9 +554,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 104,
       "county_count": 7,
-      "zips_path": "data/detail/36420/zips.geojson",
-      "counties_path": "data/detail/36420/counties.geojson",
-      "context_path": "data/detail/36420/context.json"
+      "zips_path": "data/detail/36420_zips.geojson"
     },
     {
       "cbsa_code": "14260",
@@ -700,9 +562,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 46,
       "county_count": 5,
-      "zips_path": "data/detail/14260/zips.geojson",
-      "counties_path": "data/detail/14260/counties.geojson",
-      "context_path": "data/detail/14260/context.json"
+      "zips_path": "data/detail/14260_zips.geojson"
     },
     {
       "cbsa_code": "32580",
@@ -710,9 +570,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 31,
       "county_count": 1,
-      "zips_path": "data/detail/32580/zips.geojson",
-      "counties_path": "data/detail/32580/counties.geojson",
-      "context_path": "data/detail/32580/context.json"
+      "zips_path": "data/detail/32580_zips.geojson"
     },
     {
       "cbsa_code": "24860",
@@ -720,9 +578,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 49,
       "county_count": 4,
-      "zips_path": "data/detail/24860/zips.geojson",
-      "counties_path": "data/detail/24860/counties.geojson",
-      "context_path": "data/detail/24860/context.json"
+      "zips_path": "data/detail/24860_zips.geojson"
     },
     {
       "cbsa_code": "12420",
@@ -730,9 +586,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 104,
       "county_count": 5,
-      "zips_path": "data/detail/12420/zips.geojson",
-      "counties_path": "data/detail/12420/counties.geojson",
-      "context_path": "data/detail/12420/context.json"
+      "zips_path": "data/detail/12420_zips.geojson"
     },
     {
       "cbsa_code": "36540",
@@ -740,9 +594,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 125,
       "county_count": 8,
-      "zips_path": "data/detail/36540/zips.geojson",
-      "counties_path": "data/detail/36540/counties.geojson",
-      "context_path": "data/detail/36540/context.json"
+      "zips_path": "data/detail/36540_zips.geojson"
     },
     {
       "cbsa_code": "39580",
@@ -750,9 +602,7 @@
       "detail_mode": "real_safmr_zcta",
       "zip_count": 64,
       "county_count": 3,
-      "zips_path": "data/detail/39580/zips.geojson",
-      "counties_path": "data/detail/39580/counties.geojson",
-      "context_path": "data/detail/39580/context.json"
+      "zips_path": "data/detail/39580_zips.geojson"
     }
   ]
 }
