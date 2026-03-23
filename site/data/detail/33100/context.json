@@ -17,7 +17,7 @@
       "state_name": "Florida",
       "population": 1977129,
       "households": 753956,
-      "permits_2024": 1655,
+      "permits_annual": 1655,
       "permits_per_1000_households": 2.2,
       "median_household_income": 77633,
       "rent_burdened_share_pct": 55.4
@@ -28,7 +28,7 @@
       "state_name": "Florida",
       "population": 2738356,
       "households": 975411,
-      "permits_2024": 10608,
+      "permits_annual": 10608,
       "permits_per_1000_households": 10.88,
       "median_household_income": 71753,
       "rent_burdened_share_pct": 55.0
@@ -39,7 +39,7 @@
       "state_name": "Florida",
       "population": 1533806,
       "households": 605430,
-      "permits_2024": 4089,
+      "permits_annual": 4089,
       "permits_per_1000_households": 6.75,
       "median_household_income": 83581,
       "rent_burdened_share_pct": 52.9

@@ -17,7 +17,7 @@
       "state_name": "Oregon",
       "population": 423975,
       "households": 163845,
-      "permits_2024": 1140,
+      "permits_annual": 1140,
       "permits_per_1000_households": 6.96,
       "median_household_income": 103517,
       "rent_burdened_share_pct": 44.6
@@ -28,7 +28,7 @@
       "state_name": "Washington",
       "population": 516959,
       "households": 196017,
-      "permits_2024": 3594,
+      "permits_annual": 3594,
       "permits_per_1000_households": 18.34,
       "median_household_income": 97536,
       "rent_burdened_share_pct": 40.7
@@ -39,7 +39,7 @@
       "state_name": "Oregon",
       "population": 53493,
       "households": 20928,
-      "permits_2024": 55,
+      "permits_annual": 55,
       "permits_per_1000_households": 2.63,
       "median_household_income": 87458,
       "rent_burdened_share_pct": 45.0
@@ -50,7 +50,7 @@
       "state_name": "Oregon",
       "population": 801477,
       "households": 349803,
-      "permits_2024": 2040,
+      "permits_annual": 2040,
       "permits_per_1000_households": 5.83,
       "median_household_income": 88766,
       "rent_burdened_share_pct": 43.7
@@ -61,7 +61,7 @@
       "state_name": "Washington",
       "population": 12402,
       "households": 5019,
-      "permits_2024": 35,
+      "permits_annual": 35,
       "permits_per_1000_households": 6.97,
       "median_household_income": 93265,
       "rent_burdened_share_pct": 37.0
@@ -72,7 +72,7 @@
       "state_name": "Oregon",
       "population": 603947,
       "households": 235406,
-      "permits_2024": 2273,
+      "permits_annual": 2273,
       "permits_per_1000_households": 9.66,
       "median_household_income": 107772,
       "rent_burdened_share_pct": 39.1
@@ -83,7 +83,7 @@
       "state_name": "Oregon",
       "population": 108734,
       "households": 39247,
-      "permits_2024": 316,
+      "permits_annual": 316,
       "permits_per_1000_households": 8.05,
       "median_household_income": 90063,
       "rent_burdened_share_pct": 46.3

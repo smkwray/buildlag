@@ -17,7 +17,7 @@
       "state_name": "Alabama",
       "population": 22130,
       "households": 7704,
-      "permits_2024": 16,
+      "permits_annual": 16,
       "permits_per_1000_households": 2.08,
       "median_household_income": 52541,
       "rent_burdened_share_pct": 46.4
@@ -28,7 +28,7 @@
       "state_name": "Alabama",
       "population": 59518,
       "households": 22180,
-      "permits_2024": 17,
+      "permits_annual": 17,
       "permits_per_1000_households": 0.77,
       "median_household_income": 64190,
       "rent_burdened_share_pct": 36.8
@@ -39,7 +39,7 @@
       "state_name": "Alabama",
       "population": 45992,
       "households": 17875,
-      "permits_2024": 25,
+      "permits_annual": 25,
       "permits_per_1000_households": 1.4,
       "median_household_income": 65603,
       "rent_burdened_share_pct": 31.5
@@ -50,7 +50,7 @@
       "state_name": "Alabama",
       "population": 667755,
       "households": 269883,
-      "permits_2024": 2117,
+      "permits_annual": 2117,
       "permits_per_1000_households": 7.84,
       "median_household_income": 66388,
       "rent_burdened_share_pct": 43.5
@@ -61,7 +61,7 @@
       "state_name": "Alabama",
       "population": 230211,
       "households": 86866,
-      "permits_2024": 990,
+      "permits_annual": 990,
       "permits_per_1000_households": 11.4,
       "median_household_income": 97961,
       "rent_burdened_share_pct": 38.4
@@ -72,7 +72,7 @@
       "state_name": "Alabama",
       "population": 94166,
       "households": 35107,
-      "permits_2024": 543,
+      "permits_annual": 543,
       "permits_per_1000_households": 15.47,
       "median_household_income": 77463,
       "rent_burdened_share_pct": 32.9
@@ -83,7 +83,7 @@
       "state_name": "Alabama",
       "population": 64841,
       "households": 25388,
-      "permits_2024": 38,
+      "permits_annual": 38,
       "permits_per_1000_households": 1.5,
       "median_household_income": 56509,
       "rent_burdened_share_pct": 30.7

@@ -3,17 +3,16 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from .acs import AcsVintage, fetch_acs_context
-from .build_real_panel import build_real_panel
-from .bundle import build_fixture_bundle
-from .fetch_real_sources import fetch_real_sources
+
+
 
 
 def project_root() -> Path:
     return Path(__file__).resolve().parents[2]
 
 
-def main() -> None:
+def build_parser() -> argparse.ArgumentParser:
+    """Create the CLI argument parser. Importable for testing."""
     parser = argparse.ArgumentParser(description="Underbuilt vs. Overpriced Atlas helper CLI")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
@@ -50,6 +49,16 @@ def main() -> None:
         help="Allow fixture-data fallback if real detail layers fail (marks build as invalid for deploy).",
     )
 
+    return parser
+
+
+def main() -> None:
+    from .acs import AcsVintage, fetch_acs_context
+    from .build_real_panel import build_real_panel
+    from .bundle import build_fixture_bundle
+    from .fetch_real_sources import fetch_real_sources
+
+    parser = build_parser()
     args = parser.parse_args()
 
     if args.command == "build-real-panel" and args.top_n < 1:

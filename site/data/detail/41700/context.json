@@ -17,7 +17,7 @@
       "state_name": "Texas",
       "population": 51008,
       "households": 16786,
-      "permits_2024": 220,
+      "permits_annual": 220,
       "permits_per_1000_households": 13.11,
       "median_household_income": 70770,
       "rent_burdened_share_pct": 40.2
@@ -28,7 +28,7 @@
       "state_name": "Texas",
       "population": 22021,
       "households": 9255,
-      "permits_2024": 2,
+      "permits_annual": 2,
       "permits_per_1000_households": 0.22,
       "median_household_income": 75813,
       "rent_burdened_share_pct": 24.8
@@ -39,7 +39,7 @@
       "state_name": "Texas",
       "population": 2067341,
       "households": 750939,
-      "permits_2024": 8349,
+      "permits_annual": 8349,
       "permits_per_1000_households": 11.12,
       "median_household_income": 72341,
       "rent_burdened_share_pct": 44.2
@@ -50,7 +50,7 @@
       "state_name": "Texas",
       "population": 183826,
       "households": 71354,
-      "permits_2024": 3430,
+      "permits_annual": 3430,
       "permits_per_1000_households": 48.07,
       "median_household_income": 101889,
       "rent_burdened_share_pct": 38.5
@@ -61,7 +61,7 @@
       "state_name": "Texas",
       "population": 183642,
       "households": 65424,
-      "permits_2024": 2062,
+      "permits_annual": 2062,
       "permits_per_1000_households": 31.52,
       "median_household_income": 92375,
       "rent_burdened_share_pct": 38.0
@@ -72,7 +72,7 @@
       "state_name": "Texas",
       "population": 48567,
       "households": 17741,
-      "permits_2024": 560,
+      "permits_annual": 560,
       "permits_per_1000_households": 31.57,
       "median_household_income": 114962,
       "rent_burdened_share_pct": 49.6
@@ -83,7 +83,7 @@
       "state_name": "Texas",
       "population": 53547,
       "households": 17804,
-      "permits_2024": 100,
+      "permits_annual": 100,
       "permits_per_1000_households": 5.62,
       "median_household_income": 78074,
       "rent_burdened_share_pct": 38.2
@@ -94,7 +94,7 @@
       "state_name": "Texas",
       "population": 52781,
       "households": 18185,
-      "permits_2024": 134,
+      "permits_annual": 134,
       "permits_per_1000_households": 7.37,
       "median_household_income": 94565,
       "rent_burdened_share_pct": 36.6

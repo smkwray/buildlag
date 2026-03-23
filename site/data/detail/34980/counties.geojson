@@ -889,7 +889,7 @@
         "state_name": "Tennessee",
         "population": 14818,
         "households": 5776,
-        "permits_2024": 157,
+        "permits_annual": 157,
         "permits_per_1000_households": 27.18,
         "median_household_income": 59443,
         "rent_burdened_share_pct": 33.6
@@ -2221,7 +2221,7 @@
         "state_name": "Tennessee",
         "population": 41829,
         "households": 16279,
-        "permits_2024": 275,
+        "permits_annual": 275,
         "permits_per_1000_households": 16.89,
         "median_household_income": 89852,
         "rent_burdened_share_pct": 39.7
@@ -3889,7 +3889,7 @@
         "state_name": "Tennessee",
         "population": 715388,
         "households": 324907,
-        "permits_2024": 6880,
+        "permits_annual": 6880,
         "permits_per_1000_households": 21.18,
         "median_household_income": 77853,
         "rent_burdened_share_pct": 43.2
@@ -5001,7 +5001,7 @@
         "state_name": "Tennessee",
         "population": 55983,
         "households": 21757,
-        "permits_2024": 376,
+        "permits_annual": 376,
         "permits_per_1000_households": 17.28,
         "median_household_income": 75003,
         "rent_burdened_share_pct": 25.0
@@ -6279,7 +6279,7 @@
         "state_name": "Tennessee",
         "population": 25436,
         "households": 9435,
-        "permits_2024": 124,
+        "permits_annual": 124,
         "permits_per_1000_households": 13.14,
         "median_household_income": 68247,
         "rent_burdened_share_pct": 31.3
@@ -6689,7 +6689,7 @@
         "state_name": "Tennessee",
         "population": 26240,
         "households": 9421,
-        "permits_2024": 181,
+        "permits_annual": 181,
         "permits_per_1000_households": 19.21,
         "median_household_income": 59177,
         "rent_burdened_share_pct": 27.1
@@ -8275,7 +8275,7 @@
         "state_name": "Tennessee",
         "population": 107791,
         "households": 42306,
-        "permits_2024": 1672,
+        "permits_annual": 1672,
         "permits_per_1000_households": 39.52,
         "median_household_income": 76130,
         "rent_burdened_share_pct": 38.7
@@ -9601,7 +9601,7 @@
         "state_name": "Tennessee",
         "population": 75539,
         "households": 28255,
-        "permits_2024": 983,
+        "permits_annual": 983,
         "permits_per_1000_households": 34.79,
         "median_household_income": 83047,
         "rent_burdened_share_pct": 40.4
@@ -11883,7 +11883,7 @@
         "state_name": "Tennessee",
         "population": 360646,
         "households": 129431,
-        "permits_2024": 3420,
+        "permits_annual": 3420,
         "permits_per_1000_households": 26.42,
         "median_household_income": 85470,
         "rent_burdened_share_pct": 39.7
@@ -13273,7 +13273,7 @@
         "state_name": "Tennessee",
         "population": 20389,
         "households": 7932,
-        "permits_2024": 159,
+        "permits_annual": 159,
         "permits_per_1000_households": 20.05,
         "median_household_income": 66293,
         "rent_burdened_share_pct": 28.9
@@ -14759,7 +14759,7 @@
         "state_name": "Tennessee",
         "population": 204424,
         "households": 78582,
-        "permits_2024": 1778,
+        "permits_annual": 1778,
         "permits_per_1000_households": 22.63,
         "median_household_income": 90301,
         "rent_burdened_share_pct": 39.1
@@ -15373,7 +15373,7 @@
         "state_name": "Tennessee",
         "population": 11957,
         "households": 3700,
-        "permits_2024": 112,
+        "permits_annual": 112,
         "permits_per_1000_households": 30.27,
         "median_household_income": 72747,
         "rent_burdened_share_pct": 37.3
@@ -16663,7 +16663,7 @@
         "state_name": "Tennessee",
         "population": 260351,
         "households": 92214,
-        "permits_2024": 1994,
+        "permits_annual": 1994,
         "permits_per_1000_households": 21.62,
         "median_household_income": 135594,
         "rent_burdened_share_pct": 38.5
@@ -18559,7 +18559,7 @@
         "state_name": "Tennessee",
         "population": 158805,
         "households": 59139,
-        "permits_2024": 1927,
+        "permits_annual": 1927,
         "permits_per_1000_households": 32.58,
         "median_household_income": 95839,
         "rent_burdened_share_pct": 36.9

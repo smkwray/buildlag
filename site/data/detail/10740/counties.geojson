@@ -545,7 +545,7 @@
         "state_name": "New Mexico",
         "population": 673930,
         "households": 285495,
-        "permits_2024": 1316,
+        "permits_annual": 1316,
         "permits_per_1000_households": 4.61,
         "median_household_income": 69473,
         "rent_burdened_share_pct": 43.5
@@ -1645,7 +1645,7 @@
         "state_name": "New Mexico",
         "population": 153604,
         "households": 56895,
-        "permits_2024": 1278,
+        "permits_annual": 1278,
         "permits_per_1000_households": 22.46,
         "median_household_income": 86636,
         "rent_burdened_share_pct": 40.3
@@ -1987,7 +1987,7 @@
         "state_name": "New Mexico",
         "population": 15490,
         "households": 6052,
-        "permits_2024": 0,
+        "permits_annual": 0,
         "permits_per_1000_households": 0.0,
         "median_household_income": 57842,
         "rent_burdened_share_pct": 30.7
@@ -2345,7 +2345,7 @@
         "state_name": "New Mexico",
         "population": 78458,
         "households": 27583,
-        "permits_2024": 282,
+        "permits_annual": 282,
         "permits_per_1000_households": 10.22,
         "median_household_income": 58933,
         "rent_burdened_share_pct": 43.1

@@ -17,7 +17,7 @@
       "state_name": "Oklahoma",
       "population": 72830,
       "households": 28246,
-      "permits_2024": 193,
+      "permits_annual": 193,
       "permits_per_1000_households": 6.83,
       "median_household_income": 62338,
       "rent_burdened_share_pct": 33.4
@@ -28,7 +28,7 @@
       "state_name": "Oklahoma",
       "population": 36899,
       "households": 14246,
-      "permits_2024": 12,
+      "permits_annual": 12,
       "permits_per_1000_households": 0.84,
       "median_household_income": 54029,
       "rent_burdened_share_pct": 39.0
@@ -39,7 +39,7 @@
       "state_name": "Oklahoma",
       "population": 45997,
       "households": 17374,
-      "permits_2024": 89,
+      "permits_annual": 89,
       "permits_per_1000_households": 5.12,
       "median_household_income": 62847,
       "rent_burdened_share_pct": 37.6
@@ -50,7 +50,7 @@
       "state_name": "Oklahoma",
       "population": 15795,
       "households": 6108,
-      "permits_2024": 0,
+      "permits_annual": 0,
       "permits_per_1000_households": 0.0,
       "median_household_income": 58738,
       "rent_burdened_share_pct": 34.5
@@ -61,7 +61,7 @@
       "state_name": "Oklahoma",
       "population": 98610,
       "households": 36672,
-      "permits_2024": 618,
+      "permits_annual": 618,
       "permits_per_1000_households": 16.85,
       "median_household_income": 80067,
       "rent_burdened_share_pct": 32.2
@@ -72,7 +72,7 @@
       "state_name": "Oklahoma",
       "population": 680794,
       "households": 272422,
-      "permits_2024": 2818,
+      "permits_annual": 2818,
       "permits_per_1000_households": 10.34,
       "median_household_income": 69009,
       "rent_burdened_share_pct": 36.7
@@ -83,7 +83,7 @@
       "state_name": "Oklahoma",
       "population": 86609,
       "households": 31379,
-      "permits_2024": 581,
+      "permits_annual": 581,
       "permits_per_1000_households": 18.52,
       "median_household_income": 81207,
       "rent_burdened_share_pct": 33.4

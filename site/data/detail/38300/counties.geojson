@@ -1341,7 +1341,7 @@
         "state_name": "Pennsylvania",
         "population": 1238177,
         "households": 545802,
-        "permits_2024": 2999,
+        "permits_annual": 2999,
         "permits_per_1000_households": 5.49,
         "median_household_income": 78548,
         "rent_burdened_share_pct": 37.4
@@ -3043,7 +3043,7 @@
         "state_name": "Pennsylvania",
         "population": 64622,
         "households": 28035,
-        "permits_2024": 57,
+        "permits_annual": 57,
         "permits_per_1000_households": 2.03,
         "median_household_income": 65008,
         "rent_burdened_share_pct": 31.8
@@ -3629,7 +3629,7 @@
         "state_name": "Pennsylvania",
         "population": 166324,
         "households": 72257,
-        "permits_2024": 267,
+        "permits_annual": 267,
         "permits_per_1000_households": 3.7,
         "median_household_income": 71089,
         "rent_burdened_share_pct": 33.0
@@ -4115,7 +4115,7 @@
         "state_name": "Pennsylvania",
         "population": 197254,
         "households": 80824,
-        "permits_2024": 976,
+        "permits_annual": 976,
         "permits_per_1000_households": 12.08,
         "median_household_income": 89843,
         "rent_burdened_share_pct": 32.6
@@ -6257,7 +6257,7 @@
         "state_name": "Pennsylvania",
         "population": 125997,
         "households": 55182,
-        "permits_2024": 189,
+        "permits_annual": 189,
         "permits_per_1000_households": 3.43,
         "median_household_income": 58236,
         "rent_burdened_share_pct": 35.2
@@ -6623,7 +6623,7 @@
         "state_name": "Pennsylvania",
         "population": 85024,
         "households": 36121,
-        "permits_2024": 60,
+        "permits_annual": 60,
         "permits_per_1000_households": 1.66,
         "median_household_income": 61931,
         "rent_burdened_share_pct": 37.6
@@ -8557,7 +8557,7 @@
         "state_name": "Pennsylvania",
         "population": 210042,
         "households": 88505,
-        "permits_2024": 450,
+        "permits_annual": 450,
         "permits_per_1000_households": 5.08,
         "median_household_income": 78958,
         "rent_burdened_share_pct": 31.8
@@ -12315,7 +12315,7 @@
         "state_name": "Pennsylvania",
         "population": 352500,
         "households": 154979,
-        "permits_2024": 414,
+        "permits_annual": 414,
         "permits_per_1000_households": 2.67,
         "median_household_income": 74109,
         "rent_burdened_share_pct": 32.7

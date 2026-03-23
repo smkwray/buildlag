@@ -17,7 +17,7 @@
       "state_name": "South Carolina",
       "population": 246802,
       "households": 93711,
-      "permits_2024": 3169,
+      "permits_annual": 3169,
       "permits_per_1000_households": 33.82,
       "median_household_income": 84358,
       "rent_burdened_share_pct": 42.7
@@ -28,7 +28,7 @@
       "state_name": "South Carolina",
       "population": 420264,
       "households": 178975,
-      "permits_2024": 4153,
+      "permits_annual": 4153,
       "permits_per_1000_households": 23.2,
       "median_household_income": 88494,
       "rent_burdened_share_pct": 44.8
@@ -39,7 +39,7 @@
       "state_name": "South Carolina",
       "population": 167201,
       "households": 63179,
-      "permits_2024": 1192,
+      "permits_annual": 1192,
       "permits_per_1000_households": 18.87,
       "median_household_income": 78198,
       "rent_burdened_share_pct": 46.0

@@ -17,7 +17,7 @@
       "state_name": "Arizona",
       "population": 1060490,
       "households": 437827,
-      "permits_2024": 5250,
+      "permits_annual": 5250,
       "permits_per_1000_households": 11.99,
       "median_household_income": 70315,
       "rent_burdened_share_pct": 44.1

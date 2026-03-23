@@ -17,7 +17,7 @@
       "state_name": "Louisiana",
       "population": 130314,
       "households": 47656,
-      "permits_2024": 531,
+      "permits_annual": 531,
       "permits_per_1000_households": 11.14,
       "median_household_income": 91549,
       "rent_burdened_share_pct": 36.5
@@ -28,7 +28,7 @@
       "state_name": "Louisiana",
       "population": 20484,
       "households": 8830,
-      "permits_2024": 29,
+      "permits_annual": 29,
       "permits_per_1000_households": 3.28,
       "median_household_income": 51423,
       "rent_burdened_share_pct": 53.3
@@ -39,7 +39,7 @@
       "state_name": "Louisiana",
       "population": 452938,
       "households": 177295,
-      "permits_2024": 2305,
+      "permits_annual": 2305,
       "permits_per_1000_households": 13.0,
       "median_household_income": 63071,
       "rent_burdened_share_pct": 48.0
@@ -50,7 +50,7 @@
       "state_name": "Louisiana",
       "population": 19271,
       "households": 6401,
-      "permits_2024": 17,
+      "permits_annual": 17,
       "permits_per_1000_households": 2.66,
       "median_household_income": 73085,
       "rent_burdened_share_pct": 37.5
@@ -61,7 +61,7 @@
       "state_name": "Louisiana",
       "population": 29815,
       "households": 11296,
-      "permits_2024": 85,
+      "permits_annual": 85,
       "permits_per_1000_households": 7.52,
       "median_household_income": 54000,
       "rent_burdened_share_pct": 41.1
@@ -72,7 +72,7 @@
       "state_name": "Louisiana",
       "population": 148115,
       "households": 53596,
-      "permits_2024": 634,
+      "permits_annual": 634,
       "permits_per_1000_households": 11.83,
       "median_household_income": 80122,
       "rent_burdened_share_pct": 41.8
@@ -83,7 +83,7 @@
       "state_name": "Louisiana",
       "population": 20217,
       "households": 8335,
-      "permits_2024": 60,
+      "permits_annual": 60,
       "permits_per_1000_households": 7.2,
       "median_household_income": 65961,
       "rent_burdened_share_pct": 52.3
@@ -94,7 +94,7 @@
       "state_name": "Louisiana",
       "population": 10858,
       "households": 4176,
-      "permits_2024": 12,
+      "permits_annual": 12,
       "permits_per_1000_households": 2.87,
       "median_household_income": 41934,
       "rent_burdened_share_pct": 24.1
@@ -105,7 +105,7 @@
       "state_name": "Louisiana",
       "population": 27974,
       "households": 10974,
-      "permits_2024": 88,
+      "permits_annual": 88,
       "permits_per_1000_households": 8.02,
       "median_household_income": 87299,
       "rent_burdened_share_pct": 36.1
@@ -116,7 +116,7 @@
       "state_name": "Louisiana",
       "population": 15327,
       "households": 4026,
-      "permits_2024": 45,
+      "permits_annual": 45,
       "permits_per_1000_households": 11.18,
       "median_household_income": 77452,
       "rent_burdened_share_pct": 62.1

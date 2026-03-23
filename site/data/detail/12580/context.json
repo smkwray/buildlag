@@ -17,7 +17,7 @@
       "state_name": "Maryland",
       "population": 598166,
       "households": 224748,
-      "permits_2024": 1304,
+      "permits_annual": 1304,
       "permits_per_1000_households": 5.8,
       "median_household_income": 124911,
       "rent_burdened_share_pct": 38.7
@@ -28,7 +28,7 @@
       "state_name": "Maryland",
       "population": 850796,
       "households": 332801,
-      "permits_2024": 1511,
+      "permits_annual": 1511,
       "permits_per_1000_households": 4.54,
       "median_household_income": 91768,
       "rent_burdened_share_pct": 44.8
@@ -39,7 +39,7 @@
       "state_name": "Maryland",
       "population": 573243,
       "households": 255668,
-      "permits_2024": 1273,
+      "permits_annual": 1273,
       "permits_per_1000_households": 4.98,
       "median_household_income": 62177,
       "rent_burdened_share_pct": 44.6
@@ -50,7 +50,7 @@
       "state_name": "Maryland",
       "population": 175321,
       "households": 64285,
-      "permits_2024": 156,
+      "permits_annual": 156,
       "permits_per_1000_households": 2.43,
       "median_household_income": 118211,
       "rent_burdened_share_pct": 40.9
@@ -61,7 +61,7 @@
       "state_name": "Maryland",
       "population": 263757,
       "households": 101795,
-      "permits_2024": 803,
+      "permits_annual": 803,
       "permits_per_1000_households": 7.89,
       "median_household_income": 112265,
       "rent_burdened_share_pct": 39.2
@@ -72,7 +72,7 @@
       "state_name": "Maryland",
       "population": 336328,
       "households": 121065,
-      "permits_2024": 881,
+      "permits_annual": 881,
       "permits_per_1000_households": 7.28,
       "median_household_income": 149763,
       "rent_burdened_share_pct": 38.7
@@ -83,7 +83,7 @@
       "state_name": "Maryland",
       "population": 51825,
       "households": 19907,
-      "permits_2024": 356,
+      "permits_annual": 356,
       "permits_per_1000_households": 17.88,
       "median_household_income": 112826,
       "rent_burdened_share_pct": 46.0

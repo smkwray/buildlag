@@ -17,7 +17,7 @@
       "state_name": "Michigan",
       "population": 88837,
       "households": 34836,
-      "permits_2024": 149,
+      "permits_annual": 149,
       "permits_per_1000_households": 4.28,
       "median_household_income": 77306,
       "rent_burdened_share_pct": 41.6
@@ -28,7 +28,7 @@
       "state_name": "Michigan",
       "population": 195833,
       "households": 76445,
-      "permits_2024": 488,
+      "permits_annual": 488,
       "permits_per_1000_households": 6.38,
       "median_household_income": 103039,
       "rent_burdened_share_pct": 38.4
@@ -39,7 +39,7 @@
       "state_name": "Michigan",
       "population": 879853,
       "households": 358668,
-      "permits_2024": 1317,
+      "permits_annual": 1317,
       "permits_per_1000_households": 3.67,
       "median_household_income": 77837,
       "rent_burdened_share_pct": 40.5
@@ -50,7 +50,7 @@
       "state_name": "Michigan",
       "population": 1279825,
       "households": 530460,
-      "permits_2024": 2886,
+      "permits_annual": 2886,
       "permits_per_1000_households": 5.44,
       "median_household_income": 97760,
       "rent_burdened_share_pct": 36.6
@@ -61,7 +61,7 @@
       "state_name": "Michigan",
       "population": 160221,
       "households": 67816,
-      "permits_2024": 235,
+      "permits_annual": 235,
       "permits_per_1000_households": 3.47,
       "median_household_income": 71270,
       "rent_burdened_share_pct": 44.7
@@ -72,7 +72,7 @@
       "state_name": "Michigan",
       "population": 1772259,
       "households": 700591,
-      "permits_2024": 2629,
+      "permits_annual": 2629,
       "permits_per_1000_households": 3.75,
       "median_household_income": 60539,
       "rent_burdened_share_pct": 45.3

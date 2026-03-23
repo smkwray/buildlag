@@ -961,7 +961,7 @@
         "state_name": "New York",
         "population": 317018,
         "households": 134703,
-        "permits_2024": 741,
+        "permits_annual": 741,
         "permits_per_1000_households": 5.5,
         "median_household_income": 85333,
         "rent_burdened_share_pct": 37.2
@@ -1875,7 +1875,7 @@
         "state_name": "New York",
         "population": 160332,
         "households": 66686,
-        "permits_2024": 320,
+        "permits_annual": 320,
         "permits_per_1000_households": 4.8,
         "median_household_income": 87915,
         "rent_burdened_share_pct": 38.8
@@ -3781,7 +3781,7 @@
         "state_name": "New York",
         "population": 238284,
         "households": 101911,
-        "permits_2024": 1112,
+        "permits_annual": 1112,
         "permits_per_1000_households": 10.91,
         "median_household_income": 100787,
         "rent_burdened_share_pct": 33.2
@@ -4447,7 +4447,7 @@
         "state_name": "New York",
         "population": 160369,
         "households": 66902,
-        "permits_2024": 154,
+        "permits_annual": 154,
         "permits_per_1000_households": 2.3,
         "median_household_income": 79623,
         "rent_burdened_share_pct": 44.4
@@ -5397,7 +5397,7 @@
         "state_name": "New York",
         "population": 30049,
         "households": 12861,
-        "permits_2024": 39,
+        "permits_annual": 39,
         "permits_per_1000_households": 3.03,
         "median_household_income": 70133,
         "rent_burdened_share_pct": 38.5

@@ -973,7 +973,7 @@
         "state_name": "Pennsylvania",
         "population": 65382,
         "households": 27255,
-        "permits_2024": 157,
+        "permits_annual": 157,
         "permits_per_1000_households": 5.76,
         "median_household_income": 67554,
         "rent_burdened_share_pct": 36.7
@@ -1647,7 +1647,7 @@
         "state_name": "Pennsylvania",
         "population": 378792,
         "households": 144386,
-        "permits_2024": 1062,
+        "permits_annual": 1062,
         "permits_per_1000_households": 7.36,
         "median_household_income": 80079,
         "rent_burdened_share_pct": 44.9
@@ -2965,7 +2965,7 @@
         "state_name": "Pennsylvania",
         "population": 318580,
         "households": 122624,
-        "permits_2024": 546,
+        "permits_annual": 546,
         "permits_per_1000_households": 4.45,
         "median_household_income": 89184,
         "rent_burdened_share_pct": 40.7
@@ -4691,7 +4691,7 @@
         "state_name": "New Jersey",
         "population": 110849,
         "households": 45391,
-        "permits_2024": 720,
+        "permits_annual": 720,
         "permits_per_1000_households": 15.86,
         "median_household_income": 100869,
         "rent_burdened_share_pct": 40.3

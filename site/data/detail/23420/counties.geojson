@@ -7049,7 +7049,7 @@
         "state_name": "California",
         "population": 1016725,
         "households": 324702,
-        "permits_2024": 2439,
+        "permits_annual": 2439,
         "permits_per_1000_households": 7.51,
         "median_household_income": 74201,
         "rent_burdened_share_pct": 46.1
@@ -11263,7 +11263,7 @@
         "state_name": "California",
         "population": 160940,
         "households": 45379,
-        "permits_2024": 1343,
+        "permits_annual": 1343,
         "permits_per_1000_households": 29.6,
         "median_household_income": 76627,
         "rent_burdened_share_pct": 47.2

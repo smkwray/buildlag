@@ -57,7 +57,7 @@ sources:
 
   metro_delineation:
     page: https://www.census.gov/geographies/reference-files/time-series/demo/metro-micro/delineation-files.html
-    county_to_cbsa_file: https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2023/delineation-files/list2_2023.xlsx
+    county_to_cbsa_file: https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2023/delineation-files/list1_2023.xlsx
     intended_use:
       - county_to_cbsa_crosswalk
 

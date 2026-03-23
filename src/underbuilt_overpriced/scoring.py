@@ -44,7 +44,7 @@ def bucket_for_score(score: float) -> str:
 
 def enrich_rows(rows: MutableSequence[dict]) -> MutableSequence[dict]:
     permits_per_1000 = [
-        safe_ratio(float(row["permits_2024"]), float(row["households_2024"])) * 1000.0
+        safe_ratio(float(row["permits_annual"]), float(row["households"])) * 1000.0
         for row in rows
     ]
     fmr_to_income = [

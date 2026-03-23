@@ -7,15 +7,15 @@ class ScoringTests(unittest.TestCase):
     def test_scores_stay_in_bounds(self):
         rows = [
             {
-                "permits_2024": "1000",
-                "households_2024": "100000",
+                "permits_annual": "1000",
+                "households": "100000",
                 "fmr_2br": "1500",
                 "median_household_income": "60000",
                 "rent_burdened_share_pct": "20",
             },
             {
-                "permits_2024": "500",
-                "households_2024": "100000",
+                "permits_annual": "500",
+                "households": "100000",
                 "fmr_2br": "2500",
                 "median_household_income": "60000",
                 "rent_burdened_share_pct": "35",
@@ -29,15 +29,15 @@ class ScoringTests(unittest.TestCase):
     def test_higher_permits_reduce_underbuilt_component(self):
         rows = [
             {
-                "permits_2024": "100",
-                "households_2024": "100000",
+                "permits_annual": "100",
+                "households": "100000",
                 "fmr_2br": "1500",
                 "median_household_income": "70000",
                 "rent_burdened_share_pct": "20",
             },
             {
-                "permits_2024": "5000",
-                "households_2024": "100000",
+                "permits_annual": "5000",
+                "households": "100000",
                 "fmr_2br": "1500",
                 "median_household_income": "70000",
                 "rent_burdened_share_pct": "20",

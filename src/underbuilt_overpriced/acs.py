@@ -149,6 +149,7 @@ def fetch_acs_metro_context(raw_dir: Path, *, year: int = 2024, force: bool = Fa
             "year": year,
             "variables_profile": ACS_PROFILE_VARS,
             "variables_base": ACS_BASE_VARS,
+            "query_urls": [profile_url, base_url],
             "rows": merged,
         },
     )
@@ -227,6 +228,7 @@ def fetch_acs_county_context(raw_dir: Path, *, year: int = 2024, force: bool = F
             "year": year,
             "variables_profile": ACS_PROFILE_VARS,
             "variables_base": ACS_BASE_VARS,
+            "query_urls": [profile_url, base_url],
             "rows": merged,
         },
     )
@@ -256,18 +258,28 @@ def fetch_acs_context(raw_dir: Path, *, vintage: AcsVintage | None = None, force
     county_path = fetch_acs_county_context(raw_dir, year=selected.county_acs5_year, force=force)
     project_root = raw_dir.parent.parent
 
+    metro_year = selected.metro_acs1_year
+    county_year = selected.county_acs5_year
     manifest = {
         "metro": {
             "dataset": "acs1",
-            "year": selected.metro_acs1_year,
+            "year": metro_year,
             "json_path": str(metro_path.relative_to(project_root)),
             "csv_path": str(metro_path.with_suffix(".csv").relative_to(project_root)),
+            "query_urls": [
+                f"{CENSUS_API_BASE}/{metro_year}/acs/acs1/profile?get=NAME,{','.join(ACS_PROFILE_VARS)}&for=metropolitan%20statistical%20area/micropolitan%20statistical%20area:*",
+                f"{CENSUS_API_BASE}/{metro_year}/acs/acs1?get=NAME,{','.join(ACS_BASE_VARS)}&for=metropolitan%20statistical%20area/micropolitan%20statistical%20area:*",
+            ],
         },
         "county": {
             "dataset": "acs5",
-            "year": selected.county_acs5_year,
+            "year": county_year,
             "json_path": str(county_path.relative_to(project_root)),
             "csv_path": str(county_path.with_suffix(".csv").relative_to(project_root)),
+            "query_urls": [
+                f"{CENSUS_API_BASE}/{county_year}/acs/acs5/profile?get=NAME,{','.join(ACS_PROFILE_VARS)}&for=county:*",
+                f"{CENSUS_API_BASE}/{county_year}/acs/acs5?get=NAME,{','.join(ACS_BASE_VARS)}&for=county:*",
+            ],
         },
     }
     manifest_path = raw_dir / "acs" / "manifest.json"

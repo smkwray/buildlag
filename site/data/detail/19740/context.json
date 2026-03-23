@@ -17,7 +17,7 @@
       "state_name": "Colorado",
       "population": 530225,
       "households": 188730,
-      "permits_2024": 2371,
+      "permits_annual": 2371,
       "permits_per_1000_households": 12.56,
       "median_household_income": 94571,
       "rent_burdened_share_pct": 45.8
@@ -28,7 +28,7 @@
       "state_name": "Colorado",
       "population": 659844,
       "households": 257232,
-      "permits_2024": 3856,
+      "permits_annual": 3856,
       "permits_per_1000_households": 14.99,
       "median_household_income": 101087,
       "rent_burdened_share_pct": 45.4
@@ -39,7 +39,7 @@
       "state_name": "Colorado",
       "population": 76304,
       "households": 31760,
-      "permits_2024": 405,
+      "permits_annual": 405,
       "permits_per_1000_households": 12.75,
       "median_household_income": 123874,
       "rent_burdened_share_pct": 35.3
@@ -50,7 +50,7 @@
       "state_name": "Colorado",
       "population": 9262,
       "households": 4677,
-      "permits_2024": 19,
+      "permits_annual": 19,
       "permits_per_1000_households": 4.06,
       "median_household_income": 94577,
       "rent_burdened_share_pct": 36.5
@@ -61,7 +61,7 @@
       "state_name": "Colorado",
       "population": 718877,
       "households": 335428,
-      "permits_2024": 3994,
+      "permits_annual": 3994,
       "permits_per_1000_households": 11.91,
       "median_household_income": 94718,
       "rent_burdened_share_pct": 37.8
@@ -72,7 +72,7 @@
       "state_name": "Colorado",
       "population": 377150,
       "households": 139960,
-      "permits_2024": 3131,
+      "permits_annual": 3131,
       "permits_per_1000_households": 22.37,
       "median_household_income": 149594,
       "rent_burdened_share_pct": 41.2
@@ -83,7 +83,7 @@
       "state_name": "Colorado",
       "population": 27874,
       "households": 10004,
-      "permits_2024": 458,
+      "permits_annual": 458,
       "permits_per_1000_households": 45.78,
       "median_household_income": 132685,
       "rent_burdened_share_pct": 32.5
@@ -94,7 +94,7 @@
       "state_name": "Colorado",
       "population": 5901,
       "households": 3122,
-      "permits_2024": 24,
+      "permits_annual": 24,
       "permits_per_1000_households": 7.69,
       "median_household_income": 95361,
       "rent_burdened_share_pct": 33.2
@@ -105,7 +105,7 @@
       "state_name": "Colorado",
       "population": 579377,
       "households": 241735,
-      "permits_2024": 1172,
+      "permits_annual": 1172,
       "permits_per_1000_households": 4.85,
       "median_household_income": 110656,
       "rent_burdened_share_pct": 42.5
@@ -116,7 +116,7 @@
       "state_name": "Colorado",
       "population": 17907,
       "households": 8988,
-      "permits_2024": 140,
+      "permits_annual": 140,
       "permits_per_1000_households": 15.58,
       "median_household_income": 103670,
       "rent_burdened_share_pct": 28.7

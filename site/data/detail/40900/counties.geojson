@@ -3745,7 +3745,7 @@
         "state_name": "California",
         "population": 192662,
         "households": 76185,
-        "permits_2024": 437,
+        "permits_annual": 437,
         "permits_per_1000_households": 5.74,
         "median_household_income": 108845,
         "rent_burdened_share_pct": 44.9
@@ -7303,7 +7303,7 @@
         "state_name": "California",
         "population": 419156,
         "households": 157954,
-        "permits_2024": 3713,
+        "permits_annual": 3713,
         "permits_per_1000_households": 23.51,
         "median_household_income": 115998,
         "rent_burdened_share_pct": 48.2
@@ -9993,7 +9993,7 @@
         "state_name": "California",
         "population": 1594006,
         "households": 571057,
-        "permits_2024": 6747,
+        "permits_annual": 6747,
         "permits_per_1000_households": 11.81,
         "median_household_income": 92175,
         "rent_burdened_share_pct": 46.3
@@ -13071,7 +13071,7 @@
         "state_name": "California",
         "population": 220564,
         "households": 76693,
-        "permits_2024": 716,
+        "permits_annual": 716,
         "permits_per_1000_households": 9.34,
         "median_household_income": 91752,
         "rent_burdened_share_pct": 51.4

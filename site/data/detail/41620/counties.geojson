@@ -2577,7 +2577,7 @@
         "state_name": "Utah",
         "population": 1196523,
         "households": 426245,
-        "permits_2024": 4550,
+        "permits_annual": 4550,
         "permits_per_1000_households": 10.67,
         "median_household_income": 97494,
         "rent_burdened_share_pct": 38.5
@@ -4531,7 +4531,7 @@
         "state_name": "Utah",
         "population": 79347,
         "households": 23925,
-        "permits_2024": 897,
+        "permits_annual": 897,
         "permits_per_1000_households": 37.49,
         "median_household_income": 106587,
         "rent_burdened_share_pct": 23.7

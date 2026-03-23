@@ -1973,7 +1973,7 @@
         "state_name": "Texas",
         "population": 891977,
         "households": 270210,
-        "permits_2024": 7292,
+        "permits_annual": 7292,
         "permits_per_1000_households": 26.99,
         "median_household_income": 54338,
         "rent_burdened_share_pct": 40.7

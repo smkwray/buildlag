@@ -17,7 +17,7 @@
       "state_name": "Texas",
       "population": 1163337,
       "households": 416646,
-      "permits_2024": 18813,
+      "permits_annual": 18813,
       "permits_per_1000_households": 45.15,
       "median_household_income": 121600,
       "rent_burdened_share_pct": 37.4
@@ -28,7 +28,7 @@
       "state_name": "Texas",
       "population": 2621179,
       "households": 982737,
-      "permits_2024": 12711,
+      "permits_annual": 12711,
       "permits_per_1000_households": 12.93,
       "median_household_income": 76547,
       "rent_burdened_share_pct": 42.7
@@ -39,7 +39,7 @@
       "state_name": "Texas",
       "population": 979561,
       "households": 360392,
-      "permits_2024": 10507,
+      "permits_annual": 10507,
       "permits_per_1000_households": 29.15,
       "median_household_income": 111498,
       "rent_burdened_share_pct": 41.3
@@ -50,7 +50,7 @@
       "state_name": "Texas",
       "population": 213160,
       "households": 71759,
-      "permits_2024": 2972,
+      "permits_annual": 2972,
       "permits_per_1000_households": 41.42,
       "median_household_income": 99595,
       "rent_burdened_share_pct": 42.5
@@ -61,7 +61,7 @@
       "state_name": "Texas",
       "population": 108972,
       "households": 38466,
-      "permits_2024": 1287,
+      "permits_annual": 1287,
       "permits_per_1000_households": 33.46,
       "median_household_income": 71938,
       "rent_burdened_share_pct": 38.6
@@ -72,7 +72,7 @@
       "state_name": "Texas",
       "population": 195597,
       "households": 65507,
-      "permits_2024": 2183,
+      "permits_annual": 2183,
       "permits_per_1000_households": 33.32,
       "median_household_income": 84859,
       "rent_burdened_share_pct": 42.8
@@ -83,7 +83,7 @@
       "state_name": "Texas",
       "population": 172604,
       "households": 50990,
-      "permits_2024": 1745,
+      "permits_annual": 1745,
       "permits_per_1000_households": 34.22,
       "median_household_income": 89485,
       "rent_burdened_share_pct": 44.0
@@ -94,7 +94,7 @@
       "state_name": "Texas",
       "population": 165168,
       "households": 56437,
-      "permits_2024": 439,
+      "permits_annual": 439,
       "permits_per_1000_households": 7.78,
       "median_household_income": 104443,
       "rent_burdened_share_pct": 43.6
@@ -105,7 +105,7 @@
       "state_name": "Texas",
       "population": 123617,
       "households": 41237,
-      "permits_2024": 1810,
+      "permits_annual": 1810,
       "permits_per_1000_households": 43.89,
       "median_household_income": 127981,
       "rent_burdened_share_pct": 42.4
@@ -116,7 +116,7 @@
       "state_name": "Texas",
       "population": 2167390,
       "households": 782419,
-      "permits_2024": 18858,
+      "permits_annual": 18858,
       "permits_per_1000_households": 24.1,
       "median_household_income": 84207,
       "rent_burdened_share_pct": 45.5
@@ -127,7 +127,7 @@
       "state_name": "Texas",
       "population": 75005,
       "households": 25135,
-      "permits_2024": 463,
+      "permits_annual": 463,
       "permits_per_1000_households": 18.42,
       "median_household_income": 93421,
       "rent_burdened_share_pct": 30.9

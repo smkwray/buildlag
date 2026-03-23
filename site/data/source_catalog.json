@@ -27,27 +27,33 @@
     },
     {
       "id": "census_bps_cbsa_annual_2024",
-      "name": "BPS annual CBSA file pattern",
+      "name": "BPS 2024 annual CBSA file",
       "url": "https://www.census.gov/construction/bps/xls/cbsaannual_202499.xls",
       "purpose": "Top-metro annual permit totals."
     },
     {
-      "id": "acs_api_docs",
-      "name": "ACS API docs",
-      "url": "https://www.census.gov/programs-surveys/acs/data/data-via-api.html",
-      "purpose": "Programmatic ACS extraction."
+      "id": "acs1_metro_profile_2024",
+      "name": "ACS 1-year 2024 metro profile query",
+      "url": "https://api.census.gov/data/2024/acs/acs1/profile?get=NAME,DP03_0062E,DP04_0001E,DP04_0046E,DP04_0134E,DP04_0142PE&for=metropolitan%20statistical%20area/micropolitan%20statistical%20area:*",
+      "purpose": "Metro-level income, housing, and rent burden data."
     },
     {
-      "id": "acs_acs1_profile_examples",
-      "name": "ACS 1-year profile examples",
-      "url": "https://api.census.gov/data/2024/acs/acs1/profile/examples.html",
-      "purpose": "Geography and endpoint examples for metro pulls."
+      "id": "acs1_metro_base_2024",
+      "name": "ACS 1-year 2024 metro base query",
+      "url": "https://api.census.gov/data/2024/acs/acs1?get=NAME,B01003_001E,B11001_001E&for=metropolitan%20statistical%20area/micropolitan%20statistical%20area:*",
+      "purpose": "Metro-level population and household counts."
     },
     {
-      "id": "acs_geography_examples",
-      "name": "ACS 1-year geography list",
-      "url": "https://api.census.gov/data/2024/acs/acs1/geography.html",
-      "purpose": "Confirms metro geography support in ACS 1-year."
+      "id": "acs5_county_profile_2024",
+      "name": "ACS 5-year 2024 county profile query",
+      "url": "https://api.census.gov/data/2024/acs/acs5/profile?get=NAME,DP03_0062E,DP04_0001E,DP04_0046E,DP04_0134E,DP04_0142PE&for=county:*",
+      "purpose": "County-level income, housing, and rent burden data."
+    },
+    {
+      "id": "acs5_county_base_2024",
+      "name": "ACS 5-year 2024 county base query",
+      "url": "https://api.census.gov/data/2024/acs/acs5?get=NAME,B01003_001E,B11001_001E&for=county:*",
+      "purpose": "County-level population and household counts."
     },
     {
       "id": "hud_fmr_docs",
@@ -74,16 +80,16 @@
       "purpose": "ZIP-level selected-metro detail layer."
     },
     {
-      "id": "delineation_2023_list2",
-      "name": "Census county-to-CBSA delineation file",
-      "url": "https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2023/delineation-files/list2_2023.xlsx",
-      "purpose": "County-to-CBSA rollup."
+      "id": "delineation_2023_list1",
+      "name": "Census county-to-CBSA crosswalk (List 1)",
+      "url": "https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2023/delineation-files/list1_2023.xlsx",
+      "purpose": "County-to-CBSA membership crosswalk used for county rollups."
     },
     {
-      "id": "delineation_2023_list1",
-      "name": "Census county-to-CBSA (List 1) file",
-      "url": "https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2023/delineation-files/list1_2023.xlsx",
-      "purpose": "County-level CBSA membership crosswalk."
+      "id": "delineation_2023_list2",
+      "name": "Census CBSA principal cities (List 2)",
+      "url": "https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2023/delineation-files/list2_2023.xlsx",
+      "purpose": "Principal-city membership within each CBSA."
     },
     {
       "id": "metro_population_2024",
@@ -99,7 +105,7 @@
     },
     {
       "id": "census_bps_county_annual_2024",
-      "name": "BPS county annual file",
+      "name": "BPS 2024 county annual file",
       "url": "https://www2.census.gov/econ/bps/County/co2024a.txt",
       "purpose": "County-level annual permit counts for county-year workflows."
     },

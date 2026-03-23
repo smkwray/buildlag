@@ -322,11 +322,8 @@ def _prepare_scoring_rows(df: pd.DataFrame) -> List[dict]:
                 "lat": round(float(row["lat"]), 6),
                 "lon": round(float(row["lon"]), 6),
                 "population": int(round(float(row["population"]))),
-                "population_2024": int(round(float(row["population"]))),
                 "households": int(round(float(row["households"]))),
-                "households_2024": int(round(float(row["households"]))),
                 "permits_annual": int(round(float(row["permits_annual"]))),
-                "permits_2024": int(round(float(row["permits_annual"]))),
                 "hud_fmr_2br": int(round(float(row["hud_fmr_2br"]))),
                 "fmr_2br": int(round(float(row["hud_fmr_2br"]))),
                 "median_household_income": int(round(float(row["median_household_income"]))),
@@ -367,7 +364,7 @@ def _write_detail_fallback(site_data_dir: Path, project_root: Path, *, detail_cb
         "counties": [
             {
                 "county_name": row.get("county_name"),
-                "permits_2024": row.get("permits_2024"),
+                "permits_annual": row.get("permits_annual", row.get("permits_2024")),
                 "permits_per_1000_households": row.get("permits_per_1000_households"),
             }
             for row in austin_county_rows
@@ -504,7 +501,7 @@ def _build_real_detail_layers(
                 "state_name": row.get("state_name"),
                 "population": int(round(_as_float(row.get("population")))) if pd.notna(row.get("population")) else None,
                 "households": int(round(_as_float(row.get("households")))) if pd.notna(row.get("households")) else None,
-                "permits_2024": int(round(_as_float(row.get("permits_annual_county")))),
+                "permits_annual": int(round(_as_float(row.get("permits_annual_county")))),
                 "permits_per_1000_households": round(float(permits_per_1000), 2) if pd.notna(permits_per_1000) else None,
                 "median_household_income": int(round(_as_float(row.get("median_household_income")))) if pd.notna(row.get("median_household_income")) else None,
                 "rent_burdened_share_pct": round(float(row.get("rent_burdened_share_pct")), 1) if pd.notna(row.get("rent_burdened_share_pct")) else None,
@@ -661,11 +658,8 @@ def build_real_panel(
         "lat",
         "lon",
         "population",
-        "population_2024",
         "households",
-        "households_2024",
         "permits_annual",
-        "permits_2024",
         "hud_fmr_2br",
         "fmr_2br",
         "median_household_income",

@@ -4787,7 +4787,7 @@
         "state_name": "Washington",
         "population": 2287171,
         "households": 941054,
-        "permits_2024": 10564,
+        "permits_annual": 10564,
         "permits_per_1000_households": 11.23,
         "median_household_income": 124746,
         "rent_burdened_share_pct": 37.5
@@ -10811,7 +10811,7 @@
         "state_name": "Washington",
         "population": 930319,
         "households": 351330,
-        "permits_2024": 3207,
+        "permits_annual": 3207,
         "permits_per_1000_households": 9.13,
         "median_household_income": 99564,
         "rent_burdened_share_pct": 42.6
@@ -13319,7 +13319,7 @@
         "state_name": "Washington",
         "population": 844430,
         "households": 316212,
-        "permits_2024": 4149,
+        "permits_annual": 4149,
         "permits_per_1000_households": 13.12,
         "median_household_income": 111246,
         "rent_burdened_share_pct": 41.9

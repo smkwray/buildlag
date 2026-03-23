@@ -1641,7 +1641,7 @@
         "state_name": "Virginia",
         "population": 13462,
         "households": 5417,
-        "permits_2024": 60,
+        "permits_annual": 60,
         "permits_per_1000_households": 11.08,
         "median_household_income": 76717,
         "rent_burdened_share_pct": 29.6
@@ -3223,7 +3223,7 @@
         "state_name": "Virginia",
         "population": 6627,
         "households": 2911,
-        "permits_2024": 30,
+        "permits_annual": 30,
         "permits_per_1000_households": 10.31,
         "median_household_income": 75417,
         "rent_burdened_share_pct": 40.8
@@ -5617,7 +5617,7 @@
         "state_name": "Virginia",
         "population": 377869,
         "households": 140155,
-        "permits_2024": 2307,
+        "permits_annual": 2307,
         "permits_per_1000_households": 16.46,
         "median_household_income": 101931,
         "rent_burdened_share_pct": 41.9
@@ -5971,7 +5971,7 @@
         "state_name": "Virginia",
         "population": 18352,
         "households": 7530,
-        "permits_2024": 17,
+        "permits_annual": 17,
         "permits_per_1000_households": 2.26,
         "median_household_income": 76505,
         "rent_burdened_share_pct": 40.4
@@ -7477,7 +7477,7 @@
         "state_name": "Virginia",
         "population": 28191,
         "households": 10661,
-        "permits_2024": 82,
+        "permits_annual": 82,
         "permits_per_1000_households": 7.69,
         "median_household_income": 83704,
         "rent_burdened_share_pct": 39.1
@@ -9005,7 +9005,7 @@
         "state_name": "Virginia",
         "population": 26410,
         "households": 10342,
-        "permits_2024": 322,
+        "permits_annual": 322,
         "permits_per_1000_households": 31.14,
         "median_household_income": 118931,
         "rent_burdened_share_pct": 29.9
@@ -11971,7 +11971,7 @@
         "state_name": "Virginia",
         "population": 112879,
         "households": 42688,
-        "permits_2024": 447,
+        "permits_annual": 447,
         "permits_per_1000_households": 10.47,
         "median_household_income": 112805,
         "rent_burdened_share_pct": 38.6
@@ -14633,7 +14633,7 @@
         "state_name": "Virginia",
         "population": 335744,
         "households": 137365,
-        "permits_2024": 1826,
+        "permits_annual": 1826,
         "permits_per_1000_households": 13.29,
         "median_household_income": 88783,
         "rent_burdened_share_pct": 41.7
@@ -15023,7 +15023,7 @@
         "state_name": "Virginia",
         "population": 22959,
         "households": 9255,
-        "permits_2024": 42,
+        "permits_annual": 42,
         "permits_per_1000_households": 4.54,
         "median_household_income": 54729,
         "rent_burdened_share_pct": 43.6
@@ -18097,7 +18097,7 @@
         "state_name": "Virginia",
         "population": 18593,
         "households": 7352,
-        "permits_2024": 129,
+        "permits_annual": 129,
         "permits_per_1000_households": 17.55,
         "median_household_income": 86056,
         "rent_burdened_share_pct": 44.6
@@ -20943,7 +20943,7 @@
         "state_name": "Virginia",
         "population": 6695,
         "households": 3003,
-        "permits_2024": 36,
+        "permits_annual": 36,
         "permits_per_1000_households": 11.99,
         "median_household_income": 70469,
         "rent_burdened_share_pct": 39.7
@@ -23149,7 +23149,7 @@
         "state_name": "Virginia",
         "population": 25105,
         "households": 9263,
-        "permits_2024": 453,
+        "permits_annual": 453,
         "permits_per_1000_households": 48.9,
         "median_household_income": 123314,
         "rent_burdened_share_pct": 31.2
@@ -23575,7 +23575,7 @@
         "state_name": "Virginia",
         "population": 33537,
         "households": 15138,
-        "permits_2024": 135,
+        "permits_annual": 135,
         "permits_per_1000_households": 8.92,
         "median_household_income": 50698,
         "rent_burdened_share_pct": 42.9
@@ -24845,7 +24845,7 @@
         "state_name": "Virginia",
         "population": 31555,
         "households": 11325,
-        "permits_2024": 115,
+        "permits_annual": 115,
         "permits_per_1000_households": 10.15,
         "median_household_income": 110537,
         "rent_burdened_share_pct": 35.7
@@ -26031,7 +26031,7 @@
         "state_name": "Virginia",
         "population": 43146,
         "households": 12919,
-        "permits_2024": 72,
+        "permits_annual": 72,
         "permits_per_1000_households": 5.57,
         "median_household_income": 84897,
         "rent_burdened_share_pct": 31.2
@@ -27005,7 +27005,7 @@
         "state_name": "Virginia",
         "population": 229359,
         "households": 104321,
-        "permits_2024": 2540,
+        "permits_annual": 2540,
         "permits_per_1000_households": 24.35,
         "median_household_income": 64587,
         "rent_burdened_share_pct": 43.0
@@ -27895,7 +27895,7 @@
         "state_name": "Virginia",
         "population": 10765,
         "households": 3785,
-        "permits_2024": 29,
+        "permits_annual": 29,
         "permits_per_1000_households": 7.66,
         "median_household_income": 63530,
         "rent_burdened_share_pct": 42.6

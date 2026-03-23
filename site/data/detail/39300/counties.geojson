@@ -1559,7 +1559,7 @@
         "state_name": "Massachusetts",
         "population": 582270,
         "households": 233825,
-        "permits_2024": 863,
+        "permits_annual": 863,
         "permits_per_1000_households": 3.69,
         "median_household_income": 85625,
         "rent_burdened_share_pct": 42.3
@@ -1993,7 +1993,7 @@
         "state_name": "Rhode Island",
         "population": 50490,
         "households": 20104,
-        "permits_2024": 25,
+        "permits_annual": 25,
         "permits_per_1000_households": 1.24,
         "median_household_income": 114490,
         "rent_burdened_share_pct": 35.9
@@ -2835,7 +2835,7 @@
         "state_name": "Rhode Island",
         "population": 171456,
         "households": 72839,
-        "permits_2024": 471,
+        "permits_annual": 471,
         "permits_per_1000_households": 6.47,
         "median_household_income": 94345,
         "rent_burdened_share_pct": 39.6
@@ -5415,7 +5415,7 @@
         "state_name": "Rhode Island",
         "population": 84657,
         "households": 36868,
-        "permits_2024": 180,
+        "permits_annual": 180,
         "permits_per_1000_households": 4.88,
         "median_household_income": 103514,
         "rent_burdened_share_pct": 39.4
@@ -6405,7 +6405,7 @@
         "state_name": "Rhode Island",
         "population": 664854,
         "households": 259210,
-        "permits_2024": 782,
+        "permits_annual": 782,
         "permits_per_1000_households": 3.02,
         "median_household_income": 78787,
         "rent_burdened_share_pct": 37.0
@@ -7881,7 +7881,7 @@
         "state_name": "Rhode Island",
         "population": 130344,
         "households": 52549,
-        "permits_2024": 299,
+        "permits_annual": 299,
         "permits_per_1000_households": 5.69,
         "median_household_income": 106638,
         "rent_burdened_share_pct": 42.0

@@ -79,7 +79,7 @@ function bucketLabel(score) {
   return "Lower";
 }
 
-function pop(row) { return Number(row.population_2024 ?? row.population ?? 0); }
+function pop(row) { return Number(row.population ?? 0); }
 function fmr(row) { return Number(row.hud_fmr_2br ?? row.fmr_2br ?? 0); }
 
 async function loadJson(path) {
@@ -615,8 +615,8 @@ function renderExplainer(row) {
 function renderDetailMetrics(row) {
   const metrics = [
     ["Population", fmt.int(pop(row))],
-    ["Households", fmt.int(row.households_2024 ?? row.households)],
-    ["Permits (2024)", fmt.int(row.permits_2024 ?? row.permits_annual)],
+    ["Households", fmt.int(row.households)],
+    [`Permits (${state.metaData?.data_vintages?.bps ?? "Annual"})`, fmt.int(row.permits_annual)],
     ["Permits / 1k HH", row.permits_per_1000_households],
     ["2BR FMR", fmt.money(fmr(row))],
     ["Median income", fmt.money(row.median_household_income)],
@@ -697,7 +697,7 @@ function renderDetailMap(bundle) {
       const p = f.properties;
       layer.bindPopup(`
         <strong>${p.county_name}</strong><br/>
-        Permits: ${p.permits_2024 != null ? fmt.int(p.permits_2024) : "n/a"}<br/>
+        Permits: ${p.permits_annual != null ? fmt.int(p.permits_annual) : "n/a"}<br/>
         Permits/1k HH: ${p.permits_per_1000_households ?? "n/a"}<br/>
         Rent burden: ${p.rent_burdened_share_pct != null ? fmt.pct(p.rent_burdened_share_pct) : "n/a"}
       `);
@@ -732,7 +732,7 @@ function renderCountyStrip(bundle) {
         </div>
         <div class="county-metric">
           <span class="county-metric-label">Permits</span>
-          <span class="county-metric-value">${fmt.int(c.permits_2024)}</span>
+          <span class="county-metric-value">${fmt.int(c.permits_annual)}</span>
         </div>
         <div class="county-metric">
           <span class="county-metric-label">Permits/1k HH</span>
@@ -766,7 +766,8 @@ function renderSourceCards() {
   // IDs are now parameterized by year, so match on stable prefixes.
   function vintageForId(id) {
     if (id.startsWith("census_bps")) return vintages.bps;
-    if (id.startsWith("acs_")) return vintages.acs_metro;
+    if (id.startsWith("acs1_")) return vintages.acs_metro;
+    if (id.startsWith("acs5_")) return vintages.acs_county;
     if (id.startsWith("hud_fmr")) return vintages.hud;
     if (id.startsWith("hud_safmr")) return vintages.hud_safmr;
     if (id.startsWith("delineation_")) return vintages.delineation;
@@ -778,7 +779,7 @@ function renderSourceCards() {
   }
 
   // Show curated subset: exclude docs/reference-only entries
-  const hidePrefixes = ["census_bps_home", "census_bps_master", "acs_api_docs", "acs_geography_examples", "hud_fmr_docs", "hud_fmr_api_docs", "census_cbsa_gazetteer"];
+  const hidePrefixes = ["census_bps_home", "census_bps_master", "hud_fmr_docs", "hud_fmr_api_docs", "census_cbsa_gazetteer"];
   const filtered = sources.filter((s) => !hidePrefixes.some((p) => s.id.startsWith(p)));
 
   document.getElementById("source-grid").innerHTML = filtered.map((s) => `

@@ -577,7 +577,7 @@
         "state_name": "Ohio",
         "population": 169688,
         "households": 68166,
-        "permits_2024": 797,
+        "permits_annual": 797,
         "permits_per_1000_households": 11.69,
         "median_household_income": 87309,
         "rent_burdened_share_pct": 31.4
@@ -1067,7 +1067,7 @@
         "state_name": "Ohio",
         "population": 110296,
         "households": 44906,
-        "permits_2024": 326,
+        "permits_annual": 326,
         "permits_per_1000_households": 7.26,
         "median_household_income": 76817,
         "rent_burdened_share_pct": 34.4
@@ -1789,7 +1789,7 @@
         "state_name": "Ohio",
         "population": 536096,
         "households": 231319,
-        "permits_2024": 933,
+        "permits_annual": 933,
         "permits_per_1000_households": 4.03,
         "median_household_income": 66139,
         "rent_burdened_share_pct": 38.2

@@ -17,7 +17,7 @@
       "state_name": "Illinois",
       "population": 5182090,
       "households": 2100230,
-      "permits_2024": 6507,
+      "permits_annual": 6507,
       "permits_per_1000_households": 3.1,
       "median_household_income": 83498,
       "rent_burdened_share_pct": 39.9
@@ -28,7 +28,7 @@
       "state_name": "Illinois",
       "population": 100703,
       "households": 39550,
-      "permits_2024": 257,
+      "permits_annual": 257,
       "permits_per_1000_households": 6.5,
       "median_household_income": 70724,
       "rent_burdened_share_pct": 46.3
@@ -39,7 +39,7 @@
       "state_name": "Illinois",
       "population": 930024,
       "households": 350758,
-      "permits_2024": 1450,
+      "permits_annual": 1450,
       "permits_per_1000_households": 4.13,
       "median_household_income": 112096,
       "rent_burdened_share_pct": 36.1
@@ -50,7 +50,7 @@
       "state_name": "Illinois",
       "population": 53219,
       "households": 20595,
-      "permits_2024": 88,
+      "permits_annual": 88,
       "permits_per_1000_households": 4.27,
       "median_household_income": 92235,
       "rent_burdened_share_pct": 35.0
@@ -61,7 +61,7 @@
       "state_name": "Indiana",
       "population": 33234,
       "households": 12755,
-      "permits_2024": 84,
+      "permits_annual": 84,
       "permits_per_1000_households": 6.59,
       "median_household_income": 77314,
       "rent_burdened_share_pct": 30.7
@@ -72,7 +72,7 @@
       "state_name": "Illinois",
       "population": 517255,
       "households": 184706,
-      "permits_2024": 2132,
+      "permits_annual": 2132,
       "permits_per_1000_households": 11.54,
       "median_household_income": 103163,
       "rent_burdened_share_pct": 40.3
@@ -83,7 +83,7 @@
       "state_name": "Illinois",
       "population": 137675,
       "households": 45372,
-      "permits_2024": 706,
+      "permits_annual": 706,
       "permits_per_1000_households": 15.56,
       "median_household_income": 111601,
       "rent_burdened_share_pct": 36.1
@@ -94,7 +94,7 @@
       "state_name": "Illinois",
       "population": 714223,
       "households": 258455,
-      "permits_2024": 1042,
+      "permits_annual": 1042,
       "permits_per_1000_households": 4.03,
       "median_household_income": 110416,
       "rent_burdened_share_pct": 40.1
@@ -105,7 +105,7 @@
       "state_name": "Indiana",
       "population": 500379,
       "households": 195130,
-      "permits_2024": 1649,
+      "permits_annual": 1649,
       "permits_per_1000_households": 8.45,
       "median_household_income": 71493,
       "rent_burdened_share_pct": 44.8
@@ -116,7 +116,7 @@
       "state_name": "Illinois",
       "population": 312591,
       "households": 117594,
-      "permits_2024": 1565,
+      "permits_annual": 1565,
       "permits_per_1000_households": 13.31,
       "median_household_income": 104802,
       "rent_burdened_share_pct": 38.1
@@ -127,7 +127,7 @@
       "state_name": "Indiana",
       "population": 13922,
       "households": 5726,
-      "permits_2024": 26,
+      "permits_annual": 26,
       "permits_per_1000_households": 4.54,
       "median_household_income": 75481,
       "rent_burdened_share_pct": 32.0
@@ -138,7 +138,7 @@
       "state_name": "Indiana",
       "population": 174818,
       "households": 68639,
-      "permits_2024": 556,
+      "permits_annual": 556,
       "permits_per_1000_households": 8.1,
       "median_household_income": 87972,
       "rent_burdened_share_pct": 37.9
@@ -149,7 +149,7 @@
       "state_name": "Illinois",
       "population": 701462,
       "households": 244273,
-      "permits_2024": 2002,
+      "permits_annual": 2002,
       "permits_per_1000_households": 8.2,
       "median_household_income": 109984,
       "rent_burdened_share_pct": 43.4

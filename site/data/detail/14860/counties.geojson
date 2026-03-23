@@ -863,7 +863,7 @@
         "state_name": "Connecticut",
         "population": 329259,
         "households": 119633,
-        "permits_2024": 818,
+        "permits_annual": 818,
         "permits_per_1000_households": 6.84,
         "median_household_income": 89667,
         "rent_burdened_share_pct": 49.7
@@ -3111,7 +3111,7 @@
         "state_name": "Connecticut",
         "population": 627071,
         "households": 235379,
-        "permits_2024": 1094,
+        "permits_annual": 1094,
         "permits_per_1000_households": 4.65,
         "median_household_income": 128188,
         "rent_burdened_share_pct": 43.4

@@ -17,7 +17,7 @@
       "state_name": "Kentucky",
       "population": 84027,
       "households": 31747,
-      "permits_2024": 380,
+      "permits_annual": 380,
       "permits_per_1000_households": 11.97,
       "median_household_income": 80558,
       "rent_burdened_share_pct": 36.7
@@ -28,7 +28,7 @@
       "state_name": "Indiana",
       "population": 124354,
       "households": 51242,
-      "permits_2024": 911,
+      "permits_annual": 911,
       "permits_per_1000_households": 17.78,
       "median_household_income": 74214,
       "rent_burdened_share_pct": 35.5
@@ -39,7 +39,7 @@
       "state_name": "Indiana",
       "population": 80918,
       "households": 31916,
-      "permits_2024": 297,
+      "permits_annual": 297,
       "permits_per_1000_households": 9.31,
       "median_household_income": 79704,
       "rent_burdened_share_pct": 38.0
@@ -50,7 +50,7 @@
       "state_name": "Indiana",
       "population": 39859,
       "households": 15497,
-      "permits_2024": 158,
+      "permits_annual": 158,
       "permits_per_1000_households": 10.2,
       "median_household_income": 74475,
       "rent_burdened_share_pct": 30.8
@@ -61,7 +61,7 @@
       "state_name": "Kentucky",
       "population": 15856,
       "households": 6147,
-      "permits_2024": 65,
+      "permits_annual": 65,
       "permits_per_1000_households": 10.57,
       "median_household_income": 63347,
       "rent_burdened_share_pct": 48.6
@@ -72,7 +72,7 @@
       "state_name": "Kentucky",
       "population": 783022,
       "households": 331554,
-      "permits_2024": 2863,
+      "permits_annual": 2863,
       "permits_per_1000_households": 8.64,
       "median_household_income": 69866,
       "rent_burdened_share_pct": 38.5
@@ -83,7 +83,7 @@
       "state_name": "Kentucky",
       "population": 30158,
       "households": 11007,
-      "permits_2024": 124,
+      "permits_annual": 124,
       "permits_per_1000_households": 11.27,
       "median_household_income": 74355,
       "rent_burdened_share_pct": 31.4
@@ -94,7 +94,7 @@
       "state_name": "Kentucky",
       "population": 47606,
       "households": 19150,
-      "permits_2024": 210,
+      "permits_annual": 210,
       "permits_per_1000_households": 10.97,
       "median_household_income": 69562,
       "rent_burdened_share_pct": 44.0
@@ -105,7 +105,7 @@
       "state_name": "Kentucky",
       "population": 69257,
       "households": 23025,
-      "permits_2024": 402,
+      "permits_annual": 402,
       "permits_per_1000_households": 17.46,
       "median_household_income": 122497,
       "rent_burdened_share_pct": 32.2
@@ -116,7 +116,7 @@
       "state_name": "Kentucky",
       "population": 49096,
       "households": 18484,
-      "permits_2024": 237,
+      "permits_annual": 237,
       "permits_per_1000_households": 12.82,
       "median_household_income": 82604,
       "rent_burdened_share_pct": 32.7
@@ -127,7 +127,7 @@
       "state_name": "Kentucky",
       "population": 20193,
       "households": 7308,
-      "permits_2024": 126,
+      "permits_annual": 126,
       "permits_per_1000_households": 17.24,
       "median_household_income": 102618,
       "rent_burdened_share_pct": 31.4
@@ -138,7 +138,7 @@
       "state_name": "Indiana",
       "population": 28212,
       "households": 11229,
-      "permits_2024": 23,
+      "permits_annual": 23,
       "permits_per_1000_households": 2.05,
       "median_household_income": 64641,
       "rent_burdened_share_pct": 38.2

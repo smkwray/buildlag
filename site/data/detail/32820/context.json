@@ -17,7 +17,7 @@
       "state_name": "Mississippi",
       "population": 7589,
       "households": 3074,
-      "permits_2024": 1,
+      "permits_annual": 1,
       "permits_per_1000_households": 0.33,
       "median_household_income": 46016,
       "rent_burdened_share_pct": 30.3
@@ -28,7 +28,7 @@
       "state_name": "Arkansas",
       "population": 47266,
       "households": 18203,
-      "permits_2024": 69,
+      "permits_annual": 69,
       "permits_per_1000_households": 3.79,
       "median_household_income": 55358,
       "rent_burdened_share_pct": 38.7
@@ -39,7 +39,7 @@
       "state_name": "Mississippi",
       "population": 191301,
       "households": 70986,
-      "permits_2024": 1159,
+      "permits_annual": 1159,
       "permits_per_1000_households": 16.33,
       "median_household_income": 85297,
       "rent_burdened_share_pct": 41.5
@@ -50,7 +50,7 @@
       "state_name": "Tennessee",
       "population": 43267,
       "households": 17210,
-      "permits_2024": 225,
+      "permits_annual": 225,
       "permits_per_1000_households": 13.07,
       "median_household_income": 88456,
       "rent_burdened_share_pct": 31.8
@@ -61,7 +61,7 @@
       "state_name": "Mississippi",
       "population": 33979,
       "households": 13187,
-      "permits_2024": 306,
+      "permits_annual": 306,
       "permits_per_1000_households": 23.2,
       "median_household_income": 53458,
       "rent_burdened_share_pct": 49.6
@@ -72,7 +72,7 @@
       "state_name": "Tennessee",
       "population": 919173,
       "households": 362741,
-      "permits_2024": 2061,
+      "permits_annual": 2061,
       "permits_per_1000_households": 5.68,
       "median_household_income": 63767,
       "rent_burdened_share_pct": 45.6
@@ -83,7 +83,7 @@
       "state_name": "Mississippi",
       "population": 28321,
       "households": 11018,
-      "permits_2024": 114,
+      "permits_annual": 114,
       "permits_per_1000_households": 10.35,
       "median_household_income": 69704,
       "rent_burdened_share_pct": 49.7
@@ -94,7 +94,7 @@
       "state_name": "Tennessee",
       "population": 61553,
       "households": 22660,
-      "permits_2024": 215,
+      "permits_annual": 215,
       "permits_per_1000_households": 9.49,
       "median_household_income": 74127,
       "rent_burdened_share_pct": 30.4
@@ -105,7 +105,7 @@
       "state_name": "Mississippi",
       "population": 9475,
       "households": 3800,
-      "permits_2024": 90,
+      "permits_annual": 90,
       "permits_per_1000_households": 23.68,
       "median_household_income": 39364,
       "rent_burdened_share_pct": 52.3

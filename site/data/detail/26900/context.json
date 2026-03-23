@@ -17,7 +17,7 @@
       "state_name": "Indiana",
       "population": 74718,
       "households": 28738,
-      "permits_2024": 893,
+      "permits_annual": 893,
       "permits_per_1000_households": 31.07,
       "median_household_income": 111250,
       "rent_burdened_share_pct": 30.6
@@ -28,7 +28,7 @@
       "state_name": "Indiana",
       "population": 15606,
       "households": 6781,
-      "permits_2024": 76,
+      "permits_annual": 76,
       "permits_per_1000_households": 11.21,
       "median_household_income": 78528,
       "rent_burdened_share_pct": 48.7
@@ -39,7 +39,7 @@
       "state_name": "Indiana",
       "population": 365056,
       "households": 137252,
-      "permits_2024": 4561,
+      "permits_annual": 4561,
       "permits_per_1000_households": 33.23,
       "median_household_income": 121530,
       "rent_burdened_share_pct": 32.5
@@ -50,7 +50,7 @@
       "state_name": "Indiana",
       "population": 84037,
       "households": 33474,
-      "permits_2024": 1091,
+      "permits_annual": 1091,
       "permits_per_1000_households": 32.59,
       "median_household_income": 93186,
       "rent_burdened_share_pct": 29.0
@@ -61,7 +61,7 @@
       "state_name": "Indiana",
       "population": 183344,
       "households": 67110,
-      "permits_2024": 1295,
+      "permits_annual": 1295,
       "permits_per_1000_households": 19.3,
       "median_household_income": 101144,
       "rent_burdened_share_pct": 38.0
@@ -72,7 +72,7 @@
       "state_name": "Indiana",
       "population": 166315,
       "households": 62554,
-      "permits_2024": 1134,
+      "permits_annual": 1134,
       "permits_per_1000_households": 18.13,
       "median_household_income": 90454,
       "rent_burdened_share_pct": 35.0
@@ -83,7 +83,7 @@
       "state_name": "Indiana",
       "population": 131900,
       "households": 53429,
-      "permits_2024": 186,
+      "permits_annual": 186,
       "permits_per_1000_households": 3.48,
       "median_household_income": 63037,
       "rent_burdened_share_pct": 38.8
@@ -94,7 +94,7 @@
       "state_name": "Indiana",
       "population": 975809,
       "households": 400432,
-      "permits_2024": 1906,
+      "permits_annual": 1906,
       "permits_per_1000_households": 4.76,
       "median_household_income": 66346,
       "rent_burdened_share_pct": 41.7
@@ -105,7 +105,7 @@
       "state_name": "Indiana",
       "population": 72659,
       "households": 28279,
-      "permits_2024": 330,
+      "permits_annual": 330,
       "permits_per_1000_households": 11.67,
       "median_household_income": 79429,
       "rent_burdened_share_pct": 40.1
@@ -116,7 +116,7 @@
       "state_name": "Indiana",
       "population": 45265,
       "households": 18450,
-      "permits_2024": 284,
+      "permits_annual": 284,
       "permits_per_1000_households": 15.39,
       "median_household_income": 72190,
       "rent_burdened_share_pct": 36.0
@@ -127,7 +127,7 @@
       "state_name": "Indiana",
       "population": 15346,
       "households": 6266,
-      "permits_2024": 32,
+      "permits_annual": 32,
       "permits_per_1000_households": 5.11,
       "median_household_income": 76156,
       "rent_burdened_share_pct": 22.0

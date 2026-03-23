@@ -3233,7 +3233,7 @@
         "state_name": "New York",
         "population": 950622,
         "households": 409665,
-        "permits_2024": 1208,
+        "permits_annual": 1208,
         "permits_per_1000_households": 2.95,
         "median_household_income": 72839,
         "rent_burdened_share_pct": 41.3
@@ -4847,7 +4847,7 @@
         "state_name": "New York",
         "population": 210721,
         "households": 91884,
-        "permits_2024": 167,
+        "permits_annual": 167,
         "permits_per_1000_households": 1.82,
         "median_household_income": 69633,
         "rent_burdened_share_pct": 39.5
