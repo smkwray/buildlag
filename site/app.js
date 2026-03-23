@@ -668,7 +668,7 @@ function renderDetailMap(bundle) {
 
   placeholder.classList.add("hidden");
   mapEl.classList.remove("hidden");
-  document.getElementById("detail-map-note").textContent = `${bundle.context?.cbsa_summary?.zip_count ?? "?"} ZIPs · HUD SAFMR ${state.metaData?.data_vintages?.hud_safmr ?? "FY2026"} · ZCTA geometry`;
+  document.getElementById("detail-map-note").textContent = `${bundle.context?.cbsa_summary?.zip_count ?? "?"} ZIPs · HUD SAFMR ${state.metaData?.data_vintages?.hud_safmr ?? ""} · ZCTA geometry`;
 
   if (state.detailMap) state.detailMap.remove();
 
