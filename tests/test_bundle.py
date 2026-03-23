@@ -20,8 +20,10 @@ class BundleTests(unittest.TestCase):
             expected = [
                 project_root / "site" / "data" / "metro_panel.json",
                 project_root / "site" / "data" / "metro_points.geojson",
-                project_root / "site" / "data" / "detail_austin_zips.geojson",
-                project_root / "site" / "data" / "detail_austin_counties.geojson",
+                project_root / "site" / "data" / "detail" / "12420" / "zips.geojson",
+                project_root / "site" / "data" / "detail" / "12420" / "counties.geojson",
+                project_root / "site" / "data" / "detail" / "12420" / "context.json",
+                project_root / "site" / "data" / "detail_index.json",
                 project_root / "site" / "data" / "meta.json",
             ]
 
@@ -31,6 +33,7 @@ class BundleTests(unittest.TestCase):
             payload = json.loads((project_root / "site" / "data" / "meta.json").read_text(encoding="utf-8"))
             self.assertTrue(payload["fixture_mode"])
             self.assertEqual(payload["detail_metro_code"], "12420")
+            self.assertEqual(payload["detail_mode"], "fixture")
 
 
 if __name__ == "__main__":

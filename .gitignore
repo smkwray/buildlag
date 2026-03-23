@@ -11,6 +11,4 @@ data/processed/build_real_panel_summary.json
 src/underbuilt_overpriced_atlas.egg-info/
 __pycache__/
 *.pyc
-site/data/detail_austin_*.geojson
-site/data/detail_context.json
 site/docs/methodology.md

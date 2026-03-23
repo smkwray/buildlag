@@ -8,9 +8,29 @@ from pathlib import Path
 from typing import Iterable, List
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 
 DEFAULT_TIMEOUT_SECONDS = 120
+
+
+def _retry_session(
+    retries: int = 3,
+    backoff_factor: float = 1.0,
+    status_forcelist: tuple = (429, 500, 502, 503, 504),
+) -> requests.Session:
+    session = requests.Session()
+    retry = Retry(
+        total=retries,
+        backoff_factor=backoff_factor,
+        status_forcelist=status_forcelist,
+        allowed_methods=["GET"],
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
+    return session
 MANIFEST_NAME = "source_manifest.json"
 
 
@@ -39,7 +59,8 @@ def _download(url: str, destination: Path, *, timeout: int = DEFAULT_TIMEOUT_SEC
     destination.parent.mkdir(parents=True, exist_ok=True)
     temp_path = destination.with_suffix(destination.suffix + ".tmp")
 
-    with requests.get(url, stream=True, timeout=timeout) as response:
+    session = _retry_session()
+    with session.get(url, stream=True, timeout=timeout) as response:
         response.raise_for_status()
         with temp_path.open("wb") as handle:
             for chunk in response.iter_content(chunk_size=1024 * 512):

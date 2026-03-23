@@ -131,18 +131,44 @@ def build_fixture_bundle(project_root: Path) -> None:
 
     austin_zip_rows = read_csv_rows(fixture_dir / "austin_zip_inputs.csv")
     austin_county_rows = read_csv_rows(fixture_dir / "austin_county_inputs.csv")
-    write_json(site_data_dir / "detail_austin_zips.geojson", polygon_geojson(austin_zip_rows, id_field="zip_code"))
-    write_json(site_data_dir / "detail_austin_counties.geojson", polygon_geojson(austin_county_rows, id_field="county_name"))
+    detail_dir = site_data_dir / "detail" / "12420"
+    detail_dir.mkdir(parents=True, exist_ok=True)
+    write_json(detail_dir / "zips.geojson", polygon_geojson(austin_zip_rows, id_field="zip_code"))
+    write_json(detail_dir / "counties.geojson", polygon_geojson(austin_county_rows, id_field="county_name"))
+    write_json(detail_dir / "context.json", {
+        "detail_mode": "fixture",
+        "detail_cbsa_code": "12420",
+        "detail_metro_name": "Austin-Round Rock-Georgetown",
+        "cbsa_summary": {"zip_count": len(austin_zip_rows), "county_count": len(austin_county_rows)},
+    })
+    write_json(site_data_dir / "detail_index.json", {
+        "detail_mode": "fixture",
+        "default_cbsa_code": "12420",
+        "default_metro_name": "Austin-Round Rock-Georgetown",
+        "supported_detail_count": 1,
+        "supported_details": [{
+            "cbsa_code": "12420",
+            "metro_name": "Austin-Round Rock-Georgetown",
+            "detail_mode": "fixture",
+            "zip_count": len(austin_zip_rows),
+            "county_count": len(austin_county_rows),
+            "zips_path": "data/detail/12420/zips.geojson",
+            "counties_path": "data/detail/12420/counties.geojson",
+            "context_path": "data/detail/12420/context.json",
+        }],
+    })
 
     metadata = {
         "project": "Underbuilt vs. Overpriced Atlas",
         "fixture_mode": True,
+        "detail_mode": "fixture",
         "detail_metro_code": "12420",
         "detail_metro_name": "Austin-Round Rock-Georgetown",
         "built_at_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "national_metro_count": len(enriched),
         "selected_metro_counties": len(austin_county_rows),
         "selected_metro_zip_features": len(austin_zip_rows),
+        "supported_detail_count": 1,
         "download_path": "data/metro_panel.csv",
     }
     write_json(site_data_dir / "meta.json", metadata)

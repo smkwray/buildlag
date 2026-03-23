@@ -347,16 +347,6 @@ def _detail_paths_for_cbsa(cbsa_code: str) -> dict:
     }
 
 
-def _write_legacy_detail_files(site_data_dir: Path, cbsa_code: str) -> None:
-    detail_dir = site_data_dir / "detail" / cbsa_code
-    if (detail_dir / "zips.geojson").exists():
-        shutil.copyfile(detail_dir / "zips.geojson", site_data_dir / "detail_austin_zips.geojson")
-    if (detail_dir / "counties.geojson").exists():
-        shutil.copyfile(detail_dir / "counties.geojson", site_data_dir / "detail_austin_counties.geojson")
-    if (detail_dir / "context.json").exists():
-        shutil.copyfile(detail_dir / "context.json", site_data_dir / "detail_context.json")
-
-
 def _write_detail_fallback(site_data_dir: Path, project_root: Path, *, detail_cbsa_code: str, detail_metro_name: str) -> dict:
     fixture_dir = project_root / "data" / "fixtures"
     detail_dir = site_data_dir / "detail" / detail_cbsa_code
@@ -384,7 +374,6 @@ def _write_detail_fallback(site_data_dir: Path, project_root: Path, *, detail_cb
         ],
     }
     write_json(detail_dir / "context.json", detail_context)
-    _write_legacy_detail_files(site_data_dir, detail_cbsa_code)
 
     detail_paths = _detail_paths_for_cbsa(detail_cbsa_code)
     detail_index = {
@@ -575,7 +564,6 @@ def _build_real_detail_layers(
         "supported_details": supported_details,
     }
     write_json(site_data_dir / "detail_index.json", detail_index)
-    _write_legacy_detail_files(site_data_dir, default_entry["cbsa_code"])
 
     return {
         "detail_mode": "multi_metro_real_safmr_zcta",

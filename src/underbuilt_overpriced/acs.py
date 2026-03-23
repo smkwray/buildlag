@@ -7,9 +7,29 @@ from pathlib import Path
 from typing import Dict, Iterable, List
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 
 CENSUS_API_BASE = "https://api.census.gov/data"
+
+
+def _retry_session(
+    retries: int = 3,
+    backoff_factor: float = 1.0,
+    status_forcelist: tuple = (429, 500, 502, 503, 504),
+) -> requests.Session:
+    session = requests.Session()
+    retry = Retry(
+        total=retries,
+        backoff_factor=backoff_factor,
+        status_forcelist=status_forcelist,
+        allowed_methods=["GET"],
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
+    return session
 
 ACS_PROFILE_VARS = [
     "DP03_0062E",   # median household income
@@ -62,7 +82,8 @@ def _write_json(path: Path, payload: object) -> None:
 
 
 def _fetch_census_rows(url: str) -> List[dict]:
-    response = requests.get(url, timeout=120)
+    session = _retry_session()
+    response = session.get(url, timeout=120)
     response.raise_for_status()
     matrix = response.json()
     header = matrix[0]
