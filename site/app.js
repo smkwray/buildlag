@@ -762,36 +762,31 @@ function renderSourceCards() {
   const vintages = cat.data_vintages || {};
   const sources = cat.data_sources || [];
 
-  const vintageMap = {
-    census_bps_home: vintages.bps,
-    census_bps_cbsa_annual_2024: vintages.bps,
-    census_bps_county_annual_2024: vintages.bps,
-    acs_api_docs: vintages.acs_metro,
-    acs_acs1_profile_examples: vintages.acs_metro,
-    acs_geography_examples: vintages.acs_metro,
-    hud_fmr_docs: vintages.hud,
-    hud_fmr_2026_county: vintages.hud,
-    hud_safmr_2026: vintages.hud_safmr,
-    delineation_2023_list2: vintages.delineation,
-    delineation_2023_list1: vintages.delineation,
-    metro_population_2024: vintages.population,
-    census_cbsa_gazetteer_2023: vintages.gazetteer,
-    census_zcta_boundaries_2020: vintages.zcta_boundaries,
-    census_county_boundaries_2023: vintages.county_boundaries,
-    census_bps_master: vintages.bps,
-    hud_fmr_api_docs: vintages.hud,
-  };
+  // Map source IDs to their vintage label by prefix pattern.
+  // IDs are now parameterized by year, so match on stable prefixes.
+  function vintageForId(id) {
+    if (id.startsWith("census_bps")) return vintages.bps;
+    if (id.startsWith("acs_")) return vintages.acs_metro;
+    if (id.startsWith("hud_fmr")) return vintages.hud;
+    if (id.startsWith("hud_safmr")) return vintages.hud_safmr;
+    if (id.startsWith("delineation_")) return vintages.delineation;
+    if (id.startsWith("metro_population")) return vintages.population;
+    if (id === "census_cbsa_gazetteer_2023") return vintages.gazetteer;
+    if (id.startsWith("census_zcta")) return vintages.zcta_boundaries;
+    if (id.startsWith("census_county_boundaries")) return vintages.county_boundaries;
+    return "";
+  }
 
-  // Show curated subset
-  const show = ["census_bps_cbsa_annual_2024", "acs_acs1_profile_examples", "hud_fmr_2026_county", "hud_safmr_2026", "delineation_2023_list1", "metro_population_2024", "census_zcta_boundaries_2020", "census_county_boundaries_2023"];
-  const filtered = sources.filter((s) => show.includes(s.id));
+  // Show curated subset: exclude docs/reference-only entries
+  const hidePrefixes = ["census_bps_home", "census_bps_master", "acs_api_docs", "acs_geography_examples", "hud_fmr_docs", "hud_fmr_api_docs", "census_cbsa_gazetteer"];
+  const filtered = sources.filter((s) => !hidePrefixes.some((p) => s.id.startsWith(p)));
 
   document.getElementById("source-grid").innerHTML = filtered.map((s) => `
     <div class="source-card">
       <div class="source-card-name">${s.name}</div>
-      <div class="source-card-vintage">${vintageMap[s.id] || ""}</div>
+      <div class="source-card-vintage">${vintageForId(s.id) || ""}</div>
       <div class="source-card-purpose">${s.purpose}</div>
-      <a href="${s.url}" target="_blank" rel="noopener">View source →</a>
+      <a href="${s.url}" target="_blank" rel="noopener">View source &rarr;</a>
     </div>
   `).join("");
 }

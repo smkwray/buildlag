@@ -44,8 +44,16 @@ def main() -> None:
     build_real_parser.add_argument("--metro-year", type=int, default=2024)
     build_real_parser.add_argument("--county-year", type=int, default=2024)
     build_real_parser.add_argument("--force-fetch", action="store_true")
+    build_real_parser.add_argument(
+        "--allow-fallback",
+        action="store_true",
+        help="Allow fixture-data fallback if real detail layers fail (marks build as invalid for deploy).",
+    )
 
     args = parser.parse_args()
+
+    if args.command == "build-real-panel" and args.top_n < 1:
+        parser.error("--top-n must be a positive integer (got %d)" % args.top_n)
 
     if args.command == "build-demo":
         build_fixture_bundle(project_root())
@@ -76,6 +84,7 @@ def main() -> None:
                 county_acs5_year=args.county_year,
             ),
             force_fetch=args.force_fetch,
+            allow_fallback=args.allow_fallback,
         )
 
 

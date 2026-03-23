@@ -52,6 +52,30 @@ class RealOutputContractTests(unittest.TestCase):
         self.assertIn("detail_mode", detail_index)
         self.assertGreaterEqual(detail_index.get("supported_detail_count", 0), 1)
 
+        # Reject fixture_fallback in real-mode outputs
+        self.assertNotEqual(
+            detail_index.get("detail_mode"),
+            "fixture_fallback",
+            "detail_index.json has detail_mode=fixture_fallback — real detail layers did not build.",
+        )
+        self.assertNotEqual(
+            meta.get("detail_mode"),
+            "fixture_fallback",
+            "meta.json has detail_mode=fixture_fallback — real detail layers did not build.",
+        )
+
+        # Consistency: meta.json and detail_index.json must agree
+        self.assertEqual(
+            meta.get("detail_mode"),
+            detail_index.get("detail_mode"),
+            "detail_mode mismatch between meta.json and detail_index.json",
+        )
+        self.assertEqual(
+            meta.get("supported_detail_count"),
+            detail_index.get("supported_detail_count"),
+            "supported_detail_count mismatch between meta.json and detail_index.json",
+        )
+
         default_cbsa_code = meta["detail_metro_code"]
         supported = {entry["cbsa_code"]: entry for entry in detail_index["supported_details"]}
         self.assertIn(default_cbsa_code, supported)
@@ -64,6 +88,28 @@ class RealOutputContractTests(unittest.TestCase):
         context = json.loads((project_root / "site" / default_entry["context_path"]).read_text(encoding="utf-8"))
         self.assertIn("detail_mode", context)
         self.assertIn("cbsa_summary", context)
+
+    def test_source_catalog_consistency(self):
+        project_root = Path(__file__).resolve().parents[1]
+        meta_path = project_root / "site" / "data" / "meta.json"
+        catalog_path = project_root / "site" / "data" / "source_catalog.json"
+
+        if not meta_path.exists() or not catalog_path.exists():
+            self.skipTest("Real outputs are not present.")
+
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        if meta.get("fixture_mode", True):
+            self.skipTest("Fixture mode; skipping catalog consistency check.")
+
+        catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(
+            meta.get("data_vintages"),
+            catalog.get("data_vintages"),
+            "data_vintages mismatch between meta.json and source_catalog.json",
+        )
+        self.assertFalse(catalog.get("fixture_mode"), "source_catalog.json should not be in fixture mode")
+        self.assertGreater(len(catalog.get("data_sources", [])), 0, "source_catalog.json has no data_sources")
 
 
 if __name__ == "__main__":

@@ -20,3 +20,35 @@ jobs:
 
       - name: Run tests
         run: PYTHONPATH=src python -m unittest discover -s tests -v
+
+      - name: Gate — reject fixture_fallback in committed outputs
+        run: |
+          META=site/data/meta.json
+          if [ -f "$META" ]; then
+            MODE=$(python -c "import json; print(json.load(open('$META')).get('detail_mode',''))")
+            if [ "$MODE" = "fixture_fallback" ]; then
+              echo "::error::Committed site outputs have detail_mode=fixture_fallback — cannot deploy."
+              exit 1
+            fi
+          fi
+
+      - name: Gate — meta/detail_index consistency
+        run: |
+          META=site/data/meta.json
+          INDEX=site/data/detail_index.json
+          if [ -f "$META" ] && [ -f "$INDEX" ]; then
+            python -c "
+          import json, sys
+          meta = json.load(open('$META'))
+          idx = json.load(open('$INDEX'))
+          errors = []
+          if meta.get('detail_mode') != idx.get('detail_mode'):
+              errors.append(f\"detail_mode mismatch: meta={meta.get('detail_mode')} vs index={idx.get('detail_mode')}\")
+          if meta.get('supported_detail_count') != idx.get('supported_detail_count'):
+              errors.append(f\"supported_detail_count mismatch: meta={meta.get('supported_detail_count')} vs index={idx.get('supported_detail_count')}\")
+          if errors:
+              for e in errors: print(f'::error::{e}')
+              sys.exit(1)
+          print('meta.json and detail_index.json are consistent.')
+          "
+          fi

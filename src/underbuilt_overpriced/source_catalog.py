@@ -3,7 +3,15 @@ from __future__ import annotations
 from typing import Any, Dict
 
 
-def catalog(*, fixture_mode: bool = True, data_vintages: Dict[str, str] | None = None) -> Dict[str, Any]:
+def catalog(
+    *,
+    fixture_mode: bool = True,
+    data_vintages: Dict[str, str] | None = None,
+    bps_year: int = 2024,
+    hud_year: int = 2026,
+    acs_year: int = 2024,
+) -> Dict[str, Any]:
+    hud_yy = str(hud_year)[-2:]
     return {
         "fixture_mode": fixture_mode,
         "data_vintages": data_vintages or {},
@@ -21,9 +29,9 @@ def catalog(*, fixture_mode: bool = True, data_vintages: Dict[str, str] | None =
                 "purpose": "Compiled source files for deeper ETL work.",
             },
             {
-                "id": "census_bps_cbsa_annual_2024",
-                "name": "BPS annual CBSA file pattern",
-                "url": "https://www.census.gov/construction/bps/xls/cbsaannual_202499.xls",
+                "id": f"census_bps_cbsa_annual_{bps_year}",
+                "name": f"BPS {bps_year} annual CBSA file",
+                "url": f"https://www.census.gov/construction/bps/xls/cbsaannual_{bps_year}99.xls",
                 "purpose": "Top-metro annual permit totals.",
             },
             {
@@ -35,13 +43,13 @@ def catalog(*, fixture_mode: bool = True, data_vintages: Dict[str, str] | None =
             {
                 "id": "acs_acs1_profile_examples",
                 "name": "ACS 1-year profile examples",
-                "url": "https://api.census.gov/data/2024/acs/acs1/profile/examples.html",
+                "url": f"https://api.census.gov/data/{acs_year}/acs/acs1/profile/examples.html",
                 "purpose": "Geography and endpoint examples for metro pulls.",
             },
             {
                 "id": "acs_geography_examples",
                 "name": "ACS 1-year geography list",
-                "url": "https://api.census.gov/data/2024/acs/acs1/geography.html",
+                "url": f"https://api.census.gov/data/{acs_year}/acs/acs1/geography.html",
                 "purpose": "Confirms metro geography support in ACS 1-year.",
             },
             {
@@ -57,15 +65,15 @@ def catalog(*, fixture_mode: bool = True, data_vintages: Dict[str, str] | None =
                 "purpose": "Alternative API access path for FMR metadata.",
             },
             {
-                "id": "hud_fmr_2026_county",
-                "name": "HUD FY2026 county FMR file",
-                "url": "https://www.huduser.gov/portal/datasets/fmr/fmr2026/FY26_FMRs.xlsx",
-                "purpose": "County-level 2026 FMR benchmarks.",
+                "id": f"hud_fmr_{hud_year}_county",
+                "name": f"HUD FY{hud_year} county FMR file",
+                "url": f"https://www.huduser.gov/portal/datasets/fmr/fmr{hud_year}/FY{hud_yy}_FMRs.xlsx",
+                "purpose": f"County-level {hud_year} FMR benchmarks.",
             },
             {
-                "id": "hud_safmr_2026",
-                "name": "HUD FY2026 SAFMR file",
-                "url": "https://www.huduser.gov/portal/datasets/fmr/fmr2026/fy2026_safmrs.xlsx",
+                "id": f"hud_safmr_{hud_year}",
+                "name": f"HUD FY{hud_year} SAFMR file",
+                "url": f"https://www.huduser.gov/portal/datasets/fmr/fmr{hud_year}/fy{hud_year}_safmrs.xlsx",
                 "purpose": "ZIP-level selected-metro detail layer.",
             },
             {
@@ -93,9 +101,9 @@ def catalog(*, fixture_mode: bool = True, data_vintages: Dict[str, str] | None =
                 "purpose": "CBSA internal point latitude/longitude for map rendering.",
             },
             {
-                "id": "census_bps_county_annual_2024",
-                "name": "BPS county annual file",
-                "url": "https://www2.census.gov/econ/bps/County/co2024a.txt",
+                "id": f"census_bps_county_annual_{bps_year}",
+                "name": f"BPS {bps_year} county annual file",
+                "url": f"https://www2.census.gov/econ/bps/County/co{bps_year}a.txt",
                 "purpose": "County-level annual permit counts for county-year workflows.",
             },
             {

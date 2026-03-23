@@ -595,6 +595,7 @@ def build_real_panel(
     hud_year: int = 2026,
     acs_vintage: AcsVintage | None = None,
     force_fetch: bool = False,
+    allow_fallback: bool = False,
 ) -> None:
     raw_dir = project_root / "data" / "raw"
     processed_dir = project_root / "data" / "processed"
@@ -725,7 +726,33 @@ def build_real_panel(
         detail_cbsa_code = candidate_codes[0] if candidate_codes else scored_rows[0]["cbsa_code"]
     detail_metro_name = scored_by_cbsa[detail_cbsa_code]["metro_name"]
 
-    try:
+    if allow_fallback:
+        try:
+            detail_result = _build_real_detail_layers(
+                site_data_dir=site_data_dir,
+                raw_dir=raw_dir,
+                safmr_df=hud_safmr_df,
+                delineation_df=delineation_df,
+                acs_county_df=acs_county_df,
+                bps_county_df=bps_county_df,
+                scored_rows=scored_rows,
+                default_cbsa_code=detail_cbsa_code,
+            )
+        except Exception:
+            import logging
+            import traceback
+
+            logging.warning(
+                "Detail layer build failed; falling back to fixture data.\n%s",
+                traceback.format_exc(),
+            )
+            detail_result = _write_detail_fallback(
+                site_data_dir,
+                project_root,
+                detail_cbsa_code=detail_cbsa_code,
+                detail_metro_name=detail_metro_name,
+            )
+    else:
         detail_result = _build_real_detail_layers(
             site_data_dir=site_data_dir,
             raw_dir=raw_dir,
@@ -735,13 +762,6 @@ def build_real_panel(
             bps_county_df=bps_county_df,
             scored_rows=scored_rows,
             default_cbsa_code=detail_cbsa_code,
-        )
-    except Exception:
-        detail_result = _write_detail_fallback(
-            site_data_dir,
-            project_root,
-            detail_cbsa_code=detail_cbsa_code,
-            detail_metro_name=detail_metro_name,
         )
 
     metadata = {
@@ -764,7 +784,13 @@ def build_real_panel(
     }
     write_json(site_data_dir / "meta.json", metadata)
 
-    source_catalog_payload = catalog(fixture_mode=False, data_vintages=vintages)
+    source_catalog_payload = catalog(
+        fixture_mode=False,
+        data_vintages=vintages,
+        bps_year=bps_year,
+        hud_year=hud_year,
+        acs_year=acs_selected.metro_acs1_year,
+    )
     write_json(processed_dir / "source_catalog.json", source_catalog_payload)
     write_json(site_data_dir / "source_catalog.json", source_catalog_payload)
 

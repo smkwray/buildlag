@@ -104,7 +104,7 @@ Then open [http://localhost:8000](http://localhost:8000).
 
 ## Rebuild the data from source
 
-Requires Python 3.11+ and a Census API key (set `CENSUS_API_KEY` in `.env`).
+Requires Python 3.11+. All data sources are free public APIs — no API keys needed.
 
 ```bash
 pip install -e .
