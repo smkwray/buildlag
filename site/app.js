@@ -784,9 +784,9 @@ function renderSourceCards() {
     if (id.startsWith("acs5_")) return vintages.acs_county;
     if (id.startsWith("hud_fmr")) return vintages.hud;
     if (id.startsWith("hud_safmr")) return vintages.hud_safmr;
-    if (id.startsWith("delineation_")) return vintages.delineation;
-    if (id.startsWith("metro_population")) return vintages.population;
-    if (id === "census_cbsa_gazetteer_2023") return vintages.gazetteer;
+    if (id.startsWith("census_delineation")) return vintages.delineation;
+    if (id.startsWith("census_metro_population")) return vintages.population;
+    if (id.startsWith("census_cbsa_gazetteer")) return vintages.gazetteer;
     if (id.startsWith("census_zcta")) return vintages.zcta_boundaries;
     if (id.startsWith("census_county_boundaries")) return vintages.county_boundaries;
     return "";
