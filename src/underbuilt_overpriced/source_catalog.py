@@ -9,7 +9,8 @@ def catalog(
     data_vintages: Dict[str, str] | None = None,
     bps_year: int = 2024,
     hud_year: int = 2026,
-    acs_year: int = 2024,
+    acs_metro_year: int = 2024,
+    acs_county_year: int = 2024,
 ) -> Dict[str, Any]:
     hud_yy = str(hud_year)[-2:]
     return {
@@ -35,27 +36,27 @@ def catalog(
                 "purpose": "Top-metro annual permit totals.",
             },
             {
-                "id": f"acs1_metro_profile_{acs_year}",
-                "name": f"ACS 1-year {acs_year} metro profile query",
-                "url": f"https://api.census.gov/data/{acs_year}/acs/acs1/profile?get=NAME,DP03_0062E,DP04_0001E,DP04_0046E,DP04_0134E,DP04_0142PE&for=metropolitan%20statistical%20area/micropolitan%20statistical%20area:*",
+                "id": f"acs1_metro_profile_{acs_metro_year}",
+                "name": f"ACS 1-year {acs_metro_year} metro profile query",
+                "url": f"https://api.census.gov/data/{acs_metro_year}/acs/acs1/profile?get=NAME,DP03_0062E,DP04_0001E,DP04_0046E,DP04_0134E,DP04_0142PE&for=metropolitan%20statistical%20area/micropolitan%20statistical%20area:*",
                 "purpose": "Metro-level income, housing, and rent burden data.",
             },
             {
-                "id": f"acs1_metro_base_{acs_year}",
-                "name": f"ACS 1-year {acs_year} metro base query",
-                "url": f"https://api.census.gov/data/{acs_year}/acs/acs1?get=NAME,B01003_001E,B11001_001E&for=metropolitan%20statistical%20area/micropolitan%20statistical%20area:*",
+                "id": f"acs1_metro_base_{acs_metro_year}",
+                "name": f"ACS 1-year {acs_metro_year} metro base query",
+                "url": f"https://api.census.gov/data/{acs_metro_year}/acs/acs1?get=NAME,B01003_001E,B11001_001E&for=metropolitan%20statistical%20area/micropolitan%20statistical%20area:*",
                 "purpose": "Metro-level population and household counts.",
             },
             {
-                "id": f"acs5_county_profile_{acs_year}",
-                "name": f"ACS 5-year {acs_year} county profile query",
-                "url": f"https://api.census.gov/data/{acs_year}/acs/acs5/profile?get=NAME,DP03_0062E,DP04_0001E,DP04_0046E,DP04_0134E,DP04_0142PE&for=county:*",
+                "id": f"acs5_county_profile_{acs_county_year}",
+                "name": f"ACS 5-year {acs_county_year} county profile query",
+                "url": f"https://api.census.gov/data/{acs_county_year}/acs/acs5/profile?get=NAME,DP03_0062E,DP04_0001E,DP04_0046E,DP04_0134E,DP04_0142PE&for=county:*",
                 "purpose": "County-level income, housing, and rent burden data.",
             },
             {
-                "id": f"acs5_county_base_{acs_year}",
-                "name": f"ACS 5-year {acs_year} county base query",
-                "url": f"https://api.census.gov/data/{acs_year}/acs/acs5?get=NAME,B01003_001E,B11001_001E&for=county:*",
+                "id": f"acs5_county_base_{acs_county_year}",
+                "name": f"ACS 5-year {acs_county_year} county base query",
+                "url": f"https://api.census.gov/data/{acs_county_year}/acs/acs5?get=NAME,B01003_001E,B11001_001E&for=county:*",
                 "purpose": "County-level population and household counts.",
             },
             {

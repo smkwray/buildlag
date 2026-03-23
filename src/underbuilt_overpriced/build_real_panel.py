@@ -141,8 +141,9 @@ def load_bps_county(path: Path) -> pd.DataFrame:
     return pd.DataFrame(rows).drop_duplicates(subset=["county_fips"])
 
 
-def load_hud_fmr(path: Path) -> pd.DataFrame:
-    df = pd.read_excel(path, sheet_name="FY26_FMRs")
+def load_hud_fmr(path: Path, *, hud_year: int = 2026) -> pd.DataFrame:
+    hud_yy = str(hud_year)[-2:]
+    df = pd.read_excel(path, sheet_name=f"FY{hud_yy}_FMRs")
     df = _strip_columns(df)
     df["cbsa_code"] = df["hud_area_code"].map(_extract_cbsa_code)
     df["fmr_2"] = pd.to_numeric(df["fmr_2"], errors="coerce")
@@ -606,7 +607,7 @@ def build_real_panel(
 
     bps_df = load_bps_cbsa(raw_dir / f"census_bps_cbsaannual_{bps_year}99.xls")
     bps_county_df = load_bps_county(raw_dir / f"census_bps_county_co{bps_year}a.txt")
-    hud_df = load_hud_fmr(raw_dir / f"hud_fmr_fy{hud_year}_county.xlsx")
+    hud_df = load_hud_fmr(raw_dir / f"hud_fmr_fy{hud_year}_county.xlsx", hud_year=hud_year)
     hud_safmr_df = load_hud_safmr(raw_dir / f"hud_safmr_fy{hud_year}_zip.xlsx")
     acs_metro_df = load_acs_metro(acs_paths["metro"].with_suffix(".csv"))
     acs_county_df = load_acs_county(acs_paths["county"].with_suffix(".csv"))
@@ -777,7 +778,8 @@ def build_real_panel(
         data_vintages=vintages,
         bps_year=bps_year,
         hud_year=hud_year,
-        acs_year=acs_selected.metro_acs1_year,
+        acs_metro_year=acs_selected.metro_acs1_year,
+        acs_county_year=acs_selected.county_acs5_year,
     )
     write_json(processed_dir / "source_catalog.json", source_catalog_payload)
     write_json(site_data_dir / "source_catalog.json", source_catalog_payload)

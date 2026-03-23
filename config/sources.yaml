@@ -24,8 +24,10 @@ sources:
 
   census_acs:
     api_docs: https://www.census.gov/programs-surveys/acs/data/data-via-api.html
-    acs1_profile_examples: https://api.census.gov/data/2024/acs/acs1/profile/examples.html
-    acs1_geography: https://api.census.gov/data/2024/acs/acs1/geography.html
+    acs1_metro_profile_pattern: https://api.census.gov/data/{year}/acs/acs1/profile?get=NAME,DP03_0062E,DP04_0001E,DP04_0046E,DP04_0134E,DP04_0142PE&for=metropolitan%20statistical%20area/micropolitan%20statistical%20area:*
+    acs1_metro_base_pattern: https://api.census.gov/data/{year}/acs/acs1?get=NAME,B01003_001E,B11001_001E&for=metropolitan%20statistical%20area/micropolitan%20statistical%20area:*
+    acs5_county_profile_pattern: https://api.census.gov/data/{year}/acs/acs5/profile?get=NAME,DP03_0062E,DP04_0001E,DP04_0046E,DP04_0134E,DP04_0142PE&for=county:*
+    acs5_county_base_pattern: https://api.census.gov/data/{year}/acs/acs5?get=NAME,B01003_001E,B11001_001E&for=county:*
     preferred_vintages:
       metro_context: 2024_acs1
       county_context: 2020_2024_acs5

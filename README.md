@@ -132,7 +132,9 @@ site/                       Static website (HTML, CSS, JS)
     meta.json               Build metadata and source vintages
     detail_index.json       Index of all 75 metro detail bundles
     source_catalog.json     Authoritative source URLs
-    detail/<cbsa>/          Per-metro ZIP and county detail
+    detail_contexts.json    Consolidated CBSA-keyed detail contexts
+    detail_counties.json    Consolidated CBSA-keyed county geometries
+    detail/<cbsa>_zips.geojson  Per-metro ZIP SAFMR geometry
 src/underbuilt_overpriced/  Python pipeline (scoring, fetching, bundling)
 config/sources.yaml         Source URL registry
 tests/                      Data contract and scoring tests

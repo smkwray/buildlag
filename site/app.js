@@ -9,6 +9,7 @@ const state = {
   detailIndex: null,
   detailContexts: {},
   detailCounties: {},
+  _detailDictsLoaded: false,
   sourceCatalog: null,
   selectedCbsa: null,
   scoreMode: "overall",      // overall | underbuilt | overpriced
@@ -526,10 +527,23 @@ function getDetailEntry(cbsa) {
   return state.detailIndex?.supported_details?.find((e) => e.cbsa_code === cbsa) ?? null;
 }
 
+async function ensureDetailDicts() {
+  if (!state._detailDictsLoaded) {
+    const [ctx, cty] = await Promise.all([
+      loadJson("data/detail_contexts.json").catch(() => ({})),
+      loadJson("data/detail_counties.json").catch(() => ({})),
+    ]);
+    state.detailContexts = ctx;
+    state.detailCounties = cty;
+    state._detailDictsLoaded = true;
+  }
+}
+
 async function loadDetailBundle(cbsa) {
   const entry = getDetailEntry(cbsa);
   if (!entry) return null;
   if (!state.detailCache[cbsa]) {
+    await ensureDetailDicts();
     const context = state.detailContexts?.[cbsa] ?? null;
     const counties = state.detailCounties?.[cbsa] ?? null;
     const zips = await loadJson(entry.zips_path);
@@ -654,7 +668,7 @@ function renderDetailMap(bundle) {
 
   placeholder.classList.add("hidden");
   mapEl.classList.remove("hidden");
-  document.getElementById("detail-map-note").textContent = `${bundle.context?.cbsa_summary?.zip_count ?? "?"} ZIPs · HUD SAFMR FY2026 · ZCTA geometry`;
+  document.getElementById("detail-map-note").textContent = `${bundle.context?.cbsa_summary?.zip_count ?? "?"} ZIPs · HUD SAFMR ${state.metaData?.data_vintages?.hud_safmr ?? "FY2026"} · ZCTA geometry`;
 
   if (state.detailMap) state.detailMap.remove();
 
@@ -867,14 +881,12 @@ function addResetControl(map, resetFn) {
 
 // ───── Init ─────
 async function init() {
-  const [panel, points, meta, detailIndex, catalog, detailContexts, detailCounties] = await Promise.all([
+  const [panel, points, meta, detailIndex, catalog] = await Promise.all([
     loadJson("data/metro_panel.json"),
     loadJson("data/metro_points.geojson"),
     loadJson("data/meta.json"),
     loadJson("data/detail_index.json").catch(() => null),
     loadJson("data/source_catalog.json").catch(() => null),
-    loadJson("data/detail_contexts.json").catch(() => ({})),
-    loadJson("data/detail_counties.json").catch(() => ({})),
   ]);
 
   state.panel = panel;
@@ -882,8 +894,6 @@ async function init() {
   state.metaData = meta;
   state.detailIndex = detailIndex;
   state.sourceCatalog = catalog;
-  state.detailContexts = detailContexts;
-  state.detailCounties = detailCounties;
   state.selectedCbsa = meta.detail_metro_code || panel[0]?.cbsa_code;
 
   initThemeToggle();

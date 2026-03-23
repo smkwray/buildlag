@@ -1,5 +1,5 @@
 # The bundled demo build uses only the Python standard library.
-# These packages are the expected next additions once Codex implements
+# These packages are the expected next additions once the team implements
 # real-source ETL and file parsing.
 
 pandas>=2.2
