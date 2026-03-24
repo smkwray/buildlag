@@ -11,4 +11,6 @@ data/processed/build_real_panel_summary.json
 src/underbuilt_overpriced_atlas.egg-info/
 __pycache__/
 *.pyc
+.playwright-mcp/
+site-*.png
 site/docs/methodology.md
