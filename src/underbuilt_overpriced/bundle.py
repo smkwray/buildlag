@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import csv
 import json
-import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable, List, Sequence
@@ -92,12 +91,6 @@ def build_fixture_bundle(project_root: Path) -> None:
     fixture_dir = project_root / "data" / "fixtures"
     site_data_dir = project_root / "site" / "data"
     processed_dir = project_root / "data" / "processed"
-
-    site_docs_dir = project_root / "site" / "docs"
-    site_docs_dir.mkdir(parents=True, exist_ok=True)
-    methodology_src = project_root / "docs" / "methodology.md"
-    if methodology_src.exists():
-        shutil.copyfile(methodology_src, site_docs_dir / "methodology.md")
 
     metro_rows = read_csv_rows(fixture_dir / "metro_inputs.csv")
     enriched = enrich_rows(metro_rows)

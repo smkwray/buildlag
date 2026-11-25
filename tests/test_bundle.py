@@ -13,7 +13,6 @@ class BundleTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp_dir:
             project_root = Path(temp_dir)
             shutil.copytree(source_root / "data" / "fixtures", project_root / "data" / "fixtures")
-            shutil.copytree(source_root / "docs", project_root / "docs")
             (project_root / "site").mkdir(parents=True, exist_ok=True)
             build_fixture_bundle(project_root)
 
