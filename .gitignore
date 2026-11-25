@@ -14,3 +14,5 @@ __pycache__/
 .playwright-mcp/
 site-*.png
 site/docs/methodology.md
+
+.private-denylist
